@@ -1,3 +1,16 @@
+// Toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('toggle-business');
+    const dropdownMenu = document.getElementById('business-dropdown');
+    console.log(toggleButton, dropdownMenu);
+    toggleButton.addEventListener('click', () => {
+        console.log('Toggle button clicked'); 
+        dropdownMenu.classList.toggle('hidden'); 
+    });
+});
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const languageToggle = document.getElementById('language-toggle');
     const homePage = document.getElementById('home');
