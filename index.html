@@ -25,59 +25,60 @@
 <body style="font-family: 'Rubik', sans-serif;">
     <div class>
         <!-- Start Header -->
-                <div>
-                    <nav class="bg-white shadow-md z-50 absolute top-[10%] left-1/2 transform -translate-x-1/2 lg:w-[1182px] h-[88px] rounded-lg">
-                        <div class="container mx-auto flex justify-between items-center py-4 px-6">
-                            <div class="flex items-center space-x-2">
-                                <div class="text-right">
-                                    <h1 id="main-title" class="md:text-xl md:font-bold text-black">مجموعة الميره</h1>
-                                    <span class="md:font-bold">ALMIRA GROUP</span>
-                                </div>
-                            </div>
-                    
-                            <div class="block md:hidden">
-                                <button id="toggle-business" class="text-sm font-semibold flex items-center">
-                                    <i class="fa-solid fa-bars"></i>
-                                </button>
-                            </div>
-                    
-                            <div class="hidden md:flex items-center space-x-6">
-                                <a href="#" id="home" class="text-[22px] font-medium text-white bg-[#006144] px-4 py-2 rounded-lg">Home</a>
-                                <div class="relative">
-                                    <button id="business-toggle" class="text-sm font-semibold flex items-center">
-                                        <span id="business-text" class="text-[22px] font-normal">Businesses</span>
-                                        <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                    <div id="business-dropdown" class="absolute mt-5 w-[140px] bg-[#006144] hidden">
-                                        <a href="./optics.html" class="block p-1 text-[15px] font-normal text-white">almira optics</a>
-                                        <a href="#" class="block p-1 text-[15px] font-normal text-white">almira steamatic</a>
-                                        <a href="#" class="block p-1 text-[15px] font-normal text-white">almira steel</a>
-                                        <a href="#" class="block p-1 text-[15px] font-normal text-white">almira medical</a>
-                                        <a href="#" class="block p-1 text-[15px] font-normal text-white">carpet & furniture</a>
-
-                                    </div>
-                                </div>
-                                <a href="#about-section" id="about-us" class="text-[22px] font-normal">About Us</a>
-                                <a href="#" id="contact-us" class="text-[22px] font-normal">Contact Us</a>
-                            </div>
-                    
-                            <div class="flex items-center ltr:space-x-2 rtl:space-x-reverse rtl:space-x-2 cursor-pointer" id="language-toggle">
-                                <span class="text-2xl font-normal">Arabic</span>
-                                <img src="./images/world.svg" alt="">
-                            </div>
+            <div>
+                <nav class="bg-white shadow-md z-50 absolute top-[10%] left-1/2 transform -translate-x-1/2 lg:w-[1182px] h-[88px] rounded-lg">
+                    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+                        <div class="flex items-center space-x-2">
+                            <a href="./index.html" class="text-right">
+                                <h1 id="main-title" class="md:text-xl md:font-bold text-black">مجموعة الميره</h1>
+                                <span class="md:font-bold">ALMIRA GROUP</span>
+                            </a>
                         </div>
-                    </nav>
-                    
-                    <header class="relative h-[890px]">
-                        <img src="./images/hero.webp" alt="City" class="absolute inset-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-                        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                            <h1 id="almeraHeader" class="animate__animated animate__zoomIn text-[60px] font-bold">ALMIRA GROUP</h1>
-                            <p id="almeraPara" class="mt-4 text-[22px] font-normal w-[597px]">Al-MIRA is a Group of companies that specialized in several different fields, and its role is to serve customers in the best possible way. </p>
-                    </header>
-                </div>
+                
+                        <div class="block md:hidden">
+                            <button id="toggle-business" class="text-sm font-semibold flex items-center">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                
+                        <div class="hidden md:flex items-center gap-5">
+                            <a href="#" id="home" class="text-[22px] font-medium text-white bg-[#006144] px-4 py-2 rounded-lg">Home</a>
+                            <div class="relative">
+                                <button id="business-toggle" class="text-sm font-semibold flex items-center">
+                                    <span id="business-text" class="text-[22px] font-normal">Businesses</span>
+                                    <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <div id="business-dropdown" class="absolute mt-5 w-[140px] bg-[#006144] hidden">
+                                    <a href="./optics.html" id="meraOptics" class="block p-1 text-[15px] font-normal text-white">almira optics</a>
+                                    <a href="./steamatic.html" id="meraSteamatic" class="block p-1 text-[15px] font-normal text-white">almira steamatic</a>
+                                    <a href="#" id="meraSteal" class="block p-1 text-[15px] font-normal text-white">almira steel</a>
+                                    <a href="#" id="meraMedical" class="block p-1 text-[15px] font-normal text-white">almira medical</a>
+                                    <a href="#" id="meraCarpet" class="block p-1 text-[15px] font-normal text-white">carpet & furniture</a>
+
+                                </div>
+                            </div>
+                            <a href="#about-section" id="about-us" class="text-[22px] font-normal">About Us</a>
+                            <a href="#" id="contact-us" class="text-[22px] font-normal">Contact Us</a>
+                        </div>
+                
+                        <div class="flex items-center ltr:gap-2 rtl:space-x-reverse rtl:gap-2 cursor-pointer" id="language-toggle">
+                            <img src="./images/world.svg" alt="World Logo" class="ltr:order-1 rtl:order-2">
+                            <span class="text-2xl font-normal ltr:order-2 rtl:order-1">Arabic</span>
+                        </div>
+            
+                    </div>
+                </nav>
+                
+                <header class="relative h-[890px]">
+                    <img src="./images/hero.webp" alt="City" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+                        <h1 id="almeraHeader" class="animate__animated animate__zoomIn text-[60px] font-bold">ALMIRA GROUP</h1>
+                        <p id="almeraPara" class="mt-4 text-[22px] font-normal w-[597px]">Al-MIRA is a Group of companies that specialized in several different fields, and its role is to serve customers in the best possible way. </p>
+                </header>
+            </div>
         <!-- End Header -->
 
 
@@ -88,7 +89,7 @@
                     <div class="flex flex-wrap justify-center gap-6 mt-12 mb-12">
                         <a href="./optics.html">
                             <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
-                                <img src="./images/optics.webp" alt="Al-Mira Optics" class="w-full h-48 object-cover">
+                                <img src="./images/optics.webp" alt="Al-Mira Optics" class="w-[379px] h-48 object-cover">
                                 <div class="p-4 text-center">
                                 <h3 class="text-[#E0001A] text-xl sm:text-2xl font-semibold mb-1">الميره للبصريات</h3>
                                 <h3 class="text-xl sm:text-2xl font-semibold mb-2">Al-Mira Optics</h3>
@@ -101,7 +102,7 @@
                         </a>
                                 
                         <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
-                            <img src="./images/steamatic.webp" alt="Al-Mira Steamatic" class="w-full h-48 object-cover">
+                            <img src="./images/steamatic.webp" alt="Al-Mira Steamatic" class="w-[379px] h-48 object-cover">
                             <div class="p-4 text-center">
                             <h3 class="text-[#00367E] text-xl sm:text-2xl font-semibold mb-1">الميره ستيماتك</h3>
                             <h3 class="text-xl sm:text-2xl font-semibold mb-2">Al-Mira Steamatic</h3>
@@ -113,7 +114,7 @@
                         </div>
                     
                         <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
-                            <img src="./images/steel.webp" alt="Al-Mira Steel Building" class="w-full h-48 object-cover">
+                            <img src="./images/steel.webp" alt="Al-Mira Steel Building" class="w-[379px] h-48 object-cover">
                             <div class="p-4 text-center">
                             <h3 class="text-[#EC7E00] text-xl sm:text-2xl font-semibold mb-1">الميره للمباني حديدية</h3>
                             <h3 class="text-xl sm:text-xl font-semibold mb-2">Al-Mira For Steel Building</h3>
@@ -127,7 +128,7 @@
                 </div>
                 <div class="flex flex-wrap justify-center pl-8 pr-8 sm:pl-10 sm:pr-10 md:pl-16 md:pr-16 lg:p-20 gap-6 lg:mt-[-150px] sm:mt-[-50px] md:mt-[-40px] ">
                     <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
-                        <img src="./images/hospital-bed-with-blue-mattress-adjustable-height-monitor-stand-wheels-iv-3d-rendering-image.webp" alt="Al-Mira Medical" class="w-full h-48 object-cover">
+                        <img src="./images/hospital-bed-with-blue-mattress-adjustable-height-monitor-stand-wheels-iv-3d-rendering-image.webp" alt="Al-Mira Medical" class="w-[379px] h-48 object-cover">
                         <div class="p-4 text-center">
                         <h3 class="text-[#6EB04A] text-xl sm:text-2xl font-semibold mb-1">الميره للأجهزة الطبية</h3>
                         <h3 class="text-xl sm:text-2xl font-semibold mb-2">Al-Mira Medical</h3>
@@ -139,7 +140,7 @@
                     </div>
                 
                     <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
-                        <img src="./images/furn.webp" alt="Al-Mira Furniture" class="w-full h-48 object-cover">
+                        <img src="./images/furn.webp" alt="Al-Mira Furniture" class="w-[379px] h-48 object-cover">
                         <div class="p-4 text-center">
                         <h3 class="text-[#AB8542] text-xl sm:text-2xl font-semibold mb-1">الميره للسجاد و الأثاث</h3>
                         <h3 class="text-xl sm:text-2xl font-semibold mb-2">Al-Mira For Carpet And Furniture</h3>
@@ -155,10 +156,10 @@
 
         <!-- Start About -->
             <div id="about-section" class="bg-[#F4F3F3] rounded-lg mt-20">
-                <div class="container mx-auto flex flex-col lg:flex-row justify-evenly p-11">
-                    <div class="lg:w-[37%] p-6 ">
+                <div class="container mx-auto flex flex-col lg:flex-row justify-evenly items-center p-11">
+                    <div class="lg:w-[40%] p-6 ">
                         <h1 id="almiraGroup" class="text-3xl font-bold text-green-800 mb-4 uppercase">about Almira group</h1>
-                        <p id="paraOne" class="mb-4">Since the beginning of the twentieth century, Abdulghani Ibrahim Al Meera started trading spices from his shop located in the small market opposite the Grand Mosque in Mecca. The business then grew.</p>
+                        <p id="paraOne" class="mb-4">Since the beginning of the twentieth century, Abdulghani Ibrahim Al Meera started trading spices from his shop located in the small market opposite the Grand <br>  Mosque in Mecca. The business then grew.</p>
                         <p id="paraTwo" class="mb-4">In 1977, Abdulghani Ibrahim Al Meera laid the foundation stone for Al Meera Trading and Importing Establishment.</p>
                         <p id="paraThree" class="mb-4">In 1989, Abdul Latif and Mustafa, sons of Abdulghani Ibrahim Al Meera, established Al Meera Trading Center Limited Company, which included the following:</p>
                         <ul class="list-disc list-inside mb-4 ml-4">
@@ -174,16 +175,20 @@
                         </ul>
                     </div>
                     <div class="p-11 md:flex hidden">
-                        <img src="./images/Frame252.webp" alt="Frame252"  />
+                        <img src="./images/Frame252.webp" class="w-[540px] h-[700px]" alt="Frame252"  />
                     </div>
                 </div>
             </div>
         <!-- End About -->
 
         <!-- Start Second Section -->
-            <div class="container mx-auto">
-                <img src="./images/line.webp" alt="line">
-            </div>
+        <div class="container mx-auto relative">
+            <img src="./images/line.webp" alt="line" class="block w-full">
+            <h2 id="imageHeader" class="absolute inset-0 flex items-center justify-center text-white text-[75px] font-bold py-2 uppercase">
+                YOUR GATE TO INVESTMENT
+            </h2>
+        </div>
+        
         <!-- End Second Section -->
 
         <!-- Start Statistics -->

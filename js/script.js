@@ -1,13 +1,13 @@
 // Toggle
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleButton = document.getElementById('toggle-business');
-    const dropdownMenu = document.getElementById('business-dropdown');
-    console.log(toggleButton, dropdownMenu);
-    toggleButton.addEventListener('click', () => {
-        console.log('Toggle button clicked'); 
-        dropdownMenu.classList.toggle('hidden'); 
-    });
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     const toggleButton = document.getElementById('toggle-business');
+//     const dropdownMenu = document.getElementById('business-dropdown');
+//     console.log(toggleButton, dropdownMenu);
+//     toggleButton.addEventListener('click', () => {
+//         console.log('Toggle button clicked'); 
+//         dropdownMenu.classList.toggle('hidden'); 
+//     });
+// });
 
 
 
@@ -17,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const businessText = document.getElementById('business-text');
     const aboutUs = document.getElementById('about-us');
     const contactUs = document.getElementById('contact-us');
+    const meraOptics = document.getElementById('meraOptics');
+    const meraSteamatic = document.getElementById('meraSteamatic');
+    const meraSteal = document.getElementById('meraSteal');
+    const meraMedical = document.getElementById('meraMedical');
+    const meraCarpet = document.getElementById('meraCarpet');
+
     const almeraSection = document.getElementById('almeraSection');
     const almiraGroup = document.getElementById('almiraGroup');
     const paraOne = document.getElementById('paraOne');
@@ -29,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const listFour = document.getElementById('listFour');
     const listFive = document.getElementById('listFive');
     const listSix = document.getElementById('listSix');
+    const imageHeader = document.getElementById('imageHeader');
     const EmployeNumbers = document.getElementById('EmployeNumbers');
     const yoExpearience = document.getElementById('yoExpearience');
     const noProjects = document.getElementById('noProjects');
@@ -45,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const sector4 = document.getElementById('sector4');
     const sector5 = document.getElementById('sector5');
     const almeraHeader = document.getElementById('almeraHeader');
-    const almeraPara = document.getElementById('almeraPara')
+    const almeraPara = document.getElementById('almeraPara');
 
     const englishFont = 'Rubik';
     const arabicFont = "'Cairo', sans-serif";
@@ -67,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
         listFour.textContent = 'Al Meera Steammatic';
         listFive.textContent = 'Al Meera Optics Limited Company';
         listSix.textContent = 'Al Meera Carpet Factory';
+        imageHeader.textContent = 'YOUR GATE TO INVESTMENT';
         EmployeNumbers.textContent = 'Working Employment';
         yoExpearience.textContent = 'Years In Business';
         noProjects.textContent = 'Projects';
@@ -79,13 +87,19 @@ document.addEventListener('DOMContentLoaded', function () {
         sectors.textContent = 'Sectors';
         sector1.textContent = 'AL-MIRA OPTICS CO.LTD.';
         sector2.textContent = 'AL-MIRA STEAMATIC';
-        sector3.textContent = 'Contracting & Maintenancr Division';
+        sector3.textContent = 'Contracting & Maintenance Division';
         sector4.textContent = 'Al-Mira Medical';
         sector5.textContent = 'Al-Mira For Carpet And Furniture';
         almeraHeader.textContent = 'ALMIRA GROUP';
         almeraPara.textContent = 'Al-MIRA is a Group of companies that specialized in several different fields, and its role is to serve customers in the best possible way.';
+        meraOptics.textContent = 'almira optics';
+        meraSteamatic.textContent = 'almira steamatic';
+        meraSteal.textContent = 'almira steel';
+        meraMedical.textContent = 'almira medical';
+        meraCarpet.textContent = 'carpet & furniture';
+
         document.body.style.fontFamily = englishFont;
-        languageToggle.children[0].textContent = 'Arabic';
+        languageToggle.children[1].textContent = 'Arabic'; 
         localStorage.setItem('language', 'english');
     }
 
@@ -106,6 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
         listFour.textContent = 'الميرا ستيماتيك.';
         listFive.textContent = 'شركة الميرة للبصريات المحدودة.';
         listSix.textContent = 'مصنع الميرة للسجاد.';
+        imageHeader.textContent = 'بوابتـــك للإستثمـــار';
         EmployeNumbers.textContent = 'العمالة';
         yoExpearience.textContent = 'سنوات الخبرة';
         noProjects.textContent = 'المشاريع';
@@ -122,28 +137,32 @@ document.addEventListener('DOMContentLoaded', function () {
         sector4.textContent = 'شركة المعدات واللوازم الطبية';
         sector5.textContent = 'شركة مصنع الميره للسجاد ';
         almeraHeader.textContent = 'مجموعة الميره';
-        almeraPara.textContent = 'مجموعة شركات الميرة المتخصصة في عدة مجالات مختلفة من دورها خدمة العملاء على أكمل وجه';
+        almeraPara.textContent = 'مجموعة شركات الميرة المتخصصة';
+        meraOptics.textContent = 'الميره للبصريات';
+        meraSteamatic.textContent = 'الميره ستيماتيك';
+        meraSteal.textContent = 'الميره للحديد';
+        meraMedical.textContent = 'الميره للأدوات الطبية';
+        meraCarpet.textContent = 'للسجاد والمفروشات';
+
         document.body.style.fontFamily = arabicFont;
-        languageToggle.children[0].textContent = 'English';
+        languageToggle.children[1].textContent = 'English';
         localStorage.setItem('language', 'arabic');
     }
 
+    // Check language preference on load
     if (localStorage.getItem('language') === 'arabic') {
         switchToArabic();
-        document.body.classList.add('rtl');
     } else {
         switchToEnglish();
-        document.body.classList.remove('rtl');
     }
-    
+
+    // Add event listener to toggle button
     languageToggle.addEventListener('click', function () {
-        if (localStorage.getItem('language') === 'arabic') {
+        if (document.body.style.fontFamily === arabicFont) {
             switchToEnglish();
-            document.body.classList.remove('rtl');
         } else {
             switchToArabic();
-            document.body.classList.add('rtl');
         }
     });
-    
 });
+
