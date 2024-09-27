@@ -44,6 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const sector3 = document.getElementById('sector3');
     const sector4 = document.getElementById('sector4');
     const sector5 = document.getElementById('sector5');
+    const almeraHeader = document.getElementById('almeraHeader');
+    const almeraPara = document.getElementById('almeraPara')
 
     const englishFont = 'Rubik';
     const arabicFont = "'Cairo', sans-serif";
@@ -80,6 +82,8 @@ document.addEventListener('DOMContentLoaded', function () {
         sector3.textContent = 'Contracting & Maintenancr Division';
         sector4.textContent = 'Al-Mira Medical';
         sector5.textContent = 'Al-Mira For Carpet And Furniture';
+        almeraHeader.textContent = 'ALMIRA GROUP';
+        almeraPara.textContent = 'Al-MIRA is a Group of companies that specialized in several different fields, and its role is to serve customers in the best possible way.';
         document.body.style.fontFamily = englishFont;
         languageToggle.children[0].textContent = 'Arabic';
         localStorage.setItem('language', 'english');
@@ -117,6 +121,8 @@ document.addEventListener('DOMContentLoaded', function () {
         sector3.textContent = 'شركة المقاولات والصيانة';
         sector4.textContent = 'شركة المعدات واللوازم الطبية';
         sector5.textContent = 'شركة مصنع الميره للسجاد ';
+        almeraHeader.textContent = 'مجموعة الميره';
+        almeraPara.textContent = 'مجموعة شركات الميرة المتخصصة في عدة مجالات مختلفة من دورها خدمة العملاء على أكمل وجه';
         document.body.style.fontFamily = arabicFont;
         languageToggle.children[0].textContent = 'English';
         localStorage.setItem('language', 'arabic');
