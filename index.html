@@ -76,8 +76,11 @@
                     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
                     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
                         <h1 id="almeraHeader" class="animate__animated animate__zoomIn text-[60px] font-bold">ALMIRA GROUP</h1>
-                        <p id="almeraPara" class="mt-4 text-[22px] font-normal w-[597px]">Al-MIRA is a Group of companies that specialized in several different fields, and its role is to serve customers in the best possible way. </p>
-                </header>
+                        <p id="almeraPara" class="mt-4 text-[22px] font-normal w-[597px]">
+                            Al-MIRA is a Group of companies that specialized in several different fields, and its role is to serve customers in the best possible way.
+                        </p>
+
+                    </header>
             </div>
         <!-- End Header -->
 
@@ -278,5 +281,22 @@
             </footer>
         <!-- End Footer -->
     </div>
+
+    <script>
+        const paragraph = document.getElementById("almeraPara");
+        const text = paragraph.textContent; 
+        paragraph.textContent = ""; 
+        let index = 0;
+    
+        function typeLetter() {
+            if (index < text.length) {
+                paragraph.textContent += text.charAt(index); 
+                index++;
+                setTimeout(typeLetter, 50); 
+            }
+        }
+            typeLetter();
+    </script>
+    
 </body>
 </html>
