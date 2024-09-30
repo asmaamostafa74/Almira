@@ -53,7 +53,7 @@
                                 <div id="business-dropdown" class="absolute mt-5 w-[140px] bg-[#006144] hidden">
                                     <a href="./optics.html" id="meraOptics" class="block p-1 text-[15px] font-normal text-white">almira optics</a>
                                     <a href="./steamatic.html" id="meraSteamatic" class="block p-1 text-[15px] font-normal text-white">almira steamatic</a>
-                                    <a href="#" id="meraSteal" class="block p-1 text-[15px] font-normal text-white">almira steel</a>
+                                    <a href="./steal.html" id="meraSteal" class="block p-1 text-[15px] font-normal text-white">almira steel</a>
                                     <a href="./medical.html" id="meraMedical" class="block p-1 text-[15px] font-normal text-white">almira medical</a>
                                     <a href="./furniture.html" id="meraCarpet" class="block p-1 text-[15px] font-normal text-white">carpet & furniture</a>
 
@@ -65,8 +65,9 @@
                 
                         <div class="flex items-center ltr:gap-2 rtl:space-x-reverse rtl:gap-2 cursor-pointer" id="language-toggle">
                             <img src="./images/world.svg" alt="World Logo" class="ltr:order-1 rtl:order-2">
-                            <span class="text-2xl font-normal ltr:order-2 rtl:order-1">Arabic</span>
+                            <span id="language-text" class="text-2xl font-normal ltr:order-2 rtl:order-1">Arabic</span>
                         </div>
+                        
             
                     </div>
                 </nav>
@@ -281,7 +282,7 @@
             </footer>
         <!-- End Footer -->
     </div>
-
+<!-- 
     <script>
         const paragraph = document.getElementById("almeraPara");
         const text = paragraph.textContent; 
@@ -296,6 +297,131 @@
             }
         }
             typeLetter();
+    </script> -->
+
+    <script>
+        const translations = {
+        en: {
+        homePage : 'Home',
+        businessText : 'Businesses',
+        aboutUs : 'About Us',
+        contactUs : 'Contact Us',
+        almeraSection : 'Almira Sections',
+        almiraGroup : 'about Almira group',
+        almeraPara :'Al-MIRA is a Group of companies that specialized in several different fields, and its role is to serve customers in the best possible way. ',
+        imageHeader : 'YOUR GATE TO INVESTMENT',
+        EmployeNumbers : 'Working Employment',
+        yoExpearience : 'Years In Business',
+        noProjects : 'Projects',
+        bLine : 'Business Lines',
+        bMembers : 'Board Members',
+        nMember : 'Salah Al-Mira',
+        headTitle : 'Head Office',
+        address : 'Dammam - Khobar Road, Nasiriyah, Dammam, Kingdom of Saudi Arabia.',
+        aboutMember : 'Founder of Al-Mira Group, which specializes in several different fields',
+        sectors : 'Sectors',
+        sector1 : 'AL-MIRA OPTICS CO.LTD.',
+        sector2 : 'AL-MIRA STEAMATIC',
+        sector3 : 'Contracting & Maintenance Division',
+        sector4 : 'Al-Mira Medical',
+        sector5 : 'Al-Mira For Carpet And Furniture',
+        paraOne : 'Since the beginning of the twentieth century, Abdulghani Ibrahim Al Meera started trading spices from his shop located in the small market opposite the Grand Mosque in Mecca. The business then grew.',
+        paraTwo : 'In 1977, Abdulghani Ibrahim Al Meera laid the foundation stone for Al Meera Trading and Importing Establishment.',
+        paraThree : 'In 1989, Abdul Latif and Mustafa, sons of Abdulghani Ibrahim Al Meera, established Al Meera Trading Center Limited Company, which included the following:',
+        listOne : 'Furniture and Carpets Division.',
+        listTwo : 'Medical Division.',
+        listThree : 'Contracting and Maintenance Division.',
+        paraFour : 'Then in 1992, sons of Abdulghani Ibrahim Al Meera established Al Meera Investment Group, which included the following:',
+        listFour : 'Al Meera Steammatic',
+        listFive : 'Al Meera Optics Limited Company',
+        listSix : 'Al Meera Carpet Factory'
+    },
+    ar: {
+        homePage :'الرئيسية',
+        businessText :'قطاعات الأعمال',
+        aboutUs :'عنا',
+        contactUs :'اتصل بنا',
+        almeraSection :'قطاعات الأعمال',
+        almiraGroup :'مجموعة الميره',
+        almeraPara : 'مجموعة شركات الميرة المتخصصة',
+        imageHeader :'بوابتـــك للإستثمـــار',
+        EmployeNumbers :'العمالة',
+        yoExpearience :'سنوات الخبرة',
+        noProjects :'المشاريع',
+        bLine :'خطوط الأعمال',
+        bMembers :'أعضاء مجلس الإدارة',
+        nMember :'صلاح الميره',
+        headTitle :'المكتب الرئيسي',
+        address :'طريق الدمام الخبر، حى الناصرية، الدمام، المملكة العربية السعودية',
+        aboutMember :'مؤسس مجموعة شركات الميرة القابضة المتخصصة في عدة مجالات مختلفة',
+        sectors :'قطاعات الأعمال',
+        sector1 :' الميره للبصريات',
+        sector2 :' الميره ستيماتيك',
+        sector3 :'  الميره للحديد',
+        sector4 :'الميره للأدوات الطبية',
+        sector5 :'للسجاد والمفروشات ',
+        paraOne :'منذ بداية القرن العشرين، بدأ عبد الغني إبراهيم الميرة في تجارة التوابل من محله المتواجد في السوق الصغير مقابل المسجد الحرام بمكة المكرمة. و من ثم نمى العمل كما فعلت عائلته.',
+        paraTwo :'في عام 1977، وضع عبد الغني إبراهيم ميرة حجر الأساس لمؤسسة الميرة للتجارة والاستيراد.',
+        paraThree :'وفي عام 1989 قام عبداللطيف ومصطفى أبناء عبدالغني إبراهيم ميرة بتأسيس شركة مركز الميرة للتجارة المحدودة وتضمنت ما يلي:',
+        listOne :'قسم الأثاث والسجاد.',
+        listTwo :'القسم الطبي.',
+        listThree :'قسم المقاولات والصيانة.',
+        paraFour :'ثم في عام 1992، قام أبناء عبد الغني إبراهيم ميرة بتأسيس مجموعة الميرة الاستثمارية وتضمنت ما يلي:',
+        listFour :'الميرا ستيماتيك.',
+        listFive :'شركة الميرة للبصريات المحدودة.',
+        listSix :'مصنع الميرة للسجاد.'
+    }
+};
+
+let currentLanguage = "en"; 
+
+function updateLanguage(lang) {
+    document.getElementById("almeraPara").textContent = translations[lang].almeraPara;
+    document.getElementById("almeraSection").textContent = translations[lang].almeraSection;
+    document.getElementById("almiraGroup").textContent = translations[lang].almiraGroup;
+    document.getElementById("imageHeader").textContent = translations[lang].imageHeader;
+    document.getElementById("business-text").textContent = translations[lang].businessText;
+    document.getElementById("about-us").textContent = translations[lang].aboutUs;
+    document.getElementById("contact-us").textContent = translations[lang].contactUs;
+    document.getElementById("meraOptics").textContent = translations[lang].sector1;
+    document.getElementById("meraSteamatic").textContent = translations[lang].sector2;
+    document.getElementById("meraSteal").textContent = translations[lang].sector3;
+    document.getElementById("meraMedical").textContent = translations[lang].sector4;
+    document.getElementById("meraCarpet").textContent = translations[lang].sector5;
+    document.getElementById("EmployeNumbers").textContent = translations[lang].EmployeNumbers;
+    document.getElementById("yoExpearience").textContent = translations[lang].yoExpearience;
+    document.getElementById("noProjects").textContent = translations[lang].noProjects;
+    document.getElementById("bLine").textContent = translations[lang].bLine;
+    document.getElementById("bMembers").textContent = translations[lang].bMembers;
+    document.getElementById("nMember").textContent = translations[lang].nMember;
+    document.getElementById("aboutMember").textContent = translations[lang].aboutMember;
+    document.getElementById("headTitle").textContent = translations[lang].headTitle;
+    document.getElementById("address").textContent = translations[lang].address;
+    document.getElementById("sectors").textContent = translations[lang].sectors;
+    document.getElementById("paraOne").textContent = translations[lang].paraOne;
+    document.getElementById("paraTwo").textContent = translations[lang].paraTwo;
+    document.getElementById("paraThree").textContent = translations[lang].paraThree;
+    document.getElementById("listOne").textContent = translations[lang].listOne;
+    document.getElementById("listTwo").textContent = translations[lang].listTwo;
+    document.getElementById("listThree").textContent = translations[lang].listThree;
+    document.getElementById("paraFour").textContent = translations[lang].paraFour;
+    document.getElementById("listFour").textContent = translations[lang].listFour;
+    document.getElementById("listFive").textContent = translations[lang].listFive;
+    document.getElementById("listSix").textContent = translations[lang].listSix;
+}
+
+document.getElementById("language-toggle").addEventListener("click", function() {
+    if (currentLanguage === "en") {
+        currentLanguage = "ar";
+        document.getElementById("language-text").textContent = "English";
+        document.body.setAttribute("dir", "rtl"); // Switch to RTL layout
+    } else {
+        currentLanguage = "en";
+        document.getElementById("language-text").textContent = "Arabic";
+        document.body.setAttribute("dir", "ltr");
+    }
+    updateLanguage(currentLanguage); 
+});
     </script>
     
 </body>
