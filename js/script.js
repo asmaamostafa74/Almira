@@ -1,3 +1,20 @@
+
+// For Sidebar
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const closeSidebar = document.getElementById('close-sidebar');
+
+    menuToggle.addEventListener('click', () => {
+        sidebar.classList.remove('-translate-x-full');
+    });
+
+    closeSidebar.addEventListener('click', () => {
+        sidebar.classList.add('-translate-x-full');
+    });
+});
+
+
 // For Dropdown Business
 document.addEventListener('DOMContentLoaded', function () {
     const businessToggle = document.getElementById('business-toggle');
@@ -8,171 +25,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Toggle
-// document.addEventListener('DOMContentLoaded', () => {
-//     const toggleButton = document.getElementById('toggle-business');
-//     const dropdownMenu = document.getElementById('business-dropdown');
-//     console.log(toggleButton, dropdownMenu);
-//     toggleButton.addEventListener('click', () => {
-//         console.log('Toggle button clicked'); 
-//         dropdownMenu.classList.toggle('hidden'); 
-//     });
-// });
 
+// Lood Footer 
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        })
+        .catch(error => console.log('Error loading the footer:', error));
+});
 
+// For Dropdown Internal Business
+document.addEventListener("DOMContentLoaded", () => {
+    const businessLink = document.getElementById("business-link-unique");
+    const businessDropdown = document.getElementById("business-dropdown-unique");
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     const languageToggle = document.getElementById('language-toggle');
-//     const homePage = document.getElementById('home');
-//     const businessText = document.getElementById('business-text');
-//     const aboutUs = document.getElementById('about-us');
-//     const contactUs = document.getElementById('contact-us');
-//     const meraOptics = document.getElementById('meraOptics');
-//     const meraSteamatic = document.getElementById('meraSteamatic');
-//     const meraSteal = document.getElementById('meraSteal');
-//     const meraMedical = document.getElementById('meraMedical');
-//     const meraCarpet = document.getElementById('meraCarpet');
-
-//     const almeraSection = document.getElementById('almeraSection');
-//     const almiraGroup = document.getElementById('almiraGroup');
-//     const paraOne = document.getElementById('paraOne');
-//     const paraTwo = document.getElementById('paraTwo');
-//     const paraThree = document.getElementById('paraThree');
-//     const listOne = document.getElementById('listOne');
-//     const listTwo = document.getElementById('listTwo');
-//     const listThree = document.getElementById('listThree');
-//     const paraFour = document.getElementById('paraFour');
-//     const listFour = document.getElementById('listFour');
-//     const listFive = document.getElementById('listFive');
-//     const listSix = document.getElementById('listSix');
-//     const imageHeader = document.getElementById('imageHeader');
-//     const EmployeNumbers = document.getElementById('EmployeNumbers');
-//     const yoExpearience = document.getElementById('yoExpearience');
-//     const noProjects = document.getElementById('noProjects');
-//     const bLine = document.getElementById('bLine');
-//     const bMembers = document.getElementById('bMembers');
-//     const nMember = document.getElementById('nMember');
-//     const aboutMember = document.getElementById('aboutMember');
-//     const headTitle = document.getElementById('headTitle');
-//     const address = document.getElementById('address');
-//     const sectors = document.getElementById('sectors');
-//     const sector1 = document.getElementById('sector1');
-//     const sector2 = document.getElementById('sector2');
-//     const sector3 = document.getElementById('sector3');
-//     const sector4 = document.getElementById('sector4');
-//     const sector5 = document.getElementById('sector5');
-//     const almeraHeader = document.getElementById('almeraHeader');
-//     const almeraPara = document.getElementById('almeraPara');
-
-//     const englishFont = 'Rubik';
-//     const arabicFont = "'Cairo', sans-serif";
-    
-//     function switchToEnglish() {
-//         homePage.textContent = 'Home';
-//         businessText.textContent = 'Businesses';
-//         aboutUs.textContent = 'About Us';
-//         contactUs.textContent = 'Contact Us';
-//         almeraSection.textContent = 'Almira Sections';
-//         almiraGroup.textContent = 'about Almira group';
-//         paraOne.textContent = 'Since the beginning of the twentieth century, Abdulghani Ibrahim Al Meera started trading spices from his shop located in the small market opposite the Grand Mosque in Mecca. The business then grew.';
-//         paraTwo.textContent = 'In 1977, Abdulghani Ibrahim Al Meera laid the foundation stone for Al Meera Trading and Importing Establishment.';
-//         paraThree.textContent = 'In 1989, Abdul Latif and Mustafa, sons of Abdulghani Ibrahim Al Meera, established Al Meera Trading Center Limited Company, which included the following:';
-//         listOne.textContent = 'Furniture and Carpets Division.';
-//         listTwo.textContent = 'Medical Division.';
-//         listThree.textContent = 'Contracting and Maintenance Division.';
-//         paraFour.textContent = 'Then in 1992, sons of Abdulghani Ibrahim Al Meera established Al Meera Investment Group, which included the following:';
-//         listFour.textContent = 'Al Meera Steammatic';
-//         listFive.textContent = 'Al Meera Optics Limited Company';
-//         listSix.textContent = 'Al Meera Carpet Factory';
-//         imageHeader.textContent = 'YOUR GATE TO INVESTMENT';
-//         EmployeNumbers.textContent = 'Working Employment';
-//         yoExpearience.textContent = 'Years In Business';
-//         noProjects.textContent = 'Projects';
-//         bLine.textContent = 'Business Lines';
-//         bMembers.textContent = 'Board Members';
-//         nMember.textContent = 'Salah Al-Mira';
-//         headTitle.textContent = 'Head Office';
-//         address.textContent = 'Dammam - Khobar Road, Nasiriyah, Dammam, Kingdom of Saudi Arabia.';
-//         aboutMember.textContent = 'Founder of Al-Mira Group, which specializes in several different fields';
-//         sectors.textContent = 'Sectors';
-//         sector1.textContent = 'AL-MIRA OPTICS CO.LTD.';
-//         sector2.textContent = 'AL-MIRA STEAMATIC';
-//         sector3.textContent = 'Contracting & Maintenance Division';
-//         sector4.textContent = 'Al-Mira Medical';
-//         sector5.textContent = 'Al-Mira For Carpet And Furniture';
-//         almeraHeader.textContent = 'ALMIRA GROUP';
-//         almeraPara.textContent = 'Al-MIRA is a Group of companies that specialized in several different fields, and its role is to serve customers in the best possible way.';
-//         meraOptics.textContent = 'almira optics';
-//         meraSteamatic.textContent = 'almira steamatic';
-//         meraSteal.textContent = 'almira steel';
-//         meraMedical.textContent = 'almira medical';
-//         meraCarpet.textContent = 'carpet & furniture';
-
-//         document.body.style.fontFamily = englishFont;
-//         languageToggle.children[1].textContent = 'Arabic'; 
-//         localStorage.setItem('language', 'english');
-//     }
-
-//     function switchToArabic() {
-//         homePage.textContent = 'الرئيسية';
-//         businessText.textContent = 'قطاعات الأعمال';
-//         aboutUs.textContent = 'عنا';
-//         contactUs.textContent = 'اتصل بنا';
-//         almeraSection.textContent = 'قطاعات الأعمال';
-//         almiraGroup.textContent = 'مجموعة الميره';
-//         paraOne.textContent = 'منذ بداية القرن العشرين، بدأ عبد الغني إبراهيم الميرة في تجارة التوابل من محله المتواجد في السوق الصغير مقابل المسجد الحرام بمكة المكرمة. و من ثم نمى العمل كما فعلت عائلته.';
-//         paraTwo.textContent = 'في عام 1977، وضع عبد الغني إبراهيم ميرة حجر الأساس لمؤسسة الميرة للتجارة والاستيراد.';
-//         paraThree.textContent = 'وفي عام 1989 قام عبداللطيف ومصطفى أبناء عبدالغني إبراهيم ميرة بتأسيس شركة مركز الميرة للتجارة المحدودة وتضمنت ما يلي:';
-//         listOne.textContent = 'قسم الأثاث والسجاد.';
-//         listTwo.textContent = 'القسم الطبي.';
-//         listThree.textContent = 'قسم المقاولات والصيانة.';
-//         paraFour.textContent = 'ثم في عام 1992، قام أبناء عبد الغني إبراهيم ميرة بتأسيس مجموعة الميرة الاستثمارية وتضمنت ما يلي:';
-//         listFour.textContent = 'الميرا ستيماتيك.';
-//         listFive.textContent = 'شركة الميرة للبصريات المحدودة.';
-//         listSix.textContent = 'مصنع الميرة للسجاد.';
-//         imageHeader.textContent = 'بوابتـــك للإستثمـــار';
-//         EmployeNumbers.textContent = 'العمالة';
-//         yoExpearience.textContent = 'سنوات الخبرة';
-//         noProjects.textContent = 'المشاريع';
-//         bLine.textContent = 'خطوط الأعمال';
-//         bMembers.textContent = 'أعضاء مجلس الإدارة';
-//         nMember.textContent = 'صلاح الميره';
-//         aboutMember.textContent = 'مؤسس مجموعة شركات الميرة القابضة المتخصصة في عدة مجالات مختلفة';
-//         headTitle.textContent = 'المكتب الرئيسي';
-//         address.textContent = 'طريق الدمام الخبر، حى الناصرية، الدمام، المملكة العربية السعودية';
-//         sectors.textContent = 'قطاعات الأعمال';
-//         sector1.textContent = 'شركة الميره للبصريات.';
-//         sector2.textContent = 'شركة الميره ستيماتيك';
-//         sector3.textContent = 'شركة المقاولات والصيانة';
-//         sector4.textContent = 'شركة المعدات واللوازم الطبية';
-//         sector5.textContent = 'شركة مصنع الميره للسجاد ';
-//         almeraHeader.textContent = 'مجموعة الميره';
-//         almeraPara.textContent = 'مجموعة شركات الميرة المتخصصة';
-//         meraOptics.textContent = 'الميره للبصريات';
-//         meraSteamatic.textContent = 'الميره ستيماتيك';
-//         meraSteal.textContent = 'الميره للحديد';
-//         meraMedical.textContent = 'الميره للأدوات الطبية';
-//         meraCarpet.textContent = 'للسجاد والمفروشات';
-
-//         document.body.style.fontFamily = arabicFont;
-//         languageToggle.children[1].textContent = 'English';
-//         localStorage.setItem('language', 'arabic');
-//     }
-
-//     // Check language preference on load
-//     if (localStorage.getItem('language') === 'arabic') {
-//         switchToArabic();
-//     } else {
-//         switchToEnglish();
-//     }
-
-//     // Add event listener to toggle button
-//     languageToggle.addEventListener('click', function () {
-//         if (document.body.style.fontFamily === arabicFont) {
-//             switchToEnglish();
-//         } else {
-//             switchToArabic();
-//         }
-//     });
-// });
+    businessLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        businessDropdown.classList.toggle("hidden");
+    });
+});
 

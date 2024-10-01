@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Almira Website">
     <title>ALMIRA OPTICS</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,61 +24,100 @@
 </style>
 <body style="font-family: 'Rubik', sans-serif;" class="bg-[#F4F3F3]">
                     <!-- Start Navbar -->
-                        <nav class="bg-[#E0E0E0] shadow-md z-50 absolute top-[10%] left-1/2 transform -translate-x-1/2 lg:w-[1182px] h-[88px]  rounded-lg">
-                            <div class="container mx-auto flex justify-between items-center py-4 px-6">
-                                <div class="flex items-center space-x-2">
-                                <a href="./index.html" class="text-right">
-                                    <img src="./images/steamaticLogo.svg" alt="steamaticLogo">
-                                </a>
-                                </div>
-                        
-                                <div class="block md:hidden">
-                                <button id="toggle-business" class="text-sm font-semibold text-gray-700  flex items-center">
-                                    <i class="fa-solid fa-bars"></i>
-                                </button>
-                                </div>
-                        
-                                <div class="hidden md:flex items-center space-x-6">
-                                <a href="./index.html" id="home" class="text-[22px] font-normal px-4 py-2 rounded-lg">Home</a>
-                                    <div class="relative">
-                                    <button id="business-toggle" class="text-[22px] font-bold text-white bg-[#00367E] rounded-lg p-1 flex items-center">
-                                        <span id="business-text" class="">Businesses</span>
-                                        <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        <div>
+                            <nav class="md:bg-[#E0E0E0] md:text-black text-white md:shadow-md z-50 absolute top-16 left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[900px] md:w-[760px]  h-[88px] rounded-lg">
+                                <div class=" flex justify-between items-center py-2 px-4 md:py-4 md:px-6">
+                                    <div class="lg:hidden">
+                                    <button id="menu-toggle" class="text-black text-3xl">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                                         </svg>
                                     </button>
-                                    <div id="business-dropdown" class="absolute mt-5 ml-2 w-[140px] bg-[#00367E] hidden">
-                                        <a href="./optics.html" class="block p-1 text-[15px] font-normal text-white">almira optics</a>
-                                        <a href="./steamatic.html" class="block p-1 text-[15px] font-normal text-white">almira steamatic</a>
-                                        <a href="./steal.html" class="block p-1 text-[15px] font-normal text-white">almira steel</a>
-                                        <a href="./medical.html" class="block p-1 text-[15px] font-normal text-white">almira medical</a>
-                                        <a href="./furniture.html" class="block p-1 text-[15px] font-normal text-white">carpet & furniture</a>
-
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <a href="./index.html" class="text-right">
+                                            <img src="./images/steamaticLogo.svg" alt="Steamatic Logo">
+                                        </a>
+                                        </div>
+                                    <div id="menu-items" class="hidden md:flex items-center gap-4 lg:gap-8">
+                                    <a href="#" id="homePage"  class="text-lg lg:text-[22px]  font-normal">Home</a>
+                                    <div class="relative">
+                                        <button id="business-toggle" class="lg:text-[22px] lg:text-lg font-bold text-white bg-[#00367E] rounded-lg p-1 flex items-center">
+                                            <span id="businessText" class="">Businesses</span>
+                                            <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                        <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#00367E] rounded-lg hidden">
+                                        <a href="./optics.html" class="block p-2 text-[15px] text-white">almira optics</a>
+                                        <a href="./steamatic.html" class="block p-2 text-[15px] text-white">almira steamatic</a>
+                                        <a href="./steal.html" class="block p-2 text-[15px] text-white">almira steel</a>
+                                        <a href="./medical.html" class="block p-2 text-[15px] text-white">almira medical</a>
+                                        <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                                        </div>
+                                    </div>
+                                    <a href="#about-section" id="about-us" class="text-lg lg:text-[22px]  font-normal">About Us</a>
+                                    <a href="#" id="contact-us" class="text-lg lg:text-[22px]  font-normal">Contact Us</a>
+                                    <div class="language-toggle flex items-center gap-2 cursor-pointer">
+                                        <img src="./images/world.svg" alt="World Logo" class="order-1">
+                                        <span class="language-text text-xl md:text-2xl font-normal">Arabic</span>
+                                    </div>
                                     </div>
                                 </div>
-                                <a href="#" id="about-us" class="text-[22px] font-normal  ">About Us</a>
-                                <a href="#" id="contact-us" class="text-[22px] font-normal  ">Contact Us</a>
-                                </div>
-                        
-                                <div class="flex items-center ltr:gap-2 rtl:space-x-reverse rtl:gap-2 cursor-pointer" id="language-toggle">
-                                    <img src="./images/world.svg" alt="World Logo" class="ltr:order-1 rtl:order-2">
-                                    <span class="text-2xl font-normal ltr:order-2 rtl:order-1">Arabic</span>
-                                </div>
-                            </div>
-                        </nav> 
+                            </nav>
+
+                                <!-- Sidebar for Small Screens -->
+                                    <div id="sidebar" class="fixed top-0 ltr:left-0 rtl:right-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50">
+                                        <button id="close-sidebar" class="text-black text-3xl absolute top-4 right-4">&times;</button>
+                                        <div class="mt-16 flex flex-col items-start ltr:pl-6 rtl:pr-6 space-y-4">
+                                            <a href="./index.html" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                                <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
+                                                <p>Home</p>
+                                            </a>
+                                            <div class="relative">
+                                                <a id="business-link-unique" href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                                    <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
+                                                    <p>Business</p>
+                                                    <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </a>
+                                                <div id="business-dropdown-unique" class="absolute left-[25%] w-[170px] h-[208px] bg-[#00367E] rounded-lg hidden">
+                                                    <a href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
+                                                    <a href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
+                                                    <a href="./steal.html" class="block p-2 text-[15px] text-white">Almira steel</a>
+                                                    <a href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
+                                                    <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                                                    </div>
+                                            </div>
+                                            <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                                <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
+                                                <p>About Us</p>
+                                            </a>
+                                            <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                                <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
+                                                <p>Contact Us</p>
+                                            </a>
+                                            <a href="#" class="language-toggle flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                                <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
+                                                <p class="language-text">Language</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                        </div>
                     <!-- End Navbar -->
                     
                     <!-- Title -->
-                        <header class="flex items-center container mx-auto relative 2xl:mt-96 mt-40">
+                        <header class="md:flex items-center container mx-auto relative 2xl:mt-96 mt-40">
                             <img src="./images/vacuum.webp" class="animate__animated animate__bounceInLeft w-[526px] h-[642px]" alt="vacuum">
                             <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                                <h1 class="animate__animated animate__zoomIn font-bold text-[66px] text-[#00367E] uppercase">ALMIRA STEAMATIC</h1>
-                                    <div class="flex flex-row items-center justify-center bg-[#E0E0E0] rounded-lg  mt-4 px-4 py-2 space-x-6">
+                                <h1 class="animate__animated animate__zoomIn font-bold md:text-[66px] text-[28px] text-[#00367E] uppercase">ALMIRA STEAMATIC</h1>
+                                    <div class="md:flex hidden flex-row items-center justify-center bg-[#E0E0E0] rounded-lg  mt-4 px-4 py-2 space-x-6">
                                         <a href="./optics.html" class="text-white bg-[#00367E] py-1 px-4 rounded-md text-[22px] font-bold">Home</a>
                                         <a href="" class="text-[#00367E] font-bold text-[22px]">Services</a> 
                                         <a href="./steamaticGallary.html" class="text-[#00367E] font-bold text-[22px]">Gallary</a>
                                 </div>
-                                <p class="font-normal text-2xl text-[#E0001A] mt-5 text-center">Al Mira Steamatic is a master franchisee of Steamatic Inc <br> USA. Our company provides high quality indoor air <br> services and emergency response services. </p>
+                                <p class="font-normal md:text-2xl text-[18px] text-[#E0001A] mt-5 text-center">Al Mira Steamatic is a master franchisee of Steamatic Inc <br> USA. Our company provides high quality indoor air <br> services and emergency response services. </p>
                             </div>
                         </header>
                     <!-- Title -->
@@ -88,75 +125,54 @@
                     <!-- Second Section -->
                         <section class="container mx-auto">
                             <div class="flex mt-10 mb-10">
-                                <div class="w-[781px]">
-                                    <p class="font-normal text-2xl text-[#E0001A] mb-5">
+                                <div class="md:w-[781px] p-5">
+                                    <p class="font-normal md:text-2xl text-[18px] text-[#E0001A] mb-5">
                                         Al Mira Steamatic continues to penetrate the market by focusing on three types of customers; the home owners, the building owners/managers and the insurance adjuster
                                     </p>
-                                    <p class="font-normal text-2xl text-[#E0001A] mb-5">
+                                    <p class="font-normal md:text-2xl text-[18px] text-[#E0001A] mb-5">
                                         We provide them all the necessary services to keep the indoor environment clean and recover from fires, flood and natural disaster at the lowest costs in the quickest possible time frame
                                     </p>
-                                    <p class="font-normal text-2xl text-[#E0001A] mb-5">
+                                    <p class="font-normal md:text-2xl text-[18px] text-[#E0001A] mb-5">
                                         Al Mira Investment Group Co. Ltd established Al Mira Steamatic in 1991 currently operating in the Kingdom of Saudi Arabia with offices located in Dammam, Jubail, Jeddah, Makkah, Madina, Yanbu and Riyadh, we recently opened our branch in UAE Dubai
                                     </p>
-                                    <p class="font-normal text-2xl text-[#E0001A] mb-5">
+                                    <p class="font-normal md:text-2xl text-[18px] text-[#E0001A] mb-5">
                                          Al Mira Steamatic has a history of being a leader in the indoor air quality and emergency response business. We have eleven profit sources namely Fire Restoration, Water Restoration, Carpet Cleaning, Furniture Cleaning, Drapery Cleaning, Air Duct and Coil Cleaning, Wood Restoration, Ceiling Cleaning and Wall and Floor Cleaning
                                     </p>
-                                    <p class="font-normal text-2xl text-[#E0001A] mb-5">
+                                    <p class="font-normal md:text-2xl text-[18px] text-[#E0001A] mb-5">
                                         We are proud to announce that Al Mira Steamatic is certified and accredited by some of the biggest companies and institutes in Restoration service
                                     </p>
                                 </div>
                                 <div>
-                                    <img src="./images/Group26.webp" alt="Little Vacuum">
-                                    <img src="./images/forVacuum.webp" alt="Big Vacuum">
+                                    <img src="./images/Group26.webp" class="md:flex hidden" alt="Little Vacuum">
+                                    <img src="./images/forVacuum.webp" class="md:flex hidden" alt="Big Vacuum">
                                 </div>
                             </div>
                         </section>
                     <!-- Second Section -->
+
+                    <!-- Start Icon Bar -->
+                        <div class="flex fixed justify-between bottom-0 w-full h-[56px] items-center bg-[#00367E] sm:hidden">
+                            <a href="./steamatic.html" class="p-2 flex flex-col items-center mx-4 text-black bg-white ">
+                                <img class="w-6 h-6" src="./images/home.svg" alt="Home">
+                                <span class="text-[12px] font-normal ">Home</span>
+                            </a>
+                        
+                        
+                            <a href="#" class="flex flex-col items-center mx-4 text-white">
+                                <img class="w-6 h-6" src="./images/services.svg" alt="Services">
+                                <span class="text-[12px] font-normal ">Services</span>
+                            </a>
+                        
+                            <a href="./steamaticGallary.html" class="flex flex-col items-center mx-4 text-white">
+                                <img class="w-6 h-6" src="./images/gallary.svg" alt="Gallary">
+                                <span class="text-[12px] font-normal ">Gallery</span>
+                            </a>
+                        </div>
+                    <!-- End icon Bar -->
                     
 
                     <!-- Start Footer -->
-                        <footer class="bg-[#00367E] text-white py-6">
-                            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-                            
-                            <div>
-                                <h3 id="headTitle" class="font-semibold text-3xl">Head Office</h3>
-                                <div class="mt-2">
-                                    <p id="address">Dammam - Khobar Road, Nasiriyah, <br> Dammam, Kingdom of Saudi Arabia.</p>
-                                </div>
-                                <ul class="mt-2 space-y-1">
-                                <li class="flex items-center gap- cursor-pointer">
-                                    <i class="fa-regular fa-envelope"></i>
-                                    <a href="mailto:info@almiracentre.com" class="ml-2">info@almiracentre.com</a>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-phone"></i>
-                                    <a href="tel:+966138273792" class="ml-2">+966 13 827 3792</a>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-fax"></i>
-                                    <a href="tel:+966138273792" class="ml-2">+966 13 827 3792</a>
-                                </li>
-                                </ul>
-                            </div>
-                        
-                            <div>
-                                <h3 id="sectors" class="font-semibold text-3xl">Sectors</h3>
-                                <ul class="mt-2 space-y-1">
-                                <li id="sector1" class="cursor-pointer">AL-MIRA OPTICS CO.LTD.</li>
-                                <li id="sector2" class="cursor-pointer">AL-MIRA STEAMATIC</li>
-                                <li id="sector3" class="cursor-pointer">Contracting & Maintenance Division</li>
-                                <li id="sector4" class="cursor-pointer">Al-Mira Medical</li>
-                                <li id="sector5" class="cursor-pointer">Al-Mira For Carpet And Furniture</li>
-                                </ul>
-                            </div>
-                        
-                            <div class="text-right flex flex-col items-center justify-center">
-                                <h3 class="font-bold text-4xl">مجموعة الميره</h3>
-                                <p class="font-semibold text-3xl mt-2">ALMIRA GROUP</p>
-                            </div>
-                            
-                            </div>
-                        </footer>
+                        <div id="footer" class="bg-[#00367E]"></div>
                     <!-- End Footer -->
             </div>
 </body>

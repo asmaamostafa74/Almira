@@ -23,64 +23,100 @@
 }
 </style>
 <body style="font-family: 'Rubik', sans-serif;">
-    <div class>
+    <div>
         <!-- Start Header -->
             <div>
-                <nav class="bg-white shadow-md z-50 absolute top-[10%] left-1/2 transform -translate-x-1/2 lg:w-[1182px] h-[88px] rounded-lg">
-                    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+                <nav class="md:bg-white md:text-black text-white md:shadow-md z-50 absolute top-10 left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[900px] md:w-[760px]  h-[88px] rounded-lg">
+                    <div class=" flex justify-between items-center py-2 px-4 md:py-4 md:px-6">
+                        <div class="lg:hidden">
+                        <button id="menu-toggle" class="text-white text-3xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                        </div>
                         <div class="flex items-center space-x-2">
                             <a href="./index.html" class="text-right">
-                                <h1 id="main-title" class="md:text-xl md:font-bold text-black">مجموعة الميره</h1>
-                                <span class="md:font-bold">ALMIRA GROUP</span>
+                                <h1 id="main-title" class="text-lg md:text-xl font-bold ">مجموعة الميره</h1>
+                                <span class="font-bold">ALMIRA GROUP</span>
                             </a>
-                        </div>
-                
-                        <div class="block md:hidden">
-                            <button id="toggle-business" class="text-sm font-semibold flex items-center">
-                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        <div id="menu-items" class="hidden md:flex items-center gap-4 lg:gap-8">
+                        <a href="#" id="homePage" class="text-lg lg:text-[22px]  font-medium text-white bg-[#006144] px-4 py-2 rounded-lg">Home</a>
+                        <div class="relative">
+                            <button id="business-toggle" class="text-sm font-semibold flex items-center">
+                            <span id="business-text" class="text-lg lg:text-[22px]  font-normal">Businesses</span>
+                            <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
                             </button>
+                            <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#006144] rounded-lg hidden">
+                            <a href="./optics.html" class="block p-2 text-[15px] text-white">almira optics</a>
+                            <a href="./steamatic.html" class="block p-2 text-[15px] text-white">almira steamatic</a>
+                            <a href="./steal.html" class="block p-2 text-[15px] text-white">almira steel</a>
+                            <a href="./medical.html" class="block p-2 text-[15px] text-white">almira medical</a>
+                            <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                            </div>
                         </div>
-                
-                        <div class="hidden md:flex items-center gap-5">
-                            <a href="#" id="home" class="text-[22px] font-medium text-white bg-[#006144] px-4 py-2 rounded-lg">Home</a>
+                        <a href="#about-section" id="about-us" class="text-lg lg:text-[22px]  font-normal">About Us</a>
+                        <a href="#" id="contact-us" class="text-lg lg:text-[22px]  font-normal">Contact Us</a>
+                        <div class="language-toggle flex items-center gap-2 cursor-pointer">
+                            <img src="./images/world.svg" alt="World Logo" class="order-1">
+                            <span class="language-text text-xl md:text-2xl font-normal">Arabic</span>
+                        </div>
+                        </div>
+                    </div>
+                </nav>
+            
+                <!-- Sidebar for Small Screens -->
+                    <div id="sidebar" class="fixed top-0 ltr:left-0 rtl:right-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50">
+                        <button id="close-sidebar" class="text-black text-3xl absolute top-4 right-4">&times;</button>
+                        <div class="mt-16 flex flex-col items-start ltr:pl-6 rtl:pr-6 space-y-4">
+                            <a href="./index.html" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
+                                <p>Home</p>
+                            </a>
                             <div class="relative">
-                                <button id="business-toggle" class="text-sm font-semibold flex items-center">
-                                    <span id="business-text" class="text-[22px] font-normal">Businesses</span>
+                                <a id="business-link-unique" href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                    <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
+                                    <p>Business</p>
                                     <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                                     </svg>
-                                </button>
-                                <div id="business-dropdown" class="absolute mt-5 w-[140px] bg-[#006144] hidden">
-                                    <a href="./optics.html" id="meraOptics" class="block p-1 text-[15px] font-normal text-white">almira optics</a>
-                                    <a href="./steamatic.html" id="meraSteamatic" class="block p-1 text-[15px] font-normal text-white">almira steamatic</a>
-                                    <a href="./steal.html" id="meraSteal" class="block p-1 text-[15px] font-normal text-white">almira steel</a>
-                                    <a href="./medical.html" id="meraMedical" class="block p-1 text-[15px] font-normal text-white">almira medical</a>
-                                    <a href="./furniture.html" id="meraCarpet" class="block p-1 text-[15px] font-normal text-white">carpet & furniture</a>
-
-                                </div>
+                                </a>
+                                <div id="business-dropdown-unique" class="absolute left-[25%] w-[170px] h-[208px] bg-[#006144] rounded-lg hidden">
+                                    <a href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
+                                    <a href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
+                                    <a href="./steal.html" class="block p-2 text-[15px] text-white">Almira steel</a>
+                                    <a href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
+                                    <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                                    </div>
                             </div>
-                            <a href="#about-section" id="about-us" class="text-[22px] font-normal">About Us</a>
-                            <a href="#" id="contact-us" class="text-[22px] font-normal">Contact Us</a>
+                            <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
+                                <p>About Us</p>
+                            </a>
+                            <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
+                                <p>Contact Us</p>
+                            </a>
+                            <a href="#" class="language-toggle flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
+                                <p class="language-text">Language</p>
+                            </a>
                         </div>
-                
-                        <div class="flex items-center ltr:gap-2 rtl:space-x-reverse rtl:gap-2 cursor-pointer" id="language-toggle">
-                            <img src="./images/world.svg" alt="World Logo" class="ltr:order-1 rtl:order-2">
-                            <span id="language-text" class="text-2xl font-normal ltr:order-2 rtl:order-1">Arabic</span>
-                        </div>
-                        
-            
                     </div>
-                </nav>
-                
-                <header class="relative h-[890px] container mx-auto">
-                    <img src="./images/hero.webp" alt="City" class="absolute inset-0 w-full h-[890px] object-cover">
-                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-                    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                        <h1 id="almeraHeader" class="animate__animated animate__zoomIn text-[60px] font-bold">ALMIRA GROUP</h1>
-                        <p id="almeraPara" class="mt-4 text-[22px] font-normal w-[597px]">
-                            Al-MIRA is a Group of companies that specialized in several different fields, and its role is to serve customers in the best possible way.
-                        </p>
-
+                    
+                <!-- Hero Section -->
+                    <header class="relative h-[60vh] md:h-[890px] container mx-auto">
+                        <img src="./images/hero.webp" alt="City" class="absolute inset-0 md:w-full w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+                            <h1 id="almeraHeader" class="animate__animated animate__zoomIn text-4xl md:text-[60px] font-bold ">ALMIRA GROUP</h1>
+                            <p id="almeraPara" class="mt-4 text-lg md:text-[22px] font-normal w-[90%] md:w-[597px] leading-8">
+                            Al-MIRA is a Group of companies <br> that specialized in several different fields, <br> and its role is to serve customers in the best possible way.
+                            </p>
+                        </div>
                     </header>
             </div>
         <!-- End Header -->
@@ -99,59 +135,67 @@
                                 <h3 class="text-xl sm:text-2xl font-semibold mb-2">Al-Mira Optics</h3>
                                 </div>
                                 <hr>
-                                <div class="p-4 text-center">
+                                <div class="p-3 text-center">
                                 <p class="text-[#E0001A] text-sm sm:text-[18px]">brands - sunglasses - lenses</p>
                                 </div>
                             </div>
                         </a>
                                 
-                        <a href="./steamatic.html" class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
-                            <img src="./images/steamatic.webp" alt="Al-Mira Steamatic" class="w-[379px] h-48 object-cover">
-                            <div class="p-4 text-center">
-                            <h3 class="text-[#00367E] text-xl sm:text-2xl font-semibold mb-1">الميره ستيماتك</h3>
-                            <h3 class="text-xl sm:text-2xl font-semibold mb-2">Al-Mira Steamatic</h3>
-                            </div>
-                            <hr>
-                            <div class="p-4 text-center">
-                            <p class="text-[#00367E] text-sm sm:text-[18px]">cleaning - quality - high standard</p>
+                        <a href="./steamatic.html">
+                            <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
+                                <img src="./images/steamatic.webp" alt="Al-Mira Steammatic" class="w-[379px] h-48 object-cover">
+                                <div class="p-4 text-center">
+                                <h3 class="text-[#00367E] text-xl sm:text-2xl font-semibold mb-1">الميره ستيماتيك</h3>
+                                <h3 class="text-xl sm:text-2xl font-semibold mb-2">Al-Mira Steammatic</h3>
+                                </div>
+                                <hr>
+                                <div class="p-3 text-center">
+                                <p class="text-[#00367E] text-sm sm:text-[18px]">cleaning - quality -high standard</p>
+                                </div>
                             </div>
                         </a>
                     
-                        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
-                            <img src="./images/steel.webp" alt="Al-Mira Steel Building" class="w-[379px] h-48 object-cover">
-                            <div class="p-4 text-center">
-                            <h3 class="text-[#EC7E00] text-xl sm:text-2xl font-semibold mb-1">الميره للمباني حديدية</h3>
-                            <h3 class="text-xl sm:text-xl font-semibold mb-2">Al-Mira For Steel Building</h3>
+                        <a href="./steal.html">
+                            <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
+                                <img src="./images/steel.webp" alt="Al-Mira Steal" class="w-[379px] h-48 object-cover">
+                                <div class="p-4 text-center">
+                                <h3 class="text-[#EC7E00] text-xl sm:text-2xl font-semibold mb-1">الميره للمباني حديدية</h3>
+                                <h3 class="text-xl sm:text-xl font-semibold mb-2">Al-Mira For Steal Building</h3>
+                                </div>
+                                <hr>
+                                <div class="pt-2 pb-4 text-center">
+                                <p class="text-[#EC7E00] text-sm sm:text-[18px]">contract - maintenance - leading</p>
+                                </div>
                             </div>
-                            <hr>
-                            <div class="p-4 text-center">
-                            <p class="text-[#EC7E00] text-sm sm:text-[18px]">contract - maintenance - leading</p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="flex flex-wrap justify-center pl-8 pr-8 sm:pl-10 sm:pr-10 md:pl-16 md:pr-16 lg:p-20 gap-6 lg:mt-[-150px] sm:mt-[-50px] md:mt-[-40px] ">
-                    <a href="./medical.html" class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
-                        <img src="./images/hospital-bed-with-blue-mattress-adjustable-height-monitor-stand-wheels-iv-3d-rendering-image.webp" alt="Al-Mira Medical" class="w-[379px] h-48 object-cover">
-                        <div class="p-4 text-center">
-                        <h3 class="text-[#6EB04A] text-xl sm:text-2xl font-semibold mb-1">الميره للأجهزة الطبية</h3>
-                        <h3 class="text-xl sm:text-2xl font-semibold mb-2">Al-Mira Medical</h3>
-                        </div>
-                        <hr>
-                        <div class="p-4 text-center">
-                        <p class="text-[#6EB04A] text-sm sm:text-[18px]">health - supplying - equipment</p>
+                    <a href="./medical.html">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
+                            <img src="./images/hospital-bed-with-blue-mattress-adjustable-height-monitor-stand-wheels-iv-3d-rendering-image.webp" alt="Al-Mira Medical" class="w-[379px] h-48 object-cover">
+                            <div class="p-4 text-center">
+                            <h3 class="text-[#6EB04A] text-xl sm:text-2xl font-semibold mb-1">الميره للأجهزة الطبية</h3>
+                            <h3 class="text-xl sm:text-2xl font-semibold mb-2">Al-Mira Optics</h3>
+                            </div>
+                            <hr>
+                            <div class="p-3 text-center">
+                            <p class="text-[#6EB04A] text-sm sm:text-[18px]">health - supplying - equipment</p>
+                            </div>
                         </div>
                     </a>
                 
-                    <a href="./furniture.html" class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
-                        <img src="./images/furn.webp" alt="Al-Mira Furniture" class="w-[379px] h-48 object-cover">
-                        <div class="p-4 text-center">
-                        <h3 class="text-[#AB8542] text-xl sm:text-2xl font-semibold mb-1">الميره للسجاد و الأثاث</h3>
-                        <h3 class="text-xl sm:text-2xl font-semibold mb-2">Al-Mira For Carpet And Furniture</h3>
-                        </div>
-                        <hr>
-                        <div class="p-4 text-center">
-                        <p class="text-[#AB8542] text-sm sm:text-[18px]">carpet - furniture - elegant</p>
+                    <a href="./furniture.html">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
+                            <img src="./images/furn.webp" alt="Al-Mira Furniture" class="w-[379px] h-48 object-cover">
+                            <div class="p-4 text-center">
+                            <h3 class="text-[#AB8542] text-xl sm:text-2xl font-semibold mb-1">الميره للسجاد و الأثاث</h3>
+                            <h3 class="text-xl sm:text-[16px] font-semibold mb-2">Al-Mira For Carpet And Furniture</h3>
+                            </div>
+                            <hr>
+                            <div class="p-3 text-center">
+                            <p class="text-[#AB8542] text-sm sm:text-[18px]">carpet - furniture - elegant</p>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -188,7 +232,7 @@
         <!-- Start Second Section -->
         <div class="container mx-auto relative">
             <img src="./images/line.webp" alt="line" class="block w-full">
-            <h2 id="imageHeader" class="absolute inset-0 flex items-center justify-center text-white text-[75px] font-bold py-2 uppercase">
+            <h2 id="imageHeader" class="absolute inset-0 flex items-center justify-center text-white lg:text-[75px] text-2xl lg:font-bold font-medium py-2 uppercase">
                 YOUR GATE TO INVESTMENT
             </h2>
         </div>
@@ -196,30 +240,31 @@
         <!-- End Second Section -->
 
         <!-- Start Statistics -->
-            <div class="bg-[#DDD8D8]">
-                <div class="container mx-auto px-4 py-20 flex flex-col gap-8 md:flex-row md:justify-evenly">
-                    <div class="flex flex-col items-center justify-center gap-3 text-center">
-                        <img src="./images/users_svgrepo.com.webp" alt="users" class="w-16 h-16">
-                        <p id="EmployeNumbers" class="text-2xl">Working Employment</p>
-                        <p class="text-[#006144] text-[42px]">+400</p>
-                    </div>
-                    <div class="flex flex-col items-center justify-center gap-3 text-center">
-                        <img src="./images/calendar_svgrepo.com.webp" alt="calendar" class="w-16 h-16">
-                        <p id="yoExpearience" class="text-2xl">Years In Business</p>
-                        <p class="text-[#006144] text-[42px]">+50</p>
-                    </div>
-                    <div class="flex flex-col items-center justify-center gap-3 text-center">
-                        <img src="./images/profits-graphic_svgrepo.com.webp" alt="profits" class="w-16 h-16">
-                        <p id="noProjects" class="text-2xl">Projects</p>
-                        <p class="text-[#006144] text-[42px]">+300</p>
-                    </div>
-                    <div class="flex flex-col items-center justify-center gap-3 text-center">
-                        <img src="./images/buildings-thin_svgrepo.com.webp" alt="buildings" class="w-16 h-16">
-                        <p id="bLine" class="text-2xl">Business Lines</p>
-                        <p class="text-[#006144] text-[42px]">5</p>
-                    </div>
+        <div class="bg-[#F4F3F3]">
+            <div class="container mx-auto px-4 py-20 flex flex-col gap-8 md:flex-row md:justify-evenly">
+                <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
+                    <img src="./images/users_svgrepo.com.webp" alt="users" class="w-16 h-16">
+                    <p id="EmployeNumbers" class="text-2xl">Working Employment</p>
+                    <p class="text-[#006144] text-[42px]">+400</p>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
+                    <img src="./images/calendar_svgrepo.com.webp" alt="calendar" class="w-16 h-16">
+                    <p id="yoExpearience" class="text-2xl">Years In Business</p>
+                    <p class="text-[#006144] text-[42px]">+50</p>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
+                    <img src="./images/profits-graphic_svgrepo.com.webp" alt="profits" class="w-16 h-16">
+                    <p id="noProjects" class="text-2xl">Projects</p>
+                    <p class="text-[#006144] text-[42px]">+300</p>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3 text-center">
+                    <img src="./images/buildings-thin_svgrepo.com.webp" alt="buildings" class="w-16 h-16">
+                    <p id="bLine" class="text-2xl">Business Lines</p>
+                    <p class="text-[#006144] text-[42px]">5</p>
                 </div>
             </div>
+        </div>
+        
         <!-- End Statistics -->
 
         <!-- Start Members -->
@@ -238,74 +283,19 @@
         <!-- End Members -->
         
         <!-- Start Footer -->
-            <footer class="bg-[#006144] text-white py-6">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <div>
-                    <h3 id="headTitle" class="font-semibold text-3xl">Head Office</h3>
-                    <div class="mt-2">
-                        <p id="address">Dammam - Khobar Road, Nasiriyah, <br> Dammam, Kingdom of Saudi Arabia.</p>
-                    </div>
-                    <ul class="mt-2 space-y-1">
-                    <li class="flex items-center gap- cursor-pointer">
-                        <i class="fa-regular fa-envelope"></i>
-                        <a href="mailto:info@almiracentre.com" class="ml-2">info@almiracentre.com</a>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+966138273792" class="ml-2">+966 13 827 3792</a>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <i class="fa-solid fa-fax"></i>
-                        <a href="tel:+966138273792" class="ml-2">+966 13 827 3792</a>
-                    </li>
-                    </ul>
-                </div>
-            
-                <div>
-                    <h3 id="sectors" class="font-semibold text-3xl">Sectors</h3>
-                    <ul class="mt-2 space-y-1">
-                    <li id="sector1" class="cursor-pointer">AL-MIRA OPTICS CO.LTD.</li>
-                    <li id="sector2" class="cursor-pointer">AL-MIRA STEAMATIC</li>
-                    <li id="sector3" class="cursor-pointer">Contracting & Maintenance Division</li>
-                    <li id="sector4" class="cursor-pointer">Al-Mira Medical</li>
-                    <li id="sector5" class="cursor-pointer">Al-Mira For Carpet And Furniture</li>
-                    </ul>
-                </div>
-            
-                <div class="text-right flex flex-col items-center justify-center">
-                    <h3 class="font-bold text-4xl">مجموعة الميره</h3>
-                    <p class="font-semibold text-3xl mt-2">ALMIRA GROUP</p>
-                </div>
-                
-                </div>
-            </footer>
+            <div id="footer" class="bg-[#006144]"></div>
         <!-- End Footer -->
     </div>
-<!-- 
-    <script>
-        const paragraph = document.getElementById("almeraPara");
-        const text = paragraph.textContent; 
-        paragraph.textContent = ""; 
-        let index = 0;
-    
-        function typeLetter() {
-            if (index < text.length) {
-                paragraph.textContent += text.charAt(index); 
-                index++;
-                setTimeout(typeLetter, 50); 
-            }
-        }
-            typeLetter();
-    </script> -->
 
-    <script>
+    <!-- Script for translation -->
+    <!-- <script>
         const translations = {
         en: {
         homePage : 'Home',
         businessText : 'Businesses',
         aboutUs : 'About Us',
         contactUs : 'Contact Us',
+        almeraHeader : 'ALMIRA GROUP',
         almeraSection : 'Almira Sections',
         almiraGroup : 'about Almira group',
         almeraPara :'Al-MIRA is a Group of companies that specialized in several different fields, and its role is to serve customers in the best possible way. ',
@@ -320,11 +310,11 @@
         address : 'Dammam - Khobar Road, Nasiriyah, Dammam, Kingdom of Saudi Arabia.',
         aboutMember : 'Founder of Al-Mira Group, which specializes in several different fields',
         sectors : 'Sectors',
-        sector1 : 'AL-MIRA OPTICS CO.LTD.',
-        sector2 : 'AL-MIRA STEAMATIC',
-        sector3 : 'Contracting & Maintenance Division',
-        sector4 : 'Al-Mira Medical',
-        sector5 : 'Al-Mira For Carpet And Furniture',
+        sector1 : 'almira optics',
+        sector2 : 'almira steamatic',
+        sector3 : 'almira steel',
+        sector4 : 'almira medical',
+        sector5 : 'carpet & furniture',
         paraOne : 'Since the beginning of the twentieth century, Abdulghani Ibrahim Al Meera started trading spices from his shop located in the small market opposite the Grand Mosque in Mecca. The business then grew.',
         paraTwo : 'In 1977, Abdulghani Ibrahim Al Meera laid the foundation stone for Al Meera Trading and Importing Establishment.',
         paraThree : 'In 1989, Abdul Latif and Mustafa, sons of Abdulghani Ibrahim Al Meera, established Al Meera Trading Center Limited Company, which included the following:',
@@ -341,6 +331,7 @@
         businessText :'قطاعات الأعمال',
         aboutUs :'عنا',
         contactUs :'اتصل بنا',
+        almeraHeader : 'مجموعة الميره ',
         almeraSection :'قطاعات الأعمال',
         almiraGroup :'مجموعة الميره',
         almeraPara : 'مجموعة شركات الميرة المتخصصة',
@@ -376,7 +367,9 @@
 let currentLanguage = "en"; 
 
 function updateLanguage(lang) {
+    document.getElementById("homePage").textContent = translations[lang].homePage;
     document.getElementById("almeraPara").textContent = translations[lang].almeraPara;
+    document.getElementById("almeraHeader").textContent = translations[lang].almeraHeader;
     document.getElementById("almeraSection").textContent = translations[lang].almeraSection;
     document.getElementById("almiraGroup").textContent = translations[lang].almiraGroup;
     document.getElementById("imageHeader").textContent = translations[lang].imageHeader;
@@ -410,19 +403,41 @@ function updateLanguage(lang) {
     document.getElementById("listSix").textContent = translations[lang].listSix;
 }
 
-document.getElementById("language-toggle").addEventListener("click", function() {
-    if (currentLanguage === "en") {
-        currentLanguage = "ar";
-        document.getElementById("language-text").textContent = "English";
-        document.body.setAttribute("dir", "rtl"); // Switch to RTL layout
-    } else {
-        currentLanguage = "en";
-        document.getElementById("language-text").textContent = "Arabic";
-        document.body.setAttribute("dir", "ltr");
-    }
-    updateLanguage(currentLanguage); 
+document.querySelectorAll(".language-toggle").forEach(function(toggleButton) {
+    toggleButton.addEventListener("click", function() {
+        let currentLanguage = toggleButton.getAttribute("data-language") || "en";
+
+        if (currentLanguage === "en") {
+            currentLanguage = "ar";
+            toggleButton.querySelector(".language-text").textContent = "English";
+            document.body.setAttribute("dir", "rtl");
+        } else {
+            currentLanguage = "en";
+            toggleButton.querySelector(".language-text").textContent = "Arabic";
+            document.body.setAttribute("dir", "ltr");
+        }
+
+        toggleButton.setAttribute("data-language", currentLanguage);
+
+        updateLanguage(currentLanguage); 
+    });
 });
+
+    </script> -->
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const closeSidebar = document.getElementById('close-sidebar');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.remove('-translate-x-full');
+        });
+
+        closeSidebar.addEventListener('click', () => {
+            sidebar.classList.add('-translate-x-full');
+        });
+
     </script>
-    
 </body>
 </html>
