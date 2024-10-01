@@ -26,46 +26,47 @@
                 <header class="p-4">
             <!-- Start Navbar -->
                 <div>
-                    <nav class="md:bg-[#E0E0E0] md:text-black text-white md:shadow-md z-50 absolute top-16 left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[900px] md:w-[760px]  h-[88px] rounded-lg">
-                        <div class=" flex justify-between items-center py-2 px-4 md:py-4 md:px-6">
+                    <nav class="lg:bg-[#E0E0E0] md:text-black text-white lg:shadow-md z-50 absolute top-20 left-[50%] transform -translate-x-1/2 w-[95%] lg:w-[1020px] md:w-[760px] h-[88px] rounded-lg">
+                        <div class="flex justify-between items-center py-2 px-4 md:py-4 md:px-6">
                             <div class="lg:hidden">
-                            <button id="menu-toggle" class="text-black text-3xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                                </svg>
-                            </button>
+                                <button id="menu-toggle" class="flex text-black text-3xl">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                    </svg>
+                                </button>
                             </div>
                             <div class="flex items-center space-x-2">
                                 <a href="./index.html" class="text-right">
                                     <img src="./images/stealLogo.svg" alt="Steal Logo">
                                 </a>
-                                </div>
-                            <div id="menu-items" class="hidden md:flex items-center gap-4 lg:gap-8">
-                            <a href="./index.html" id="homePage"  class="text-lg lg:text-[22px]  font-normal">Home</a>
-                            <div class="relative">
-                                <button id="business-toggle" class="lg:text-[22px] lg:text-lg font-bold text-white bg-[#EC7E00] rounded-lg p-1 flex items-center">
-                                    <span id="businessText" class="">Businesses</span>
-                                    <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                    </svg>
-                                </button>
-                                <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#EC7E00] rounded-lg hidden">
-                                <a href="./optics.html" class="block p-2 text-[15px] text-white">almira optics</a>
-                                <a href="./steamatic.html" class="block p-2 text-[15px] text-white">almira steamatic</a>
-                                <a href="./steal.html" class="block p-2 text-[15px] text-white">almira steel</a>
-                                <a href="./medical.html" class="block p-2 text-[15px] text-white">almira medical</a>
-                                <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
-                                </div>
                             </div>
-                            <a href="#about-section" id="about-us" class="text-lg lg:text-[22px]  font-normal">About Us</a>
-                            <a href="#" id="contact-us" class="text-lg lg:text-[22px]  font-normal">Contact Us</a>
-                            <div class="language-toggle flex items-center gap-2 cursor-pointer">
-                                <img src="./images/world.svg" alt="World Logo" class="order-1">
-                                <span class="language-text text-xl md:text-2xl font-normal">Arabic</span>
-                            </div>
+                            <div id="menu-items" class="hidden lg:flex items-center gap-4 lg:gap-8">
+                                <a href="./index.html" id="homePage" class="text-lg lg:text-[22px] font-normal">Home</a>
+                                <div class="relative">
+                                    <button id="business-toggle" class="lg:text-[22px] lg:text-lg font-bold text-white bg-[#EC7E00] rounded-lg p-1 flex items-center">
+                                        <span id="businessText">Businesses</span>
+                                        <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#EC7E00] rounded-lg hidden">
+                                        <a href="./optics.html" class="block p-2 text-[15px] text-white">almira optics</a>
+                                        <a href="./steamatic.html" class="block p-2 text-[15px] text-white">almira steamatic</a>
+                                        <a href="./steal.html" class="block p-2 text-[15px] text-white">almira steel</a>
+                                        <a href="./medical.html" class="block p-2 text-[15px] text-white">almira medical</a>
+                                        <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                                    </div>
+                                </div>
+                                <a href="#about-section" id="about-us" class="text-lg lg:text-[22px] font-normal">About Us</a>
+                                <a href="#" id="contact-us" class="text-lg lg:text-[22px] font-normal">Contact Us</a>
+                                <div class="language-toggle flex items-center gap-2 cursor-pointer">
+                                    <img src="./images/world.svg" alt="World Logo" class="order-1">
+                                    <span class="language-text text-xl md:text-2xl font-normal lg:ml-20">Arabic</span>
+                                </div>
                             </div>
                         </div>
                     </nav>
+                    
                 
                         <!-- Sidebar for Small Screens -->
                             <div id="sidebar" class="fixed top-0 ltr:left-0 rtl:right-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50">
@@ -112,8 +113,8 @@
             <main class="relative bg-white">
                 <div class="lg:grid grid-cols-2 max-w-7xl mx-auto">
                     <div class="lg:order-2">
-                        <div class="relative z-10 flex flex-col items-center justify-center text-center text-white mt-72 mb-10">
-                            <h1 class="animate__animated animate__zoomIn font-bold md:text-[66px] text-[28px] text-black uppercase">ALMIRA FOR STEEL BUILDING</h1>
+                        <div class="relative z-10 flex flex-col items-center justify-center text-center text-white lg:mt-72 mt-52 mb-10">
+                            <h1 class="animate__animated animate__zoomIn font-bold md:text-[66px] text-[28px] text-black uppercase">ALMIRA FOR <br> STEEL BUILDING</h1>
                             <div class="md:flex hidden flex-row items-center justify-center bg-[#E0E0E0] rounded-lg mt-4 px-4 py-2 space-x-6">
                                 <a href="#" class="text-white bg-[#EC7E00] py-1 px-4 rounded-md text-[22px] font-bold">Home</a>
                                 <a href="#" class="text-[#EC7E00] font-normal text-[22px]">Services</a>
@@ -126,13 +127,13 @@
                     <div class="relative lg:order-1">
                         <div class="relative">
                             <img src="./images/orangeBG.webp" alt="Building" class="object-cover h-full">
-                            <img src="./images/building.webp" alt="building" class="absolute top-[35.5%] md:top-[15.5%] animate__animated animate__backInUp">
+                            <img src="./images/building.webp" alt="building" class="absolute top-[35.5%] sm:top-[15.5%] animate__animated animate__backInUp">
                         </div>
                     </div>
                 </div>
                 
-                <img src="./images/Frame330.webp" class="md:flex hidden absolute bottom-0 right-[10%]" alt="Frame330">
-                <img src="./images/bgShape.webp" class="md:flex hidden absolute bottom-0 right-0" alt="">
+                <img src="./images/Frame330.webp" class="md:flex hidden absolute bottom-0 right-0" alt="Frame330">
+                <img src="./images/bgShape.webp" class="lg:flex hidden absolute bottom-0 right-0" alt="">
             </main>
             </div>
         <!-- End Header -->
