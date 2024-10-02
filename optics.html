@@ -220,6 +220,15 @@
                     para2 : "We've provided the best devices for detecting matter and equipment cut lenses",
                     para3 : 'And always strive to provide the latest and best global brands of glasses and sunglasses and contact lenses ',
                     para4 : 'And constantly aim to provide the best services to keep valued customers ',
+
+                    headTitle : 'Head Office',
+                    address : 'Dammam - Khobar Road, Nasiriyah, Dammam, Kingdom of Saudi Arabia.',
+                    sectors : 'Sectors',
+                    sector1 : 'AL-MIRA OPTICS CO.LTD.',
+                    sector2 : 'AL-MIRA STEAMATIC',
+                    sector3 : 'Contracting & Maintenancr Division',
+                    sector4 : 'Al-Mira Medicall',
+                    sector5 : 'Al-Mira For Carpet And Furniture',
                 },
                 
                 ar: {
@@ -241,10 +250,20 @@
                     para2 : 'لقد وفرنا أفضل الأجهزة لكشف المواد ومعدات قطع العدسات اللاصقة',
                     para3 : 'ونسعى دائما إلى تقديم أحدث وأفضل الماركات العالمية من النظارات والنظارات الشمسية والعدسات اللاصقة .',
                     para4 : 'ونهدف باستمرار إلى تقديم أفضل الخدمات للحفاظ على العملاء الكرام .',
+
+                    headTitle :'المكتب الرئيسي',
+                    address :'طريق الدمام الخبر، حى الناصرية، الدمام، المملكة العربية السعودية',
+                    sectors :'قطاعات الأعمال',
+                    sector1 :' الميره للبصريات',
+                    sector2 :' الميره ستيماتيك',
+                    sector3 :'  الميره للحديد',
+                    sector4 :'الميره للأدوات الطبية',
+                    sector5 :'للسجاد والمفروشات ',
+
                 }
             };
         
-            let currentLanguage = localStorage.getItem('language') || "en"; // استرجاع اللغة المحفوظة أو تعيين "en" كلغة افتراضية
+            let currentLanguage = localStorage.getItem('language') || "en"; 
         
             function updateLanguage(lang) {
                 document.getElementById("homePage").textContent = translations[lang].homePage;
@@ -265,6 +284,17 @@
                 document.getElementById("para2").textContent = translations[lang].para2;
                 document.getElementById("para3").textContent = translations[lang].para3;
                 document.getElementById("para4").textContent = translations[lang].para4;
+
+                document.getElementById("headTitle").textContent = translations[lang].headTitle;
+                document.getElementById("address").textContent = translations[lang].address;
+                document.getElementById("sectors").textContent = translations[lang].sectors;
+                document.getElementById("sector1").textContent = translations[lang].sector1;
+                document.getElementById("sector2").textContent = translations[lang].sector2;
+                document.getElementById("sector3").textContent = translations[lang].sector3;
+                document.getElementById("sector4").textContent = translations[lang].sector4;
+                document.getElementById("sector5").textContent = translations[lang].sector5;
+
+
             }
         
             document.addEventListener("DOMContentLoaded", function() {
