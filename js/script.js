@@ -1,18 +1,21 @@
 
 // For Sidebar
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menu-toggle');
-    const sidebar = document.getElementById('sidebar');
-    const closeSidebar = document.getElementById('close-sidebar');
+document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const menuItems = document.getElementById('navbar-sticky');
+            const sidebar = document.getElementById('sidebar');
+            const closeSidebar = document.getElementById('close-sidebar');
 
-    menuToggle.addEventListener('click', () => {
-        sidebar.classList.remove('-translate-x-full');
-    });
+            menuToggle.addEventListener('click', function() {
+                sidebar.classList.toggle('hidden');
+                sidebar.setAttribute('aria-expanded', sidebar.classList.contains('hidden') ? 'false' : 'true');
+            });
 
-    closeSidebar.addEventListener('click', () => {
-        sidebar.classList.add('-translate-x-full');
-    });
-});
+            closeSidebar.addEventListener('click', function() {
+                sidebar.classList.add('hidden');
+                sidebar.setAttribute('aria-expanded', 'false');
+            });
+        })
 
 
 // For Dropdown Business

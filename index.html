@@ -60,50 +60,55 @@
                         </div>
                         <a href="#about-section" id="about-us" class="text-lg lg:text-[22px]  font-normal">About Us</a>
                         <a href="#" id="contact-us" class="text-lg lg:text-[22px]  font-normal">Contact Us</a>
-                        <div class="language-toggle flex items-center gap-2 cursor-pointer">
+                        <div class="language-toggle flex items-center gap-2 cursor-pointer  ltr:lg:ml-10 rtl:lg:mr-10" id="toggle-language">
                             <img src="./images/world.svg" alt="World Logo" class="order-1">
-                            <span class="language-text text-xl md:text-2xl font-normal lg:ml-10">Arabic</span>
+                            <span class="language-text text-xl md:text-2xl font-normal" id="language-text">Arabic</span>
                         </div>
+                        
                         </div>
                     </div>
                 </nav>
             
                 <!-- Sidebar for Small Screens -->
-                    <div id="sidebar" class="fixed top-0 ltr:left-0 rtl:right-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50">
-                        <button id="close-sidebar" class="text-black text-3xl absolute top-4 right-4">&times;</button>
-                        <div class="mt-16 flex flex-col items-start ltr:pl-6 rtl:pr-6 space-y-4">
-                            <a href="./index.html" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
-                                <p>Home</p>
-                            </a>
-                            <div class="relative">
-                                <a id="business-link-unique" href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                    <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
-                                    <p>Business</p>
-                                    <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                    </svg>
+                    <div id="sidebar" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden">
+                        <div class="flex flex-col  h-full w-64 bg-white p-4">
+                            <button id="close-sidebar" class="text-black text-2xl w-6 h-6 self-end relative rtl:right-[5%] ltr:left-[5%]  transform ltr:rotate-180">
+                                <img src="./images/close-x.svg" alt="Close">
+                            </button>           
+                            <ul class="flex flex-col space-y-4 mt-8">
+                                <a href="./index.html" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                    <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
+                                    <p>Home</p>
                                 </a>
-                                <div id="business-dropdown-unique" class="absolute left-[25%] w-[170px] h-[208px] bg-[#006144] rounded-lg hidden">
-                                    <a href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
-                                    <a href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
-                                    <a href="./steal.html" class="block p-2 text-[15px] text-white">Almira steel</a>
-                                    <a href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
-                                    <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                                <div class="relative">
+                                    <a id="business-link-unique" href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                        <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
+                                        <p>Business</p>
+                                        <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                    <div id="business-dropdown-unique" class="absolute left-[25%] w-[170px] h-[208px] bg-[#006144] rounded-lg hidden">
+                                        <a href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
+                                        <a href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
+                                        <a href="./steal.html" class="block p-2 text-[15px] text-white">Almira steel</a>
+                                        <a href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
+                                        <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                                     </div>
-                            </div>
-                            <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
-                                <p>About Us</p>
-                            </a>
-                            <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
-                                <p>Contact Us</p>
-                            </a>
-                            <a href="#" class="language-toggle flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
-                                <p class="language-text">Language</p>
-                            </a>
+                                </div>
+                                <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                    <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
+                                    <p>About Us</p>
+                                </a>
+                                <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                    <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
+                                    <p>Contact Us</p>
+                                </a>
+                                <a href="#" class="language-toggle flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                    <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
+                                    <p class="language-text">Language</p>
+                                </a>
+                            </ul>
                         </div>
                     </div>
                     
@@ -120,7 +125,6 @@
                     </header>
             </div>
         <!-- End Header -->
-
 
         <!-- Start Almira Section -->
             <section>
@@ -230,40 +234,39 @@
         <!-- End About -->
 
         <!-- Start Second Section -->
-        <div class="container mx-auto relative">
-            <img src="./images/line.webp" alt="line" class="block w-full">
-            <h2 id="imageHeader" class="absolute inset-0 flex items-center justify-center text-white lg:text-[75px] text-2xl lg:font-bold font-medium py-2 uppercase">
-                YOUR GATE TO INVESTMENT
-            </h2>
-        </div>
-        
+            <div class="container mx-auto relative">
+                <img src="./images/line.webp" alt="line" class="block w-full">
+                <h2 id="imageHeader" class="absolute inset-0 flex items-center justify-center text-white lg:text-[75px] text-2xl lg:font-bold font-medium py-2 uppercase">
+                    YOUR GATE TO INVESTMENT
+                </h2>
+            </div> 
         <!-- End Second Section -->
 
         <!-- Start Statistics -->
-        <div class="bg-[#F4F3F3]">
-            <div class="container mx-auto px-4 py-20 flex flex-col gap-8 md:flex-row md:justify-evenly">
-                <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
-                    <img src="./images/users_svgrepo.com.webp" alt="users" class="w-16 h-16">
-                    <p id="EmployeNumbers" class="text-2xl">Working Employment</p>
-                    <p class="text-[#006144] text-[42px]">+400</p>
+            <div class="bg-[#F4F3F3]">
+                <div class="container mx-auto px-4 py-20 flex flex-col gap-8 md:flex-row md:justify-evenly">
+                    <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
+                        <img src="./images/users_svgrepo.com.webp" alt="users" class="w-16 h-16">
+                        <p id="EmployeNumbers" class="text-2xl">Working Employment</p>
+                        <p class="text-[#006144] text-[42px]">+400</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
+                        <img src="./images/calendar_svgrepo.com.webp" alt="calendar" class="w-16 h-16">
+                        <p id="yoExpearience" class="text-2xl">Years In Business</p>
+                        <p class="text-[#006144] text-[42px]">+50</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
+                        <img src="./images/profits-graphic_svgrepo.com.webp" alt="profits" class="w-16 h-16">
+                        <p id="noProjects" class="text-2xl">Projects</p>
+                        <p class="text-[#006144] text-[42px]">+300</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-3 text-center">
+                        <img src="./images/buildings-thin_svgrepo.com.webp" alt="buildings" class="w-16 h-16">
+                        <p id="bLine" class="text-2xl">Business Lines</p>
+                        <p class="text-[#006144] text-[42px]">5</p>
+                    </div>
                 </div>
-                <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
-                    <img src="./images/calendar_svgrepo.com.webp" alt="calendar" class="w-16 h-16">
-                    <p id="yoExpearience" class="text-2xl">Years In Business</p>
-                    <p class="text-[#006144] text-[42px]">+50</p>
-                </div>
-                <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
-                    <img src="./images/profits-graphic_svgrepo.com.webp" alt="profits" class="w-16 h-16">
-                    <p id="noProjects" class="text-2xl">Projects</p>
-                    <p class="text-[#006144] text-[42px]">+300</p>
-                </div>
-                <div class="flex flex-col items-center justify-center gap-3 text-center">
-                    <img src="./images/buildings-thin_svgrepo.com.webp" alt="buildings" class="w-16 h-16">
-                    <p id="bLine" class="text-2xl">Business Lines</p>
-                    <p class="text-[#006144] text-[42px]">5</p>
-                </div>
-            </div>
-        </div> 
+            </div> 
         <!-- End Statistics -->
 
         <!-- Start Members -->
@@ -286,8 +289,65 @@
         <!-- End Footer -->
     </div>
 
-    <!-- Script for translation -->
+
     <!-- <script>
+        const translations = {
+            en: {
+                title: "ALMIRA GROUP",
+                home: "Home",
+                business: "Businesses",
+                aboutUs: "About Us",
+                contactUs: "Contact Us",
+            },
+            ar: {
+                title: "مجموعة الميره",
+                home: "الرئيسية",
+                business: "الأعمال",
+                aboutUs: "من نحن",
+                contactUs: "اتصل بنا",
+            },
+        };
+
+        let currentLanguage = 'en';
+
+        function updateText() {
+            const title = document.getElementById('main-title');
+            const homePage = document.getElementById('homePage');
+            const businessText = document.getElementById('business-text');
+            const aboutUs = document.getElementById('about-us');
+            const contactUs = document.getElementById('contact-us');
+            const languageText = document.getElementById('language-text');
+
+            if (currentLanguage === 'en') {
+                title.textContent = translations.en.title;
+                homePage.textContent = translations.en.home;
+                businessText.textContent = translations.en.business;
+                aboutUs.textContent = translations.en.aboutUs;
+                contactUs.textContent = translations.en.contactUs;
+                languageText.textContent = 'Arabic';
+                document.documentElement.setAttribute('dir', 'ltr'); // Set direction to LTR
+            } else {
+                title.textContent = translations.ar.title;
+                homePage.textContent = translations.ar.home;
+                businessText.textContent = translations.ar.business;
+                aboutUs.textContent = translations.ar.aboutUs;
+                contactUs.textContent = translations.ar.contactUs;
+                languageText.textContent = 'English';
+                document.documentElement.setAttribute('dir', 'rtl'); // Set direction to LTR
+
+            }
+        }
+
+        document.getElementById('toggle-language').addEventListener('click', () => {
+            currentLanguage = currentLanguage === 'ar' ? 'en' : 'ar';
+            updateText(); 
+        });
+
+        updateText();
+    </script> -->
+
+    <!-- Script for translation -->
+     <script>
         const translations = {
         en: {
         homePage : 'Home',
@@ -421,21 +481,6 @@ document.querySelectorAll(".language-toggle").forEach(function(toggleButton) {
         updateLanguage(currentLanguage); 
     });
 });
-
-    </script> -->
-
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const sidebar = document.getElementById('sidebar');
-        const closeSidebar = document.getElementById('close-sidebar');
-
-        menuToggle.addEventListener('click', () => {
-            sidebar.classList.remove('-translate-x-full');
-        });
-
-        closeSidebar.addEventListener('click', () => {
-            sidebar.classList.add('-translate-x-full');
-        });
 
     </script>
 </body>
