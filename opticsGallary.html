@@ -46,7 +46,7 @@
                                         </svg>
                                     </button>
                                     </div>
-                                    <div class="flex items-center space-x-2 lg:ml-20">
+                                    <div class="flex items-center space-x-2">
                                         <a href="./index.html" class="text-right">
                                             <img src="./images/opticLogo.svg" alt="Optics Logo">
                                         </a>
@@ -61,16 +61,16 @@
                                             </svg>
                                         </button>
                                         <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#8E0104] rounded-lg hidden">
-                                        <a href="./optics.html" class="block p-2 text-[15px] text-white">almira optics</a>
-                                        <a href="./steamatic.html" class="block p-2 text-[15px] text-white">almira steamatic</a>
-                                        <a href="./steal.html" class="block p-2 text-[15px] text-white">almira steel</a>
-                                        <a href="./medical.html" class="block p-2 text-[15px] text-white">almira medical</a>
-                                        <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                                            <a href="./optics.html" id="busOptics" class="block p-2 text-[15px] text-white">almira optics</a>
+                                            <a href="./steamatic.html" id="busSteamatic" class="block p-2 text-[15px] text-white">almira steamatic</a>
+                                            <a href="./steal.html" id="busSteal" class="block p-2 text-[15px] text-white">almira steel</a>
+                                            <a href="./medical.html" id="busMedical" class="block p-2 text-[15px] text-white">almira medical</a>
+                                            <a href="./furniture.html" id="busFurniture" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                                         </div>
                                     </div>
-                                    <a href="#about-section" id="about-us" class="text-lg lg:text-[22px]  font-normal">About Us</a>
-                                    <a href="#" id="contact-us" class="text-lg lg:text-[22px]  font-normal">Contact Us</a>
-                                    <div class="language-toggle flex items-center gap-2 cursor-pointer lg:ml-32">
+                                    <a href="#about-section" id="aboutUs" class="text-lg lg:text-[22px]  font-normal">About Us</a>
+                                    <a href="#" id="contactUs" class="text-lg lg:text-[22px]  font-normal">Contact Us</a>
+                                    <div class="language-toggle flex items-center gap-2 cursor-pointer">
                                         <img src="./images/world.svg" alt="World Logo" class="order-1">
                                         <span class="language-text text-xl md:text-2xl font-normal ">Arabic</span>
                                     </div>
@@ -186,71 +186,124 @@
                     <div id="footer" class="bg-[#8E0104]"></div>
                     <!-- End Footer -->
 
-            <script>
-                const translations = {
-                en: {
-                homePage : 'Home',
-                businessText : 'Businesses',
-                aboutUs : 'About Us',
-                contactUs : 'Contact US',
-                sector1 :' الميره للبصريات',
-                sector2 :' الميره ستيماتيك',
-                sector3 :'  الميره للحديد',
-                sector4 :'الميره للأدوات الطبية',
-                sector5 :'للسجاد والمفروشات ',
-                almeraHeader : 'ALMIRA OPTICS',
-                homeTitle : 'Home',
-                gallaryTitle : 'Gallary',
-                brandsTitle : 'Brands'
-                },
-                ar: {
-                    homePage :'الرئيسية',
-                    businessText : 'قطاعات الأعمال',
-                    aboutUs : 'عنا',
-                    contactUs : 'اتصل بنا',
-                    sector1 :' الميره للبصريات',
-                    sector2 :' الميره ستيماتيك',
-                    sector3 :'  الميره للحديد',
-                    sector4 :'الميره للأدوات الطبية',
-                    sector5 :'للسجاد والمفروشات ',
-                    almeraHeader : ' الميره للبصريات',
-                    homeTitle : 'الرئيسية',
-                    gallaryTitle : 'المعرض',
-                    brandsTitle : 'الماركات',
-                }
-        };
-        
-        let currentLanguage = "en"; 
-        
-        function updateLanguage(lang) {
-            document.getElementById("homePage").textContent = translations[lang].homePage;
-            document.getElementById("businessText").textContent = translations[lang].businessText;
-            document.getElementById("aboutUs").textContent = translations[lang].aboutUs;
-            document.getElementById("contactUs").textContent = translations[lang].contactUs;
-            document.getElementById("meraOptics").textContent = translations[lang].sector1;
-            document.getElementById("meraSteamatic").textContent = translations[lang].sector2;
-            document.getElementById("meraSteal").textContent = translations[lang].sector3;
-            document.getElementById("meraMedical").textContent = translations[lang].sector4;
-            document.getElementById("meraCarpet").textContent = translations[lang].sector5;
-            document.getElementById("almeraHeader").textContent = translations[lang].almeraHeader;
-            document.getElementById("homeTitle").textContent = translations[lang].homeTitle;
-            document.getElementById("gallaryTitle").textContent = translations[lang].gallaryTitle;
-            document.getElementById("brandsTitle").textContent = translations[lang].brandsTitle;
+                    <!-- Script for translation -->
+                    <script>
+                        const translations = {
+                            en: {
+                                homePage: 'Home',
+                                businessText: 'Businesses',
+                                busOptics : 'almira optics',
+                                busSteamatic : 'almira steammatic',
+                                busSteal : 'almira steal',
+                                busMedical : 'almira medical',
+                                busFurniture : 'carpet & furniture',
+                                aboutUs: 'About Us',
+                                contactUs: 'Contact US',
+                                almeraHeader: 'ALMIRA OPTICS',
+                                homeTitle: 'Home',
+                                gallaryTitle: 'Gallary',
+                                brandsTitle: 'Brands',
+                                headTitle : 'Head Office',
+                                address : 'Dammam - Khobar Road, Nasiriyah, Dammam, Kingdom of Saudi Arabia.',
+                                aboutMember : 'Founder of Al-Mira Group, which specializes in several different fields',
+                                sectors : 'Sectors',
+                                sector1 : 'AL-MIRA OPTICS CO.LTD.',
+                                sector2 : 'almira steamatic',
+                                sector3 : 'almira steel',
+                                sector4 : 'almira medical',
+                                sector5 : 'carpet & furniture',
+                            },
+                            ar: {
+                                homePage: 'الرئيسية',
+                                businessText: 'قطاعات الأعمال',
+                                busOptics : 'الميره للبصريات',
+                                busSteamatic : 'الميره ستيماتيك',
+                                busSteal : 'الميره للحديد',
+                                busMedical : 'الميره للأدوات الطبية',
+                                busFurniture : 'للسجاد والمفروشات',
+                                aboutUs: 'عنا',
+                                contactUs: 'اتصل بنا',
+                                almeraHeader: 'الميره للبصريات',
+                                homeTitle: 'الرئيسية',
+                                gallaryTitle: 'المعرض',
+                                brandsTitle: 'الماركات',
+                                headTitle :'المكتب الرئيسي',
+                                address :'طريق الدمام الخبر، حى الناصرية، الدمام، المملكة العربية السعودية',
+                                aboutMember :'مؤسس مجموعة شركات الميرة القابضة المتخصصة في عدة مجالات مختلفة',
+                                sectors :'قطاعات الأعمال',
+                                sector1 :' الميره للبصريات',
+                                sector2 :' الميره ستيماتيك',
+                                sector3 :'  الميره للحديد',
+                                sector4 :'الميره للأدوات الطبية',
+                                sector5 :'للسجاد والمفروشات ',
+                            }
+                        };
 
-        }
-        
-        document.getElementById("language-toggle").addEventListener("click", function() {
-            if (currentLanguage === "en") {
-                currentLanguage = "ar";
-                document.getElementById("language-text").textContent = "English";
-                document.body.setAttribute("dir", "rtl");
-            } else {
-                currentLanguage = "en";
-                document.getElementById("language-text").textContent = "Arabic";
-                document.body.setAttribute("dir", "ltr");
-            }
-            updateLanguage(currentLanguage); 
-        });
-            </script>
+                        let currentLanguage = localStorage.getItem('language') || 'en';
+
+                        function updateLanguage(lang) {
+                            document.getElementById("homePage").textContent = translations[lang].homePage;
+                            document.getElementById("businessText").textContent = translations[lang].businessText;
+                            document.getElementById("busOptics").textContent = translations[lang].busOptics;
+                            document.getElementById("busSteamatic").textContent = translations[lang].busSteamatic;
+                            document.getElementById("busSteal").textContent = translations[lang].busSteal;
+                            document.getElementById("busMedical").textContent = translations[lang].busMedical;
+                            document.getElementById("busFurniture").textContent = translations[lang].busFurniture;
+                            document.getElementById("aboutUs").textContent = translations[lang].aboutUs;
+                            document.getElementById("contactUs").textContent = translations[lang].contactUs;
+                            document.getElementById("almeraHeader").textContent = translations[lang].almeraHeader;
+                            document.getElementById("homeTitle").textContent = translations[lang].homeTitle;
+                            document.getElementById("gallaryTitle").textContent = translations[lang].gallaryTitle;
+                            document.getElementById("brandsTitle").textContent = translations[lang].brandsTitle;
+                            document.getElementById("headTitle").textContent = translations[lang].headTitle;
+                            document.getElementById("aboutMember").textContent = translations[lang].aboutMember;
+                            document.getElementById("address").textContent = translations[lang].address;
+                            document.getElementById("sectors").textContent = translations[lang].sectors;
+                            document.getElementById("sector1").textContent = translations[lang].sector1;
+                            document.getElementById("sector2").textContent = translations[lang].sector2;
+                            document.getElementById("sector3").textContent = translations[lang].sector3;
+                            document.getElementById("sector4").textContent = translations[lang].sector4;
+                            document.getElementById("sector5").textContent = translations[lang].sector5;
+                        }
+
+                        document.addEventListener("DOMContentLoaded", function () {
+                            if (currentLanguage === "ar") {
+                                document.body.setAttribute("dir", "rtl");
+                                document.body.style.fontFamily = "'Cairo', sans-serif";
+                                document.querySelector(".language-text").textContent = "English";
+                                document.querySelector(".language-toggle").classList.add("lg:mr-32");
+                            } else {
+                                document.body.setAttribute("dir", "ltr");
+                                document.body.style.fontFamily = "'Rubik', sans-serif";
+                                document.querySelector(".language-text").textContent = "Arabic";
+                                document.querySelector(".language-toggle").classList.add("lg:ml-32");
+                            }
+                            updateLanguage(currentLanguage); 
+                        });
+
+                        document.querySelectorAll(".language-toggle").forEach(function (toggleButton) {
+                            toggleButton.addEventListener("click", function () {
+                                if (currentLanguage === "en") {
+                                    currentLanguage = "ar";
+                                    toggleButton.querySelector(".language-text").textContent = "English";
+                                    document.body.setAttribute("dir", "rtl");
+                                    document.body.style.fontFamily = "'Cairo', sans-serif";
+                                    toggleButton.classList.remove("lg:ml-32");
+                                    toggleButton.classList.add("lg:mr-32");
+                                } else {
+                                    currentLanguage = "en";
+                                    toggleButton.querySelector(".language-text").textContent = "Arabic";
+                                    document.body.setAttribute("dir", "ltr");
+                                    document.body.style.fontFamily = "'Rubik', sans-serif";
+                                    toggleButton.classList.remove("lg:mr-32");
+                                    toggleButton.classList.add("lg:ml-32");
+                                }
+
+                                localStorage.setItem('language', currentLanguage);  
+                                updateLanguage(currentLanguage); 
+                            });
+                        });
+                    </script>
+
 </body>
 </html>

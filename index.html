@@ -13,6 +13,8 @@
     <!-- Animation Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="./js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <style>
     html {
@@ -22,7 +24,7 @@
     direction: rtl;
 }
 </style>
-<body style="font-family: 'Rubik', sans-serif;">
+<body >
     <div>
         <!-- Start Header -->
             <div>
@@ -116,7 +118,7 @@
                         <img src="./images/hero.webp" alt="City" class="absolute inset-0 md:w-full w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
                         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                            <h1 id="almeraHeader" class="animate__animated animate__zoomIn text-4xl md:text-[60px] font-bold ">ALMIRA GROUP</h1>
+                            <h1 id="almeraHeader" class="animate__animated animate__zoomIn text-4xl md:text-[60px] font-bold mb-5 ">ALMIRA GROUP</h1>
                             <p id="almeraPara" class="mt-4 text-lg md:text-[22px] font-normal w-[90%] md:w-[597px] leading-8">
                             Al-MIRA is a Group of companies <br> that specialized in several different fields, <br> and its role is to serve customers in the best possible way.
                             </p>
@@ -437,6 +439,12 @@ document.querySelectorAll(".language-toggle").forEach(function(toggleButton) {
                 div.classList.remove("md:pr-20");
                 div.classList.add("md:pl-20");
             });
+
+            document.body.style.fontFamily = "'Cairo', sans-serif";
+
+            toggleButton.classList.remove("lg:ml-32");
+            toggleButton.classList.add("lg:mr-32");
+
         } else {
             currentLanguage = "en";
             toggleButton.querySelector(".language-text").textContent = "Arabic";
@@ -448,6 +456,12 @@ document.querySelectorAll(".language-toggle").forEach(function(toggleButton) {
                 div.classList.remove("md:pl-20");
                 div.classList.add("md:pr-20");
             });
+
+            document.body.style.fontFamily = "'Rubik'"
+
+            toggleButton.classList.remove("lg:mr-32");
+            toggleButton.classList.add("lg:ml-32");
+    
         }
 
         toggleButton.setAttribute("data-language", currentLanguage);

@@ -50,16 +50,16 @@
                                         </svg>
                                     </button>
                                     <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#EC7E00] rounded-lg hidden">
-                                        <a href="./optics.html" class="block p-2 text-[15px] text-white">almira optics</a>
-                                        <a href="./steamatic.html" class="block p-2 text-[15px] text-white">almira steamatic</a>
-                                        <a href="./steal.html" class="block p-2 text-[15px] text-white">almira steel</a>
-                                        <a href="./medical.html" class="block p-2 text-[15px] text-white">almira medical</a>
-                                        <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                                        <a href="./optics.html" id="busOptics" class="block p-2 text-[15px] text-white">almira optics</a>
+                                        <a href="./steamatic.html" id="busSteamatic" class="block p-2 text-[15px] text-white">almira steamatic</a>
+                                        <a href="./steal.html" id="busSteal" class="block p-2 text-[15px] text-white">almira steel</a>
+                                        <a href="./medical.html" id="busMedical" class="block p-2 text-[15px] text-white">almira medical</a>
+                                        <a href="./furniture.html" id="busFurniture" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                                     </div>
                                 </div>
-                                <a href="#about-section" id="about-us" class="text-lg lg:text-[22px] font-normal">About Us</a>
-                                <a href="#" id="contact-us" class="text-lg lg:text-[22px] font-normal">Contact Us</a>
-                                <div class="language-toggle flex items-center gap-2 cursor-pointer lg:ml-32">
+                                <a href="#about-section" id="aboutUs" class="text-lg lg:text-[22px] font-normal">About Us</a>
+                                <a href="#" id="contactUs" class="text-lg lg:text-[22px] font-normal">Contact Us</a>
+                                <div class="language-toggle flex items-center gap-2 cursor-pointer">
                                     <img src="./images/world.svg" alt="World Logo" class="order-1">
                                     <span class="language-text text-xl md:text-2xl font-normal">Arabic</span>
                                 </div>
@@ -118,11 +118,11 @@
                 <div class="lg:grid grid-cols-2 max-w-7xl mx-auto">
                     <div class="lg:order-2">
                         <div class="relative z-10 flex flex-col items-center justify-center text-center text-white lg:mt-72 mt-52 mb-10">
-                            <h1 class="animate__animated animate__zoomIn font-bold md:text-[66px] text-[28px] text-black uppercase">ALMIRA FOR <br> STEEL BUILDING</h1>
-                            <div class="md:flex hidden flex-row items-center justify-center bg-[#E0E0E0] rounded-lg mt-4 px-4 py-2 space-x-6">
-                                <a href="#" class="text-white bg-[#EC7E00] py-1 px-4 rounded-md text-[22px] font-bold">Home</a>
-                                <a href="#" class="text-[#EC7E00] font-normal text-[22px]">Services</a>
-                                <a href="#" class="text-[#EC7E00] font-normal text-[22px]">Projects</a>
+                            <h1 id="almiraSteal"  class="animate__animated animate__zoomIn font-bold md:text-[66px] text-[28px] text-black uppercase">ALMIRA FOR <br> STEEL BUILDING</h1>
+                            <div class="md:flex hidden flex-row items-center justify-center bg-[#E0E0E0] rounded-lg mt-4 px-4 py-2 gap-8">
+                                <a href="#" id="homeTitle" class="text-white bg-[#EC7E00] py-1 px-4 rounded-md text-[22px] font-bold">Home</a>
+                                <a href="#" id="servicesTitle" class="text-[#EC7E00] font-normal text-[22px]">Services</a>
+                                <a href="#" id="projectsTitle" class="text-[#EC7E00] font-normal text-[22px]">Projects</a>
                             </div>
                         </div>
                     </div>
@@ -147,10 +147,10 @@
                 <div class="container mx-auto p-5">
                     <div class="flex items-center justify-around">
                         <div class="md:w-1/2 ">
-                            <h1 class="font-bold md:text-[55px] text-[28px] text-[#EC7E00]">About Al-Mira For Steel Building</h1>
-                            <p class="font-normal text-2xl">Al-Mira undertakes the Construction of Projects on a Turnkey basis. This includes: Site Preparation. Substructure and Superstructure concrete works. Finishing work. Supply and Steel Erection buildings…etc</p>    
-                            <h2 class="font-bold md:text-[32px] text-[28px] text-[#EC7E00] mt-5">Steel Erection</h2>
-                            <p class="font-normal text-2xl">Specialized Erectors of Pre-engineered and Structural Steel Buildings and cladding products. Al-Mira has a distinctive track record of successful steel erection jobs for all types</p>
+                            <h1 id="aboutSteal" class="font-bold md:text-[55px] text-[28px] text-[#EC7E00]">About Al-Mira For Steel Building</h1>
+                            <p id="stealTitle1" class="font-normal text-2xl">Al-Mira undertakes the Construction of Projects on a Turnkey basis. This includes: Site Preparation. Substructure and Superstructure concrete works. Finishing work. Supply and Steel Erection buildings…etc</p>    
+                            <h2 id="stealHead1" class="font-bold md:text-[32px] text-[28px] text-[#EC7E00] mt-5">Steel Erection</h2>
+                            <p id="stealTitle2" class="font-normal text-2xl">Specialized Erectors of Pre-engineered and Structural Steel Buildings and cladding products. Al-Mira has a distinctive track record of successful steel erection jobs for all types</p>
                         </div>
                         <div>
                             <img src="./images/steatLogo.webp" class="md:flex hidden w-[310px] h-[310px]" alt="Steal-Logo">
@@ -159,8 +159,8 @@
 
                     <div class="flex items-center justify-around lg:ml-16">
                         <div class="md:w-1/2">
-                            <h2 class="font-bold md:text-[32px] text-[28px] text-[#EC7E00]">Al-Mira Center For Trading Co. Ltd. Contracting and Maintenance</h2>
-                            <p class="font-normal text-2xl mb-8">Contracting and Maintenance Division is one of the leading steel buildings contracting companies in Saudi Arabia</p>   
+                            <h2 id="stealHead2" class="font-bold md:text-[32px] text-[28px] text-[#EC7E00]">Al-Mira Center For Trading Co. Ltd. Contracting and Maintenance</h2>
+                            <p id="stealTitle3" class="font-normal text-2xl mb-8">Contracting and Maintenance Division is one of the leading steel buildings contracting companies in Saudi Arabia</p>   
                         </div>
                         <div>
                             <img src="./images/bFSteal.webp" class="md:flex hidden w-[570] h-[375px]" alt="Steal">
@@ -195,5 +195,147 @@
             <div id="footer" class="bg-[#EC7E00] bo"></div>
         <!-- End Footer -->
     </div>
+
+        <!-- Script for translation -->
+        <script>
+            const translations = {
+                en: {
+                    homePage: 'Home',
+                    businessText: 'Businesses',
+                    busOptics : 'almira optics',
+                    busSteamatic : 'almira steammatic',
+                    busSteal : 'almira steal',
+                    busMedical : 'almira medical',
+                    busFurniture : 'carpet & furniture',
+                    aboutUs: 'About Us',
+                    contactUs: 'Contact US',
+                    almiraSteal: 'ALMIRA FOR STEEL BUILDING',
+                    homeTitle: 'Home',
+                    servicesTitle: 'Services',
+                    projectsTitle: 'Projects',
+                    aboutSteal:'About Al-Mira For Steel Building',
+                    stealTitle1:'Al-Mira undertakes the Construction of Projects on a Turnkey basis. This includes: Site Preparation. Substructure and Superstructure concrete works. Finishing work. Supply and Steel Erection buildings…etc',
+                    stealHead1: 'Steel Erection',
+                    stealTitle2: 'Specialized Erectors of Pre-engineered and Structural Steel Buildings and cladding products. Al-Mira has a distinctive track record of successful steel erection jobs for all types',
+                    stealHead2: 'Al-Mira Center For Trading Co. Ltd. Contracting and Maintenance',
+                    stealTitle3: 'Contracting and Maintenance Division is one of the leading steel buildings contracting companies in Saudi Arabia',
+
+                    headTitle : 'Head Office',
+                    address : 'Dammam - Khobar Road, Nasiriyah, Dammam, Kingdom of Saudi Arabia.',
+                    aboutMember : 'Founder of Al-Mira Group, which specializes in several different fields',
+                    sectors : 'Sectors',
+                    sector1 : 'AL-MIRA OPTICS CO.LTD.',
+                    sector2 : 'almira steamatic',
+                    sector3 : 'almira steel',
+                    sector4 : 'almira medical',
+                    sector5 : 'carpet & furniture',
+                },
+                ar: {
+                    homePage: 'الرئيسية',
+                    businessText: 'قطاعات الأعمال',
+                    busOptics : 'الميره للبصريات',
+                    busSteamatic : 'الميره ستيماتيك',
+                    busSteal : 'الميره للحديد',
+                    busMedical : 'الميره للأدوات الطبية',
+                    busFurniture : 'للسجاد والمفروشات',
+                    aboutUs: 'عنا',
+                    contactUs: 'اتصل بنا',
+                    almiraSteal: 'الميره للمباني الحديدية',
+                    homeTitle: 'الرئيسية',
+                    servicesTitle: 'الخدمات',
+                    projectsTitle: 'المشاريع',
+                    aboutSteal:'الميره للمباني الحديدية',
+                    stealTitle1:'تتولى شركة الميرة تنفيذ المشاريع على أساس تسليم المفتاح، ويشمل ذلك: تجهيز الموقع، أعمال الخرسانة للبنية التحتية والفوقية، أعمال التشطيب، توريد وتركيب المباني الفولاذية... إلخ.',
+                    stealHead1: 'البناء الصلب',
+                    stealTitle2: 'متخصصون في تركيب المباني الفولاذية والإنشائية ومنتجات الكسوة. تتمتع شركة الميرة بسجل حافل من أعمال التركيبات الفولاذية الناجحة لجميع أنواع',
+                    stealHead2:'شركة مركز الميرة للتجارة (المقاولات والصيانة)',
+                    stealTitle3: 'يعتبر قسم المقاولات والصيانة إحدى الشركات الرائدة في مجال مقاولات المباني الحديدية في المملكة العربية السعودية.',
+
+                    headTitle :'المكتب الرئيسي',
+                    address :'طريق الدمام الخبر، حى الناصرية، الدمام، المملكة العربية السعودية',
+                    aboutMember :'مؤسس مجموعة شركات الميرة القابضة المتخصصة في عدة مجالات مختلفة',
+                    sectors :'قطاعات الأعمال',
+                    sector1 :' الميره للبصريات',
+                    sector2 :' الميره ستيماتيك',
+                    sector3 :'  الميره للحديد',
+                    sector4 :'الميره للأدوات الطبية',
+                    sector5 :'للسجاد والمفروشات ',
+                }
+            };
+
+            let currentLanguage = localStorage.getItem('language') || 'en';
+
+            function updateLanguage(lang) {
+                document.getElementById("homePage").textContent = translations[lang].homePage;
+                document.getElementById("businessText").textContent = translations[lang].businessText;
+                document.getElementById("busOptics").textContent = translations[lang].busOptics;
+                document.getElementById("busSteamatic").textContent = translations[lang].busSteamatic;
+                document.getElementById("busSteal").textContent = translations[lang].busSteal;
+                document.getElementById("busMedical").textContent = translations[lang].busMedical;
+                document.getElementById("busFurniture").textContent = translations[lang].busFurniture;
+                document.getElementById("aboutUs").textContent = translations[lang].aboutUs;
+                document.getElementById("contactUs").textContent = translations[lang].contactUs;
+                document.getElementById("almiraSteal").textContent = translations[lang].almiraSteal;
+                document.getElementById("homeTitle").textContent = translations[lang].homeTitle;
+                document.getElementById("servicesTitle").textContent = translations[lang].servicesTitle;
+                document.getElementById("projectsTitle").textContent = translations[lang].projectsTitle;
+                document.getElementById("aboutSteal").textContent = translations[lang].aboutSteal;
+                document.getElementById("stealTitle1").textContent = translations[lang].stealTitle1;
+                document.getElementById("stealHead1").textContent = translations[lang].stealHead1;
+                document.getElementById("stealTitle2").textContent = translations[lang].stealTitle2;
+                document.getElementById("stealHead2").textContent = translations[lang].stealHead2;
+                document.getElementById("stealTitle3").textContent = translations[lang].stealTitle3;
+
+
+                document.getElementById("headTitle").textContent = translations[lang].headTitle;
+                document.getElementById("aboutMember").textContent = translations[lang].aboutMember;
+                document.getElementById("address").textContent = translations[lang].address;
+                document.getElementById("sectors").textContent = translations[lang].sectors;
+                document.getElementById("sector1").textContent = translations[lang].sector1;
+                document.getElementById("sector2").textContent = translations[lang].sector2;
+                document.getElementById("sector3").textContent = translations[lang].sector3;
+                document.getElementById("sector4").textContent = translations[lang].sector4;
+                document.getElementById("sector5").textContent = translations[lang].sector5;
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                if (currentLanguage === "ar") {
+                    document.body.setAttribute("dir", "rtl");
+                    document.body.style.fontFamily = "'Cairo', sans-serif";
+                    document.querySelector(".language-text").textContent = "English";
+                    document.querySelector(".language-toggle").classList.add("lg:mr-32");
+                } else {
+                    document.body.setAttribute("dir", "ltr");
+                    document.body.style.fontFamily = "'Rubik', sans-serif";
+                    document.querySelector(".language-text").textContent = "Arabic";
+                    document.querySelector(".language-toggle").classList.add("lg:ml-32");
+                }
+                updateLanguage(currentLanguage); 
+            });
+
+            document.querySelectorAll(".language-toggle").forEach(function (toggleButton) {
+                toggleButton.addEventListener("click", function () {
+                    if (currentLanguage === "en") {
+                        currentLanguage = "ar";
+                        toggleButton.querySelector(".language-text").textContent = "English";
+                        document.body.setAttribute("dir", "rtl");
+                        document.body.style.fontFamily = "'Cairo', sans-serif";
+                        toggleButton.classList.remove("lg:ml-32");
+                        toggleButton.classList.add("lg:mr-32");
+                    } else {
+                        currentLanguage = "en";
+                        toggleButton.querySelector(".language-text").textContent = "Arabic";
+                        document.body.setAttribute("dir", "ltr");
+                        document.body.style.fontFamily = "'Rubik', sans-serif";
+                        toggleButton.classList.remove("lg:mr-32");
+                        toggleButton.classList.add("lg:ml-32");
+                    }
+
+                    localStorage.setItem('language', currentLanguage);  
+                    updateLanguage(currentLanguage); 
+                });
+            });
+        </script>
+    
 </body>
 </html>
