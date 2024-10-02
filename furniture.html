@@ -75,35 +75,35 @@
                                         <ul class="flex flex-col space-y-4 mt-8">
                                             <a href="./index.html" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
                                                 <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
-                                                <p>Home</p>
+                                                <p id="sidebarHome">Home</p>
                                             </a>
                                             <div class="relative">
                                                 <a id="business-link-unique" href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
                                                     <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
-                                                    <p>Business</p>
+                                                    <p id="sidebarBusiness">Business</p>
                                                     <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                                                     </svg>
                                                 </a>
                                                 <div id="business-dropdown-unique" class="absolute left-[25%] w-[170px] h-[208px] bg-[#006144] rounded-lg hidden">
-                                                    <a href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
-                                                    <a href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
-                                                    <a href="./steal.html" class="block p-2 text-[15px] text-white">Almira steel</a>
-                                                    <a href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
-                                                    <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                                                    <a id="businessOptics" href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
+                                                    <a id="businessSteam" href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
+                                                    <a id="businessSteal" href="./steal.html" class="block p-2 text-[15px] text-white">Almira steel</a>
+                                                    <a id="businessMedical" href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
+                                                    <a id="businessFurn" href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                                                 </div>
                                             </div>
                                             <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
                                                 <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
-                                                <p>About Us</p>
+                                                <p id="businessAboutus">About Us</p>
                                             </a>
                                             <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
                                                 <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
-                                                <p>Contact Us</p>
+                                                <p id="businessContactus">Contact Us</p>
                                             </a>
                                             <a href="#" class="language-toggle flex items-center gap-3 text-[22px] font-medium text-black mb-3">
                                                 <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
-                                                <p class="language-text">Language</p>
+                                                <p id="sideLanguage" class="language-text">Language</p>
                                             </a>
                                         </ul>
                                     </div>
@@ -195,6 +195,16 @@
                                 aboutTitle2: 'We also have a wide collection of local made carpets manufactured by our Sister Company, M/s. Al-Mira Carpet Factory Co. Ltd. Our factory manufactures high quality commercial contract carpets specifically for residential compounds, mosques, offices, hotels, banks, commercial establishments and schools made out of 100% PP, 100% Acrylic and 80/20 Wool/Nylon',
                                 aboutTitle3: 'Our reputation relies not only in providing good quality carpet but also in giving high standard of quality service to our customers through our well-trained professional staff and up to date high technology tools and equipment. Our well-known satisfied clients include; Saudi Aramco, Saudi Oger, Palaces, several western Housing Compounds, company staff quarters and business complexes around the Kingdom – a list containing some more companies is attached herewith',
                                 aboutTitle4: 'In addition, our company is also engaged in marketing a wide range of imported furniture, décor and gift articles. Our showrooms are located at Dammam, Jeddah, and Al Khoba',
+                                sidebarHome: 'Home',
+                                sidebarBusiness: 'Business',
+                                businessOptics: 'Almira optics',
+                                businessSteam: 'Almira Steamatic',
+                                businessSteal: 'Almira Steal',
+                                businessMedical: 'Almira Medical',
+                                businessFurn: 'Carpet & Furniture',
+                                businessAboutus: 'About Us',
+                                businessContactus: 'Contact Us',
+                                sideLanguage: 'Language',
 
                                 headTitle : 'Head Office',
                                 address : 'Dammam - Khobar Road, Nasiriyah, Dammam, Kingdom of Saudi Arabia.',
@@ -224,7 +234,16 @@
                                 aboutTitle2: 'لدينا أيضًا مجموعة واسعة من السجاد المصنوع محليًا من تصنيع شركتنا الشقيقة "شركة و مصنع الميرة للسجاد" حيث يقوم مصنعنا بتصنيع سجاد عالي الجودة خصيصًا للمجمعات السكنية والمساجد والمكاتب والفنادق والبنوك والمؤسسات التجارية والمدارس مصنوع من 100٪ PP و 100٪ أكريليك و 80/20 صوف / نايلون.',
                                 aboutTitle3: 'لا تعتمد سمعتنا على توفير سجاد عالي الجودة فقط بل تعتمد أيضًا على تقديم مستوى عالٍ من الخدمة عالية الجودة لعملائنا من خلال موظفينا المحترفين المدربين جيدًا والأدوات والمعدات الحديثة عالية الجودة. تشمل قائمة عملائنا المشهورين ما يلي: أرامكو السعودية، سعودي أوجيه، القصور، العديد من المجمعات السكنية الغربية، أماكن موظفي الشركة والمجمعات التجارية في جميع أنحاء المملكة',
                                 aboutTitle4: 'بالإضافة إلى ذلك، تقوم شركتنا أيضًا بتسويق مجموعة واسعة من الأثاث والديكور والهدايا المستوردة. تقع معارضنا في الدمام وجدة والخبر',
-
+                                sidebarHome: 'الرئيسية',
+                                sidebarBusiness: 'الأعمال',
+                                businessOptics: 'الميره للبصريات',
+                                businessSteam: 'الميره ستيماتيك',
+                                businessSteal: 'الميره للمباني الحديدية',
+                                businessMedical: 'الميره للأجهزة الطبية',
+                                businessFurn: 'الميره للسجاد والمفروشات',
+                                businessAboutus: 'عنا',
+                                businessContactus: 'اتصل بنا',
+                                sideLanguage: 'اللغة',
 
                                 headTitle :'المكتب الرئيسي',
                                 address :'طريق الدمام الخبر، حى الناصرية، الدمام، المملكة العربية السعودية',
@@ -258,6 +277,17 @@
                             document.getElementById("aboutTitle2").textContent = translations[lang].aboutTitle2;
                             document.getElementById("aboutTitle3").textContent = translations[lang].aboutTitle3;
                             document.getElementById("aboutTitle4").textContent = translations[lang].aboutTitle4;
+                            document.getElementById("sidebarHome").textContent = translations[lang].sidebarHome;
+                            document.getElementById("sidebarBusiness").textContent = translations[lang].sidebarBusiness;
+                            document.getElementById("businessOptics").textContent = translations[lang].businessOptics;
+                            document.getElementById("businessSteam").textContent = translations[lang].businessSteam;
+                            document.getElementById("businessSteal").textContent = translations[lang].businessSteal;
+                            document.getElementById("businessMedical").textContent = translations[lang].businessMedical;
+                            document.getElementById("businessFurn").textContent = translations[lang].businessFurn;
+                            document.getElementById("businessAboutus").textContent = translations[lang].businessAboutus;
+                            document.getElementById("businessContactus").textContent = translations[lang].businessContactus;
+                            document.getElementById("sideLanguage").textContent = translations[lang].sideLanguage;
+
                             document.getElementById("headTitle").textContent = translations[lang].headTitle;
                             document.getElementById("address").textContent = translations[lang].address;
                             document.getElementById("sectors").textContent = translations[lang].sectors;

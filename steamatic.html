@@ -67,45 +67,45 @@
                             </nav>
                             <!-- Sidebar for Small Screens -->
                             <div id="sidebar" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden">
-                                <div class="flex flex-col  h-full w-64 bg-white p-4">
-                                    <button id="close-sidebar" class="text-black text-2xl w-6 h-6 self-end relative rtl:right-[5%] ltr:left-[5%]  transform ltr:rotate-180">
-                                        <img src="./images/close-x.svg" alt="Close">
-                                    </button>           
-                                    <ul class="flex flex-col space-y-4 mt-8">
-                                        <a href="./index.html" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                            <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
-                                            <p>Home</p>
+                            <div class="flex flex-col  h-full w-64 bg-white p-4">
+                                <button id="close-sidebar" class="text-black text-2xl w-6 h-6 self-end relative rtl:right-[5%] ltr:left-[5%]  transform ltr:rotate-180">
+                                    <img src="./images/close-x.svg" alt="Close">
+                                </button>           
+                                <ul class="flex flex-col space-y-4 mt-8">
+                                    <a href="./index.html" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                        <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
+                                        <p id="sidebarHome">Home</p>
+                                    </a>
+                                    <div class="relative">
+                                        <a id="business-link-unique" href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                            <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
+                                            <p id="sidebarBusiness">Business</p>
+                                            <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                            </svg>
                                         </a>
-                                        <div class="relative">
-                                            <a id="business-link-unique" href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                                <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
-                                                <p>Business</p>
-                                                <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                            <div id="business-dropdown-unique" class="absolute left-[25%] w-[170px] h-[208px] bg-[#006144] rounded-lg hidden">
-                                                <a href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
-                                                <a href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
-                                                <a href="./steal.html" class="block p-2 text-[15px] text-white">Almira steel</a>
-                                                <a href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
-                                                <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
-                                            </div>
+                                        <div id="business-dropdown-unique" class="absolute left-[25%] w-[170px] h-[208px] bg-[#006144] rounded-lg hidden">
+                                            <a id="businessOptics" href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
+                                            <a id="businessSteam" href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
+                                            <a id="businessSteal" href="./steal.html" class="block p-2 text-[15px] text-white">Almira steel</a>
+                                            <a id="businessMedical" href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
+                                            <a id="businessFurn" href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                                         </div>
-                                        <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                            <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
-                                            <p>About Us</p>
-                                        </a>
-                                        <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                            <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
-                                            <p>Contact Us</p>
-                                        </a>
-                                        <a href="#" class="language-toggle flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                            <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
-                                            <p class="language-text">Language</p>
-                                        </a>
-                                    </ul>
-                                </div>
+                                    </div>
+                                    <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                        <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
+                                        <p id="businessAboutus">About Us</p>
+                                    </a>
+                                    <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                        <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
+                                        <p id="businessContactus">Contact Us</p>
+                                    </a>
+                                    <a href="#" class="language-toggle flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                        <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
+                                        <p id="sideLanguage" class="language-text">Language</p>
+                                    </a>
+                                </ul>
+                            </div>
                             </div>
                         </div>
                     <!-- End Navbar -->
@@ -202,6 +202,16 @@
                                 steamaticTitle3: 'Al Mira Investment Group Co. Ltd established Al Mira Steamatic in 1991 currently operating in the Kingdom of Saudi Arabia with offices located in Dammam, Jubail, Jeddah, Makkah, Madina, Yanbu and Riyadh, we recently opened our branch in UAE Dubai',
                                 steamaticTitle4: ' Al Mira Steamatic has a history of being a leader in the indoor air quality and emergency response business. We have eleven profit sources namely Fire Restoration, Water Restoration, Carpet Cleaning, Furniture Cleaning, Drapery Cleaning, Air Duct and Coil Cleaning, Wood Restoration, Ceiling Cleaning and Wall and Floor Cleaning',
                                 steamaticTitle5: 'We are proud to announce that Al Mira Steamatic is certified and accredited by some of the biggest companies and institutes in Restoration service',
+                                sidebarHome: 'Home',
+                                sidebarBusiness: 'Business',
+                                businessOptics: 'Almira optics',
+                                businessSteam: 'Almira Steamatic',
+                                businessSteal: 'Almira Steal',
+                                businessMedical: 'Almira Medical',
+                                businessFurn: 'Carpet & Furniture',
+                                businessAboutus: 'About Us',
+                                businessContactus: 'Contact Us',
+                                sideLanguage: 'Language',
 
                                 headTitle : 'Head Office',
                                 address : 'Dammam - Khobar Road, Nasiriyah, Dammam, Kingdom of Saudi Arabia.',
@@ -232,7 +242,16 @@
                                 steamaticTitle3: 'كما أننا افتتحنا مؤخرًا فرعنا في الإمارات العربية المتحدة دبي. تتمتع شركة الميرة ستيماتيك بتاريخ من كونها رائدة في مجال جودة الهواء الداخلي والاستجابة لحالات الطوارئ. ',
                                 steamaticTitle4: 'لدينا أحد عشر مصدرًا للربح وهي استعادة الحرائق، وتجديد المياه، وتنظيف السجاد، وتنظيف الأثاث، وتنظيف الستائر، وتنظيف مجاري الهواء والملفات، وترميم الخشب، وتنظيف السقف، وتنظيف الجدران والأرضيات.',
                                 steamaticTitle5: 'نحن فخورون بأن نعلن أن شركة الميرة ستيماتيك معتمدة من قبل بعض أكبر الشركات والمعاهد في خدمات الترميم.',
-
+                                sidebarHome: 'الرئيسية',
+                                sidebarBusiness: 'الأعمال',
+                                businessOptics: 'الميره للبصريات',
+                                businessSteam: 'الميره ستيماتيك',
+                                businessSteal: 'الميره للمباني الحديدية',
+                                businessMedical: 'الميره للأجهزة الطبية',
+                                businessFurn: 'الميره للسجاد والمفروشات',
+                                businessAboutus: 'عنا',
+                                businessContactus: 'اتصل بنا',
+                                sideLanguage: 'اللغة',
 
                                 headTitle :'المكتب الرئيسي',
                                 address :'طريق الدمام الخبر، حى الناصرية، الدمام، المملكة العربية السعودية',
@@ -267,7 +286,16 @@
                             document.getElementById("steamaticTitle3").textContent = translations[lang].steamaticTitle3;
                             document.getElementById("steamaticTitle4").textContent = translations[lang].steamaticTitle4;
                             document.getElementById("steamaticTitle5").textContent = translations[lang].steamaticTitle5;
-
+                            document.getElementById("sidebarHome").textContent = translations[lang].sidebarHome;
+                            document.getElementById("sidebarBusiness").textContent = translations[lang].sidebarBusiness;
+                            document.getElementById("businessOptics").textContent = translations[lang].businessOptics;
+                            document.getElementById("businessSteam").textContent = translations[lang].businessSteam;
+                            document.getElementById("businessSteal").textContent = translations[lang].businessSteal;
+                            document.getElementById("businessMedical").textContent = translations[lang].businessMedical;
+                            document.getElementById("businessFurn").textContent = translations[lang].businessFurn;
+                            document.getElementById("businessAboutus").textContent = translations[lang].businessAboutus;
+                            document.getElementById("businessContactus").textContent = translations[lang].businessContactus;
+                            document.getElementById("sideLanguage").textContent = translations[lang].sideLanguage;
 
                             document.getElementById("headTitle").textContent = translations[lang].headTitle;
                             document.getElementById("address").textContent = translations[lang].address;
