@@ -26,7 +26,7 @@
     <div>
         <!-- Start Header -->
             <div>
-                <nav class="md:bg-white md:text-black text-white md:shadow-md z-50 absolute top-10 left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[1030px] md:w-[760px]  h-[88px] rounded-lg">
+                <nav class="md:bg-white md:text-black text-white md:shadow-md z-50 absolute top-10 left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px]  h-[88px] rounded-lg">
                     <div class=" flex justify-between items-center py-2 px-4 md:py-4 md:px-6">
                         <div class="lg:hidden">
                         <button id="menu-toggle" class="text-white text-3xl">
@@ -41,7 +41,7 @@
                                 <span class="font-bold">ALMIRA GROUP</span>
                             </a>
                             </div>
-                        <div id="menu-items" class="hidden md:flex items-center gap-4 lg:gap-8">
+                        <div id="menu-items" class="hidden md:flex items-center gap-4 lg:gap-8 ">
                         <a href="./index.html" id="homePage" class="text-lg lg:text-[22px]  font-medium text-white bg-[#006144] px-4 py-2 rounded-lg">Home</a>
                         <div class="relative">
                             <button id="business-toggle" class="text-sm font-semibold flex items-center">
@@ -51,20 +51,19 @@
                             </svg>
                             </button>
                             <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#006144] rounded-lg hidden">
-                            <a href="./optics.html" class="block p-2 text-[15px] text-white">almira optics</a>
-                            <a href="./steamatic.html" class="block p-2 text-[15px] text-white">almira steamatic</a>
-                            <a href="./steal.html" class="block p-2 text-[15px] text-white">almira steel</a>
-                            <a href="./medical.html" class="block p-2 text-[15px] text-white">almira medical</a>
-                            <a href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                            <a href="./optics.html" id="busOptics" class="block p-2 text-[15px] text-white">almira optics</a>
+                            <a href="./steamatic.html" id="busSteamatic" class="block p-2 text-[15px] text-white">almira steamatic</a>
+                            <a href="./steal.html" id="busSteal" class="block p-2 text-[15px] text-white">almira steel</a>
+                            <a href="./medical.html" id="busMedical" class="block p-2 text-[15px] text-white">almira medical</a>
+                            <a href="./furniture.html" id="busFurniture" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                             </div>
                         </div>
                         <a href="#about-section" id="about-us" class="text-lg lg:text-[22px]  font-normal">About Us</a>
                         <a href="#" id="contact-us" class="text-lg lg:text-[22px]  font-normal">Contact Us</a>
-                        <div class="language-toggle flex items-center gap-2 cursor-pointer  ltr:lg:ml-10 rtl:lg:mr-10" id="toggle-language">
+                        <div class="language-toggle flex items-center gap-2 cursor-pointer lg:ml-32" id="toggle-language">
                             <img src="./images/world.svg" alt="World Logo" class="order-1">
                             <span class="language-text text-xl md:text-2xl font-normal" id="language-text">Arabic</span>
                         </div>
-                        
                         </div>
                     </div>
                 </nav>
@@ -244,7 +243,7 @@
 
         <!-- Start Statistics -->
             <div class="bg-[#F4F3F3]">
-                <div class="container mx-auto px-4 py-20 flex flex-col gap-8 md:flex-row md:justify-evenly">
+                <div class="container mx-auto px-4 py-20 flex flex-col gap-8 md:flex-row md:justify-evenly" id="stats-container" data-language="en">
                     <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
                         <img src="./images/users_svgrepo.com.webp" alt="users" class="w-16 h-16">
                         <p id="EmployeNumbers" class="text-2xl">Working Employment</p>
@@ -266,6 +265,7 @@
                         <p class="text-[#006144] text-[42px]">5</p>
                     </div>
                 </div>
+                
             </div> 
         <!-- End Statistics -->
 
@@ -290,64 +290,8 @@
     </div>
 
 
-    <!-- <script>
-        const translations = {
-            en: {
-                title: "ALMIRA GROUP",
-                home: "Home",
-                business: "Businesses",
-                aboutUs: "About Us",
-                contactUs: "Contact Us",
-            },
-            ar: {
-                title: "مجموعة الميره",
-                home: "الرئيسية",
-                business: "الأعمال",
-                aboutUs: "من نحن",
-                contactUs: "اتصل بنا",
-            },
-        };
-
-        let currentLanguage = 'en';
-
-        function updateText() {
-            const title = document.getElementById('main-title');
-            const homePage = document.getElementById('homePage');
-            const businessText = document.getElementById('business-text');
-            const aboutUs = document.getElementById('about-us');
-            const contactUs = document.getElementById('contact-us');
-            const languageText = document.getElementById('language-text');
-
-            if (currentLanguage === 'en') {
-                title.textContent = translations.en.title;
-                homePage.textContent = translations.en.home;
-                businessText.textContent = translations.en.business;
-                aboutUs.textContent = translations.en.aboutUs;
-                contactUs.textContent = translations.en.contactUs;
-                languageText.textContent = 'Arabic';
-                document.documentElement.setAttribute('dir', 'ltr'); // Set direction to LTR
-            } else {
-                title.textContent = translations.ar.title;
-                homePage.textContent = translations.ar.home;
-                businessText.textContent = translations.ar.business;
-                aboutUs.textContent = translations.ar.aboutUs;
-                contactUs.textContent = translations.ar.contactUs;
-                languageText.textContent = 'English';
-                document.documentElement.setAttribute('dir', 'rtl'); // Set direction to LTR
-
-            }
-        }
-
-        document.getElementById('toggle-language').addEventListener('click', () => {
-            currentLanguage = currentLanguage === 'ar' ? 'en' : 'ar';
-            updateText(); 
-        });
-
-        updateText();
-    </script> -->
-
     <!-- Script for translation -->
-     <script>
+    <script>
         const translations = {
         en: {
         homePage : 'Home',
@@ -383,7 +327,13 @@
         paraFour : 'Then in 1992, sons of Abdulghani Ibrahim Al Meera established Al Meera Investment Group, which included the following:',
         listFour : 'Al Meera Steammatic',
         listFive : 'Al Meera Optics Limited Company',
-        listSix : 'Al Meera Carpet Factory'
+        listSix : 'Al Meera Carpet Factory',
+        busOptics : 'almira optics',
+        busSteamatic : 'almira steammatic',
+        busSteal : 'almira steal',
+        busMedical : 'almira medical',
+        busFurniture : 'carpet & furniture',
+
     },
     ar: {
         homePage :'الرئيسية',
@@ -419,40 +369,31 @@
         paraFour :'ثم في عام 1992، قام أبناء عبد الغني إبراهيم ميرة بتأسيس مجموعة الميرة الاستثمارية وتضمنت ما يلي:',
         listFour :'الميرا ستيماتيك.',
         listFive :'شركة الميرة للبصريات المحدودة.',
-        listSix :'مصنع الميرة للسجاد.'
+        listSix :'مصنع الميرة للسجاد.',
+        busOptics : 'الميره للبصريات',
+        busSteamatic : 'الميره ستيماتيك',
+        busSteal : 'الميره للحديد',
+        busMedical : 'الميره للأدوات الطبية',
+        busFurniture : 'للسجاد والمفروشات',
     }
 };
 
 let currentLanguage = "en"; 
 
 function updateLanguage(lang) {
+    document.getElementById("imageHeader").textContent = translations[lang].imageHeader;
+    document.getElementById("EmployeNumbers").textContent = translations[lang].EmployeNumbers;
+    document.getElementById("yoExpearience").textContent = translations[lang].yoExpearience;
+    document.getElementById("noProjects").textContent = translations[lang].noProjects;
     document.getElementById("homePage").textContent = translations[lang].homePage;
     document.getElementById("almeraPara").textContent = translations[lang].almeraPara;
     document.getElementById("almeraHeader").textContent = translations[lang].almeraHeader;
     document.getElementById("almeraSection").textContent = translations[lang].almeraSection;
     document.getElementById("almiraGroup").textContent = translations[lang].almiraGroup;
-    document.getElementById("imageHeader").textContent = translations[lang].imageHeader;
-    document.getElementById("business-text").textContent = translations[lang].businessText;
-    document.getElementById("about-us").textContent = translations[lang].aboutUs;
-    document.getElementById("contact-us").textContent = translations[lang].contactUs;
-    document.getElementById("meraOptics").textContent = translations[lang].sector1;
-    document.getElementById("meraSteamatic").textContent = translations[lang].sector2;
-    document.getElementById("meraSteal").textContent = translations[lang].sector3;
-    document.getElementById("meraMedical").textContent = translations[lang].sector4;
-    document.getElementById("meraCarpet").textContent = translations[lang].sector5;
-    document.getElementById("EmployeNumbers").textContent = translations[lang].EmployeNumbers;
-    document.getElementById("yoExpearience").textContent = translations[lang].yoExpearience;
-    document.getElementById("noProjects").textContent = translations[lang].noProjects;
-    document.getElementById("bLine").textContent = translations[lang].bLine;
-    document.getElementById("bMembers").textContent = translations[lang].bMembers;
-    document.getElementById("nMember").textContent = translations[lang].nMember;
-    document.getElementById("aboutMember").textContent = translations[lang].aboutMember;
-    document.getElementById("headTitle").textContent = translations[lang].headTitle;
-    document.getElementById("address").textContent = translations[lang].address;
-    document.getElementById("sectors").textContent = translations[lang].sectors;
     document.getElementById("paraOne").textContent = translations[lang].paraOne;
     document.getElementById("paraTwo").textContent = translations[lang].paraTwo;
     document.getElementById("paraThree").textContent = translations[lang].paraThree;
+    document.getElementById("sectors").textContent = translations[lang].sectors;
     document.getElementById("listOne").textContent = translations[lang].listOne;
     document.getElementById("listTwo").textContent = translations[lang].listTwo;
     document.getElementById("listThree").textContent = translations[lang].listThree;
@@ -460,6 +401,25 @@ function updateLanguage(lang) {
     document.getElementById("listFour").textContent = translations[lang].listFour;
     document.getElementById("listFive").textContent = translations[lang].listFive;
     document.getElementById("listSix").textContent = translations[lang].listSix;
+    document.getElementById("bLine").textContent = translations[lang].bLine;
+    document.getElementById("bMembers").textContent = translations[lang].bMembers;
+    document.getElementById("nMember").textContent = translations[lang].nMember;
+    document.getElementById("aboutMember").textContent = translations[lang].aboutMember;
+    document.getElementById("headTitle").textContent = translations[lang].headTitle;
+    document.getElementById("address").textContent = translations[lang].address;
+    document.getElementById("business-text").textContent = translations[lang].businessText;
+    document.getElementById("about-us").textContent = translations[lang].aboutUs;
+    document.getElementById("contact-us").textContent = translations[lang].contactUs;
+    document.getElementById("busOptics").textContent = translations[lang].busOptics;
+    document.getElementById("busSteamatic").textContent = translations[lang].busSteamatic;
+    document.getElementById("busSteal").textContent = translations[lang].busSteal;
+    document.getElementById("busMedical").textContent = translations[lang].busMedical;
+    document.getElementById("busFurniture").textContent = translations[lang].busFurniture;
+    document.getElementById("meraOptics").textContent = translations[lang].sector1;
+    document.getElementById("meraSteamatic").textContent = translations[lang].sector2;
+    document.getElementById("meraSteal").textContent = translations[lang].sector3;
+    document.getElementById("meraMedical").textContent = translations[lang].sector4;
+    document.getElementById("meraCarpet").textContent = translations[lang].sector5;
 }
 
 document.querySelectorAll(".language-toggle").forEach(function(toggleButton) {
@@ -470,10 +430,24 @@ document.querySelectorAll(".language-toggle").forEach(function(toggleButton) {
             currentLanguage = "ar";
             toggleButton.querySelector(".language-text").textContent = "English";
             document.body.setAttribute("dir", "rtl");
+
+            document.querySelectorAll("#stats-container > div").forEach((div) => {
+                div.classList.remove("md:border-r");
+                div.classList.add("md:border-l");
+                div.classList.remove("md:pr-20");
+                div.classList.add("md:pl-20");
+            });
         } else {
             currentLanguage = "en";
             toggleButton.querySelector(".language-text").textContent = "Arabic";
             document.body.setAttribute("dir", "ltr");
+
+            document.querySelectorAll("#stats-container > div").forEach((div) => {
+                div.classList.remove("md:border-l");
+                div.classList.add("md:border-r");
+                div.classList.remove("md:pl-20");
+                div.classList.add("md:pr-20");
+            });
         }
 
         toggleButton.setAttribute("data-language", currentLanguage);
