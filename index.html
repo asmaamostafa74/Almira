@@ -27,9 +27,9 @@
 <body >
     <div>
         <!-- Start Header -->
-        <div class="">
-            <nav class="md:bg-white md:text-black text-white md:shadow-md z-50 absolute top-10 left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px] h-[88px] rounded-lg">
-                <div class="flex justify-between items-center py-2 px-4 md:py-4 md:px-6">
+        <div >
+            <nav class="md:bg-white md:text-black text-white md:shadow-md z-50 absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px] h-[76px] rounded-lg">
+                <div class="flex justify-between items-center py-2 px-4 md:py-2 lg:px-12">
                     <div class="lg:hidden">
                         <button id="menu-toggle" class="text-white text-3xl">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
@@ -39,8 +39,7 @@
                     </div>
                     <div class="flex items-center space-x-2">
                         <a href="./index.html" class="text-right">
-                            <h1 id="main-title" class="text-lg md:text-xl font-bold">مجموعة الميره</h1>
-                            <span class="font-bold">ALMIRA GROUP</span>
+                            <img src="./images/almiraLogo.svg" alt="Almira Logo">
                         </a>
                     </div>
                     <div id="menu-items" class="hidden md:flex items-center gap-4 lg:gap-8">
@@ -55,7 +54,7 @@
                             <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#006144] rounded-lg hidden">
                                 <a href="./optics.html" id="busOptics" class="block p-2 text-[15px] text-white">almira optics</a>
                                 <a href="./steamatic.html" id="busSteamatic" class="block p-2 text-[15px] text-white">almira steamatic</a>
-                                <a href="./steal.html" id="busSteal" class="block p-2 text-[15px] text-white">almira steel</a>
+                                <a href="./steel.html" id="bussteel" class="block p-2 text-[15px] text-white">almira steel</a>
                                 <a href="./medical.html" id="busMedical" class="block p-2 text-[15px] text-white">almira medical</a>
                                 <a href="./furniture.html" id="busFurniture" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                             </div>
@@ -92,7 +91,7 @@
                             <div id="business-dropdown-unique" class="absolute left-[25%] w-[180px] h-[208px] bg-[#006144] rounded-lg hidden">
                                 <a id="businessOptics" href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
                                 <a id="businessSteam" href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
-                                <a id="businessSteal" href="./steal.html" class="block p-2 text-[15px] text-white">Almira steel</a>
+                                <a id="businesssteel" href="./steel.html" class="block p-2 text-[15px] text-white">Almira steel</a>
                                 <a id="businessMedical" href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
                                 <a id="businessFurn" href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                             </div>
@@ -124,7 +123,7 @@
                 </div>
             </header>
         </div>
-        
+        <!-- End Header -->
 
         <!-- Start Almira Section -->
             <section>
@@ -147,10 +146,10 @@
                                 
                         <a href="./steamatic.html">
                             <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
-                                <img src="./images/steamatic.webp" alt="Al-Mira Steammatic" class="w-[379px] h-48 object-cover">
+                                <img src="./images/steamatic.webp" alt="Al-Mira steamatic" class="w-[379px] h-48 object-cover">
                                 <div class="p-4 text-center">
                                 <h3 class="text-[#00367E] text-xl sm:text-2xl font-semibold mb-1">الميره ستيماتيك</h3>
-                                <h3 class="text-xl sm:text-2xl font-semibold mb-2">Al-Mira Steammatic</h3>
+                                <h3 class="text-xl sm:text-2xl font-semibold mb-2">Al-Mira steamatic</h3>
                                 </div>
                                 <hr>
                                 <div class="p-3 text-center">
@@ -159,12 +158,12 @@
                             </div>
                         </a>
                     
-                        <a href="./steal.html">
+                        <a href="./steel.html">
                             <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
-                                <img src="./images/steel.webp" alt="Al-Mira Steal" class="w-[379px] h-48 object-cover">
+                                <img src="./images/steel.webp" alt="Al-Mira steel" class="w-[379px] h-48 object-cover">
                                 <div class="p-4 text-center">
                                 <h3 class="text-[#EC7E00] text-xl sm:text-2xl font-semibold mb-1">الميره للمباني حديدية</h3>
-                                <h3 class="text-xl sm:text-xl font-semibold mb-2">Al-Mira For Steal Building</h3>
+                                <h3 class="text-xl sm:text-xl font-semibold mb-2">Al-Mira For steel Building</h3>
                                 </div>
                                 <hr>
                                 <div class="pt-2 pb-4 text-center">
@@ -209,7 +208,7 @@
         <!-- Start About -->
             <div id="about-section" class="bg-[#F4F3F3] rounded-lg mt-20">
                 <div class="container mx-auto flex flex-col lg:flex-row justify-evenly items-center p-11">
-                    <div class="lg:w-[40%] p-6 ">
+                    <div class="lg:w-[40%]">
                         <h1 id="almiraGroup" class="text-3xl font-bold text-green-800 mb-4 uppercase">about Almira group</h1>
                         <p id="paraOne" class="mb-4">Since the beginning of the twentieth century, Abdulghani Ibrahim Al Meera started trading spices from his shop located in the small market opposite the Grand <br>  Mosque in Mecca. The business then grew.</p>
                         <p id="paraTwo" class="mb-4">In 1977, Abdulghani Ibrahim Al Meera laid the foundation stone for Al Meera Trading and Importing Establishment.</p>
@@ -221,7 +220,7 @@
                         </ul>
                         <p id="paraFour" class="mb-4">Then in 1992, sons of Abdulghani Ibrahim Al Meera established Al Meera Investment Group, which included the following:</p>
                         <ul class="list-disc list-inside ml-4">
-                            <li id="listFour">Al Meera Steammatic</li>
+                            <li id="listFour">Al Meera steamatic</li>
                             <li id="listFive">Al Meera Optics Limited Company</li>
                             <li id="listSix">Al Meera Carpet Factory</li>
                         </ul>
@@ -272,7 +271,7 @@
 
         <!-- Start Members -->
             <div class="bg-[#FAF9F9] ">
-                <div class="container mx-auto flex md:flex-row flex-col justify-around p-20">
+                <div class="container mx-auto flex md:flex-row flex-col justify-around sm:p-2 p-10">
                 <div class="flex flex-col justify-center gap-3">
                     <h1 id="bMembers" class="text-[#006144] font-bold text-3xl">Board Members</h1>
                     <p id="nMember" class="font-bold text-[32px]">Salah Al-Mira</p>
@@ -355,7 +354,7 @@
         sidebarBusiness: 'Business',
         businessOptics: 'Almira optics',
         businessSteam: 'Almira Steamatic',
-        businessSteal: 'Almira Steal',
+        businesssteel: 'Almira steel',
         businessMedical: 'Almira Medical',
         businessFurn: 'Carpet & Furniture',
         businessAboutus: 'About Us',
@@ -374,12 +373,12 @@
         listTwo : 'Medical Division.',
         listThree : 'Contracting and Maintenance Division.',
         paraFour : 'Then in 1992, sons of Abdulghani Ibrahim Al Meera established Al Meera Investment Group, which included the following:',
-        listFour : 'Al Meera Steammatic',
+        listFour : 'Al Meera steamatic',
         listFive : 'Al Meera Optics Limited Company',
         listSix : 'Al Meera Carpet Factory',
         busOptics : 'almira optics',
-        busSteamatic : 'almira steammatic',
-        busSteal : 'almira steal',
+        busSteamatic : 'almira steamatic',
+        bussteel : 'almira steel',
         busMedical : 'almira medical',
         busFurniture : 'carpet & furniture',
 
@@ -407,7 +406,7 @@
         sidebarBusiness: 'الأعمال',
         businessOptics: 'الميره للبصريات',
         businessSteam: 'الميره ستيماتيك',
-        businessSteal: 'الميره للمباني الحديدية',
+        businesssteel: 'الميره للمباني الحديدية',
         businessMedical: 'الميره للأجهزة الطبية',
         businessFurn: 'الميره للسجاد والمفروشات',
         businessAboutus: 'عنا',
@@ -439,7 +438,7 @@
         listSix :'مصنع الميرة للسجاد.',
         busOptics : 'الميره للبصريات',
         busSteamatic : 'الميره ستيماتيك',
-        busSteal : 'الميره للحديد',
+        bussteel : 'الميره للحديد',
         busMedical : 'الميره للأدوات الطبية',
         busFurniture : 'للسجاد والمفروشات',
     }
@@ -479,14 +478,14 @@ function updateLanguage(lang) {
     document.getElementById("contactUs").textContent = translations[lang].contactUs;
     document.getElementById("busOptics").textContent = translations[lang].busOptics;
     document.getElementById("busSteamatic").textContent = translations[lang].busSteamatic;
-    document.getElementById("busSteal").textContent = translations[lang].busSteal;
+    document.getElementById("bussteel").textContent = translations[lang].bussteel;
     document.getElementById("busMedical").textContent = translations[lang].busMedical;
     document.getElementById("busFurniture").textContent = translations[lang].busFurniture;
     document.getElementById("sidebarHome").textContent = translations[lang].sidebarHome;
     document.getElementById("sidebarBusiness").textContent = translations[lang].sidebarBusiness;
     document.getElementById("businessOptics").textContent = translations[lang].businessOptics;
     document.getElementById("businessSteam").textContent = translations[lang].businessSteam;
-    document.getElementById("businessSteal").textContent = translations[lang].businessSteal;
+    document.getElementById("businesssteel").textContent = translations[lang].businesssteel;
     document.getElementById("businessMedical").textContent = translations[lang].businessMedical;
     document.getElementById("businessFurn").textContent = translations[lang].businessFurn;
     document.getElementById("businessAboutus").textContent = translations[lang].businessAboutus;

@@ -24,96 +24,96 @@
 </style>
 <body class="bg-[#F4F3F3]">
                     <!-- Start Navbar -->
-                    <div>
-                        <nav class="lg:bg-[#E0E0E0] md:text-black text-white lg:shadow-md z-50 absolute top-20 left-[50%] transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px] rounded-lg">
-                            <div class=" flex justify-between items-center h-[88px] py-2 px-4 md:py-4 md:px-6">
-                                <div class="lg:hidden">
-                                    <button id="menu-toggle" class="flex text-black text-3xl">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="flex items-center space-x-2 lg:ml-20">
-                                    <a href="./index.html" class="text-right">
-                                        <img src="./images/furnLogo.svg" alt="Furniture Logo">
-                                    </a>
+                        <div>
+                            <nav class="lg:bg-[#E0E0E0] md:text-black text-white lg:shadow-md z-50 absolute top-[50px] left-[50%] transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px] rounded-lg">
+                                <div class=" flex justify-between items-center h-[76px] py-2 px-4 md:py-4 md:px-6">
+                                    <div class="lg:hidden">
+                                        <button id="menu-toggle" class="flex text-black text-3xl">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                            </svg>
+                                        </button>
                                     </div>
-                                <div id="menu-items" class="hidden lg:flex items-center gap-4 lg:gap-8">
-                                <a href="./index.html" id="homePage"  class="text-lg lg:text-[22px]  font-normal">Home</a>
-                                <div class="relative">
-                                    <button id="business-toggle" class="lg:text-[22px] lg:text-lg font-bold text-white bg-[#AB8542] rounded-lg p-1 flex items-center">
-                                        <span id="businessText" class="">Businesses</span>
-                                        <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                    <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#AB8542] rounded-lg hidden">
-                                        <a href="./optics.html" id="busOptics" class="block p-2 text-[15px] text-white">almira optics</a>
-                                        <a href="./steamatic.html" id="busSteamatic" class="block p-2 text-[15px] text-white">almira steamatic</a>
-                                        <a href="./steal.html" id="busSteal" class="block p-2 text-[15px] text-white">almira steel</a>
-                                        <a href="./medical.html" id="busMedical" class="block p-2 text-[15px] text-white">almira medical</a>
-                                        <a href="./furniture.html" id="busFurniture" class="block p-2 text-[15px] text-white">carpet & furniture</a>
-                                    </div>
-                                </div>
-                                <a href="#about-section" id="aboutUs" class="text-lg lg:text-[22px]  font-normal">About Us</a>
-                                <a href="#" id="contactUs" class="text-lg lg:text-[22px]  font-normal">Contact Us</a>
-                                <div class="language-toggle flex items-center gap-2 cursor-pointer">
-                                    <img src="./images/world.svg" alt="World Logo" class="order-1">
-                                    <span class="language-text text-xl md:text-2xl font-normal">Arabic</span>
-                                </div>
-                                </div>
-                            </div>
-                        </nav>
-
-                            <!-- Sidebar for Small Screens -->
-                            <div id="sidebar" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden">
-                                <div class="flex flex-col  h-full w-64 bg-white p-4">
-                                    <button id="close-sidebar" class="text-black text-2xl w-6 h-6 self-end relative rtl:right-[5%] ltr:left-[5%]  transform ltr:rotate-180">
-                                        <img src="./images/close-x.svg" alt="Close">
-                                    </button>           
-                                    <ul class="flex flex-col space-y-4 mt-8">
-                                        <a href="./index.html" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                            <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
-                                            <p id="sidebarHome">Home</p>
+                                    <div class="flex items-center space-x-2 lg:ml-20">
+                                        <a href="./index.html" class="text-right">
+                                            <img src="./images/furnLogo.svg" alt="Furniture Logo">
                                         </a>
-                                        <div class="relative">
-                                            <a id="business-link-unique" href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                                <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
-                                                <p id="sidebarBusiness">Business</p>
-                                                <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                            <div id="business-dropdown-unique" class="absolute left-[25%] w-[180px] h-[208px] bg-[#006144] rounded-lg hidden">
-                                                <a id="businessOptics" href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
-                                                <a id="businessSteam" href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
-                                                <a id="businessSteal" href="./steal.html" class="block p-2 text-[15px] text-white">Almira steel</a>
-                                                <a id="businessMedical" href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
-                                                <a id="businessFurn" href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
-                                            </div>
                                         </div>
-                                        <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                            <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
-                                            <p id="businessAboutus">About Us</p>
-                                        </a>
-                                        <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                            <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
-                                            <p id="businessContactus">Contact Us</p>
-                                        </a>
-                                        <a href="#" class="language-toggle flex items-center gap-3 text-[22px] font-medium text-black mb-3">
-                                            <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
-                                            <p id="sideLanguage" class="language-text">Language</p>
-                                        </a>
-                                    </ul>
+                                    <div id="menu-items" class="hidden lg:flex items-center gap-4 lg:gap-8">
+                                    <a href="./index.html" id="homePage"  class="text-lg lg:text-[22px]  font-normal">Home</a>
+                                    <div class="relative">
+                                        <button id="business-toggle" class="lg:text-[22px] lg:text-lg font-bold text-white bg-[#AB8542] rounded-lg p-1 flex items-center">
+                                            <span id="businessText" class="">Businesses</span>
+                                            <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                        <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#AB8542] rounded-lg hidden">
+                                            <a href="./optics.html" id="busOptics" class="block p-2 text-[15px] text-white">almira optics</a>
+                                            <a href="./steamatic.html" id="busSteamatic" class="block p-2 text-[15px] text-white">almira steamatic</a>
+                                            <a href="./steel.html" id="bussteel" class="block p-2 text-[15px] text-white">almira steel</a>
+                                            <a href="./medical.html" id="busMedical" class="block p-2 text-[15px] text-white">almira medical</a>
+                                            <a href="./furniture.html" id="busFurniture" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                                        </div>
+                                    </div>
+                                    <a href="#about-section" id="aboutUs" class="text-lg lg:text-[22px]  font-normal">About Us</a>
+                                    <a href="#" id="contactUs" class="text-lg lg:text-[22px]  font-normal">Contact Us</a>
+                                    <div class="language-toggle flex items-center gap-2 cursor-pointer">
+                                        <img src="./images/world.svg" alt="World Logo" class="order-1">
+                                        <span class="language-text text-xl md:text-2xl font-normal">Arabic</span>
+                                    </div>
+                                    </div>
                                 </div>
-                            </div>
-                    </div>
-                <!-- End Navbar -->
+                            </nav>
+
+                                <!-- Sidebar for Small Screens -->
+                                <div id="sidebar" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden">
+                                    <div class="flex flex-col  h-full w-64 bg-white p-4">
+                                        <button id="close-sidebar" class="text-black text-2xl w-6 h-6 self-end relative rtl:right-[5%] ltr:left-[5%]  transform ltr:rotate-180">
+                                            <img src="./images/close-x.svg" alt="Close">
+                                        </button>           
+                                        <ul class="flex flex-col space-y-4 mt-8">
+                                            <a href="./index.html" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                                <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
+                                                <p id="sidebarHome">Home</p>
+                                            </a>
+                                            <div class="relative">
+                                                <a id="business-link-unique" href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                                    <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
+                                                    <p id="sidebarBusiness">Business</p>
+                                                    <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </a>
+                                                <div id="business-dropdown-unique" class="absolute left-[25%] w-[180px] h-[208px] bg-[#006144] rounded-lg hidden">
+                                                    <a id="businessOptics" href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
+                                                    <a id="businessSteam" href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
+                                                    <a id="businesssteel" href="./steel.html" class="block p-2 text-[15px] text-white">Almira steel</a>
+                                                    <a id="businessMedical" href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
+                                                    <a id="businessFurn" href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                                <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
+                                                <p id="businessAboutus">About Us</p>
+                                            </a>
+                                            <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                                <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
+                                                <p id="businessContactus">Contact Us</p>
+                                            </a>
+                                            <a href="#" class="language-toggle flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                                <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
+                                                <p id="sideLanguage" class="language-text">Language</p>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    <!-- End Navbar -->
                     
                     <!-- Title -->
                         <header class="flex items-center container mx-auto relative">
-                            <div class="relative z-10 flex flex-col items-start  text-white mt-20">
+                            <div class="ltr:ml-16 rtl:mr-16 relative z-10 flex flex-col items-start  text-white mt-20">
                                 <h1 id="almeraHeader" class="animate__animated animate__zoomIn font-bold md:text-[58px] text-[28px] text-[#AB8542] ml-20 sm:ml-0 uppercase mt-24">Carpet & Fueniture Gallery </h1>
                                     <div class="md:flex hidden flex-row items-center justify-center bg-[#E0E0E0] rounded-lg  mt-4 px-4 py-2 gap-8">
                                         <a href="./furniture.html" id="homeTitle" class="text-[#AB8542] font-normal text-[22px]">Home</a>
@@ -171,8 +171,8 @@
                         homePage: 'Home',
                         businessText: 'Businesses',
                         busOptics : 'almira optics',
-                        busSteamatic : 'almira steammatic',
-                        busSteal : 'almira steal',
+                        busSteamatic : 'almira steamatic',
+                        bussteel : 'almira steel',
                         busMedical : 'almira medical',
                         busFurniture : 'carpet & furniture',
                         aboutUs: 'About Us',
@@ -193,7 +193,7 @@
                         sidebarBusiness: 'Business',
                         businessOptics: 'Almira optics',
                         businessSteam: 'Almira Steamatic',
-                        businessSteal: 'Almira Steal',
+                        businesssteel: 'Almira steel',
                         businessMedical: 'Almira Medical',
                         businessFurn: 'Carpet & Furniture',
                         businessAboutus: 'About Us',
@@ -205,7 +205,7 @@
                         businessText: 'قطاعات الأعمال',
                         busOptics : 'الميره للبصريات',
                         busSteamatic : 'الميره ستيماتيك',
-                        busSteal : 'الميره للحديد',
+                        bussteel : 'الميره للحديد',
                         busMedical : 'الميره للأدوات الطبية',
                         busFurniture : 'للسجاد والمفروشات',
                         aboutUs: 'عنا',
@@ -226,7 +226,7 @@
                         sidebarBusiness: 'الأعمال',
                         businessOptics: 'الميره للبصريات',
                         businessSteam: 'الميره ستيماتيك',
-                        businessSteal: 'الميره للمباني الحديدية',
+                        businesssteel: 'الميره للمباني الحديدية',
                         businessMedical: 'الميره للأجهزة الطبية',
                         businessFurn: 'الميره للسجاد والمفروشات',
                         businessAboutus: 'عنا',
@@ -242,7 +242,7 @@
                     document.getElementById("businessText").textContent = translations[lang].businessText;
                     document.getElementById("busOptics").textContent = translations[lang].busOptics;
                     document.getElementById("busSteamatic").textContent = translations[lang].busSteamatic;
-                    document.getElementById("busSteal").textContent = translations[lang].busSteal;
+                    document.getElementById("bussteel").textContent = translations[lang].bussteel;
                     document.getElementById("busMedical").textContent = translations[lang].busMedical;
                     document.getElementById("busFurniture").textContent = translations[lang].busFurniture;
                     document.getElementById("aboutUs").textContent = translations[lang].aboutUs;
@@ -263,7 +263,7 @@
                     document.getElementById("sidebarBusiness").textContent = translations[lang].sidebarBusiness;
                     document.getElementById("businessOptics").textContent = translations[lang].businessOptics;
                     document.getElementById("businessSteam").textContent = translations[lang].businessSteam;
-                    document.getElementById("businessSteal").textContent = translations[lang].businessSteal;
+                    document.getElementById("businesssteel").textContent = translations[lang].businesssteel;
                     document.getElementById("businessMedical").textContent = translations[lang].businessMedical;
                     document.getElementById("businessFurn").textContent = translations[lang].businessFurn;
                     document.getElementById("businessAboutus").textContent = translations[lang].businessAboutus;

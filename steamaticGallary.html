@@ -25,8 +25,8 @@
 <body style="font-family: 'Rubik', sans-serif;" class="bg-[#F4F3F3]">
                     <!-- Start Navbar -->
                         <div>
-                            <nav class="lg:bg-[#E0E0E0] md:text-black text-white lg:shadow-md z-50 absolute top-16 left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px] rounded-lg">
-                                <div class=" flex justify-between items-center  h-[88px] py-2 px-4 md:py-4 md:px-6">
+                            <nav class="lg:bg-[#E0E0E0] md:text-black text-white lg:shadow-md z-50 absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px] rounded-lg">
+                                <div class=" flex justify-between items-center  h-[76px] py-2 px-4 md:py-4 md:px-6">
                                     <div class="lg:hidden">
                                     <button id="menu-toggle" class="text-black text-3xl">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
@@ -51,7 +51,7 @@
                                         <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#00367E] rounded-lg hidden">
                                             <a href="./optics.html" id="busOptics" class="block p-2 text-[15px] text-white">almira optics</a>
                                             <a href="./steamatic.html" id="busSteamatic" class="block p-2 text-[15px] text-white">almira steamatic</a>
-                                            <a href="./steal.html" id="busSteal" class="block p-2 text-[15px] text-white">almira steel</a>
+                                            <a href="./steel.html" id="bussteel" class="block p-2 text-[15px] text-white">almira steel</a>
                                             <a href="./medical.html" id="busMedical" class="block p-2 text-[15px] text-white">almira medical</a>
                                             <a href="./furniture.html" id="busFurniture" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                                         </div>
@@ -87,7 +87,7 @@
                                             <div id="business-dropdown-unique" class="absolute left-[25%] w-[180px] h-[208px] bg-[#006144] rounded-lg hidden">
                                                 <a id="businessOptics" href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
                                                 <a id="businessSteam" href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
-                                                <a id="businessSteal" href="./steal.html" class="block p-2 text-[15px] text-white">Almira steel</a>
+                                                <a id="businesssteel" href="./steel.html" class="block p-2 text-[15px] text-white">Almira steel</a>
                                                 <a id="businessMedical" href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
                                                 <a id="businessFurn" href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                                             </div>
@@ -173,8 +173,8 @@
                                 homePage: 'Home',
                                 businessText: 'Businesses',
                                 busOptics : 'almira optics',
-                                busSteamatic : 'almira steammatic',
-                                busSteal : 'almira steal',
+                                busSteamatic : 'almira steamatic',
+                                bussteel : 'almira steel',
                                 busMedical : 'almira medical',
                                 busFurniture : 'carpet & furniture',
                                 aboutUs: 'About Us',
@@ -188,7 +188,7 @@
                                 sidebarBusiness: 'Business',
                                 businessOptics: 'Almira optics',
                                 businessSteam: 'Almira Steamatic',
-                                businessSteal: 'Almira Steal',
+                                businesssteel: 'Almira steel',
                                 businessMedical: 'Almira Medical',
                                 businessFurn: 'Carpet & Furniture',
                                 businessAboutus: 'About Us',
@@ -209,7 +209,7 @@
                                 businessText: 'قطاعات الأعمال',
                                 busOptics : 'الميره للبصريات',
                                 busSteamatic : 'الميره ستيماتيك',
-                                busSteal : 'الميره للحديد',
+                                bussteel : 'الميره للحديد',
                                 busMedical : 'الميره للأدوات الطبية',
                                 busFurniture : 'للسجاد والمفروشات',
                                 aboutUs: 'عنا',
@@ -223,7 +223,7 @@
                                 sidebarBusiness: 'الأعمال',
                                 businessOptics: 'الميره للبصريات',
                                 businessSteam: 'الميره ستيماتيك',
-                                businessSteal: 'الميره للمباني الحديدية',
+                                businesssteel: 'الميره للمباني الحديدية',
                                 businessMedical: 'الميره للأجهزة الطبية',
                                 businessFurn: 'الميره للسجاد والمفروشات',
                                 businessAboutus: 'عنا',
@@ -248,7 +248,7 @@
                             document.getElementById("businessText").textContent = translations[lang].businessText;
                             document.getElementById("busOptics").textContent = translations[lang].busOptics;
                             document.getElementById("busSteamatic").textContent = translations[lang].busSteamatic;
-                            document.getElementById("busSteal").textContent = translations[lang].busSteal;
+                            document.getElementById("bussteel").textContent = translations[lang].bussteel;
                             document.getElementById("busMedical").textContent = translations[lang].busMedical;
                             document.getElementById("busFurniture").textContent = translations[lang].busFurniture;
                             document.getElementById("aboutUs").textContent = translations[lang].aboutUs;
@@ -262,7 +262,7 @@
                             document.getElementById("sidebarBusiness").textContent = translations[lang].sidebarBusiness;
                             document.getElementById("businessOptics").textContent = translations[lang].businessOptics;
                             document.getElementById("businessSteam").textContent = translations[lang].businessSteam;
-                            document.getElementById("businessSteal").textContent = translations[lang].businessSteal;
+                            document.getElementById("businesssteel").textContent = translations[lang].businesssteel;
                             document.getElementById("businessMedical").textContent = translations[lang].businessMedical;
                             document.getElementById("businessFurn").textContent = translations[lang].businessFurn;
                             document.getElementById("businessAboutus").textContent = translations[lang].businessAboutus;
