@@ -73,16 +73,16 @@
                 <!-- Sidebar for Small Screens -->
                 <div id="sidebar" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden">
                     <div class="flex flex-col  h-full w-64 bg-white p-4">
-                        <button id="close-sidebar" class="text-black text-2xl w-6 h-6 self-end relative rtl:right-[5%] ltr:left-[5%]  transform ltr:rotate-180">
-                            <img src="./images/close-x.svg" alt="Close">
+                        <button id="close-sidebar" class="text-black text-2xl flex items-center justify-center self-end relative bg-[#E0E0E0] rounded-lg w-[45px] h-[45px] rtl:right-[-80%] ltr:right-[81%]  transform ltr:rotate-180">
+                            <img src="./images/menuToggle.svg" class="" alt="">
                         </button>           
-                        <ul class="flex flex-col space-y-4 mt-8">
-                            <a href="./index.html" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                        <ul class="flex flex-col mt-8">
+                            <a href="./index.html" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
                                 <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
                                 <p id="sidebarHome">Home</p>
                             </a>
                             <div class="relative">
-                                <a id="business-link-unique" href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                                <a id="business-link-unique" href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
                                     <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
                                     <p id="sidebarBusiness">Business</p>
                                     <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -97,15 +97,15 @@
                                     <a id="businessFurn" href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                                 </div>
                             </div>
-                            <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                            <a href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
                                 <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
                                 <p id="businessAboutus">About Us</p>
                             </a>
-                            <a href="#" class="flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                            <a href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
                                 <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
                                 <p id="businessContactus">Contact Us</p>
                             </a>
-                            <a href="#" class="language-toggle flex items-center gap-3 text-[22px] font-medium text-black mb-3">
+                            <a href="#" class="language-toggle flex items-center gap-6 text-[22px] font-medium text-black mb-6">
                                 <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
                                 <p id="sideLanguage" class="language-text">Language</p>
                             </a>
@@ -115,7 +115,7 @@
                     
                 <!-- Hero Section -->
                     <header class="relative h-[60vh] md:h-[890px] container mx-auto">
-                        <img src="./images/hero.webp" alt="City" class="absolute inset-0 md:w-full w-full h-full object-cover">
+                        <img src="./images/hero.webp" alt="City" class="absolute inset-0 sm:w-full h-full  object-cover">
                         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
                         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
                             <h1 id="almeraHeader" class="animate__animated animate__zoomIn text-4xl md:text-[60px] font-bold mb-5 ">ALMIRA GROUP</h1>
@@ -244,31 +244,31 @@
         <!-- End Second Section -->
 
         <!-- Start Statistics -->
-            <div class="bg-[#F4F3F3]">
-                <div class="container mx-auto px-4 py-20 flex flex-col gap-8 md:flex-row md:justify-evenly" id="stats-container" data-language="en">
-                    <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
-                        <img src="./images/users_svgrepo.com.webp" alt="users" class="w-16 h-16">
-                        <p id="EmployeNumbers" class="text-2xl">Working Employment</p>
-                        <p class="text-[#006144] text-[42px]">+400</p>
-                    </div>
-                    <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
-                        <img src="./images/calendar_svgrepo.com.webp" alt="calendar" class="w-16 h-16">
-                        <p id="yoExpearience" class="text-2xl">Years In Business</p>
-                        <p class="text-[#006144] text-[42px]">+50</p>
-                    </div>
-                    <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
-                        <img src="./images/profits-graphic_svgrepo.com.webp" alt="profits" class="w-16 h-16">
-                        <p id="noProjects" class="text-2xl">Projects</p>
-                        <p class="text-[#006144] text-[42px]">+300</p>
-                    </div>
-                    <div class="flex flex-col items-center justify-center gap-3 text-center">
-                        <img src="./images/buildings-thin_svgrepo.com.webp" alt="buildings" class="w-16 h-16">
-                        <p id="bLine" class="text-2xl">Business Lines</p>
-                        <p class="text-[#006144] text-[42px]">5</p>
-                    </div>
+        <div class="bg-[#F4F3F3]">
+            <div class="container mx-auto px-4 py-20 flex flex-col gap-8 md:flex-row md:justify-evenly" id="stats-container" data-language="en">
+                <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
+                    <img src="./images/users_svgrepo.com.webp" alt="users" class="w-16 h-16">
+                    <p class="text-2xl">Working Employment</p>
+                    <p id="EmployeNumbersCounter" class="text-[#006144] text-[42px]">0</p>
                 </div>
-                
-            </div> 
+                <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
+                    <img src="./images/calendar_svgrepo.com.webp" alt="calendar" class="w-16 h-16">
+                    <p class="text-2xl">Years In Business</p>
+                    <p id="yoExpearienceCounter" class="text-[#006144] text-[42px]">0</p>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
+                    <img src="./images/profits-graphic_svgrepo.com.webp" alt="profits" class="w-16 h-16">
+                    <p class="text-2xl">Projects</p>
+                    <p id="noProjectsCounter" class="text-[#006144] text-[42px]">0</p>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3 text-center">
+                    <img src="./images/buildings-thin_svgrepo.com.webp" alt="buildings" class="w-16 h-16">
+                    <p class="text-2xl">Business Lines</p>
+                    <p id="bLineCounter" class="text-[#006144] text-[42px]">0</p>
+                </div>
+            </div>
+        </div>
+        
         <!-- End Statistics -->
 
         <!-- Start Members -->
@@ -509,5 +509,46 @@ document.querySelectorAll(".language-toggle").forEach(function(toggleButton) {
 });
 
     </script>
+
+    <!-- Script For Counter -->
+    <script>
+        function animateCounter(id, start, end, duration, withPlus) {
+            const element = document.getElementById(id);
+            let startTime = null;
+    
+            function countStep(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                const currentCount = Math.floor(progress * (end - start) + start);
+                
+                if (withPlus) {
+                    element.textContent = `+${currentCount}`;
+                } else {
+                    element.textContent = currentCount;
+                }
+    
+                if (progress < 1) {
+                    window.requestAnimationFrame(countStep);
+                } else {
+                    if (withPlus) {
+                        element.textContent = `+${end}`;
+                    } else {
+                        element.textContent = end;
+                    }
+                }
+            }
+    
+            window.requestAnimationFrame(countStep);
+        }
+    
+        document.addEventListener('DOMContentLoaded', () => {
+            animateCounter("EmployeNumbersCounter", 0, 400, 3000, true);
+            animateCounter("yoExpearienceCounter", 0, 50, 3000, true);
+            animateCounter("noProjectsCounter", 0, 300, 3000, true);
+            animateCounter("bLineCounter", 0, 5, 3000, false);
+        });
+    </script>
+    
+
 </body>
 </html>
