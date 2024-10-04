@@ -26,7 +26,7 @@
                     <!-- Start Navbar -->
                         <div>
                             <nav class="lg:bg-[#E0E0E0] md:text-black text-white lg:shadow-md z-50 absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px]  rounded-lg">
-                                <div class=" flex justify-between items-center h-[76px] py-2 px-4 md:py-2 lg:px-12">
+                                <div class=" flex justify-between items-center h-[88px] py-2 px-4 md:py-2 lg:px-12">
                                     <div class="lg:hidden">
                                     <button id="menu-toggle" class="text-black text-3xl">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
@@ -115,16 +115,16 @@
                             <img src="./images/vacuum.webp" class="animate__animated animate__bounceInLeft w-[526px] h-[642px] mt-20" alt="vacuum">
                             <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
                                 <h1 id="almeraHeader" class="animate__animated animate__zoomIn font-bold md:text-[66px] text-[28px] text-[#00367E] uppercase">ALMIRA STEAMATIC</h1>
-                                    <div class="md:flex hidden flex-row items-center justify-center bg-[#E0E0E0] rounded-lg  mt-4 px-4 py-2 gap-8">
+                                    <div class="w-[387px] md:flex hidden flex-row items-center justify-center bg-[#E0E0E0] rounded-lg  mt-4 px-4 py-2 gap-8">
                                         <a id="homeTitle" href="./optics.html" class="text-white bg-[#00367E] py-1 px-4 rounded-md text-[22px] font-bold">Home</a>
                                         <a id="servicesTitle" href="" class="text-[#00367E] font-bold text-[22px]">Services</a> 
                                         <a id="gallaryTitle" href="./steamaticGallary.html" class="text-[#00367E] font-bold text-[22px]">Gallary</a>
                                 </div>
-                                <p id="steamaticTitle" class="md:w-[662px] font-normal md:text-2xl text-[18px] text-[#E0001A] mt-5 text-center">Al Mira Steamatic is a master franchisee of Steamatic Inc <br> USA. Our company provides high quality indoor air <br> services and emergency response services. </p>
+                                <p id="steamaticTitle" class="md:w-[662px] p-2 font-normal md:text-2xl text-[18px] text-[#E0001A] mt-5 text-center">Al Mira Steamatic is a master franchisee of Steamatic Inc <br> USA. Our company provides high quality indoor air <br> services and emergency response services. </p>
                             </div>
                         </header>
                     <!-- Title -->
-
+                    
                     <!-- Second Section -->
                         <section class="container mx-auto pb-10">
                             <div class="flex mt-10 mb-10">
@@ -311,7 +311,21 @@
                             } else {
                                 vacuumImage.src = "./images/forVacuum.webp";
                             }
-                        }
+                            if (lang === "ar") {
+                                document.getElementById("steamaticTitle").style.backgroundColor = "#ffffff";
+                            } else {
+                                document.getElementById("steamaticTitle").style.backgroundColor = ""; 
+                            }
+                            if (lang === "ar") {
+                                document.getElementById("homeTitle").style.fontWeight = "normal"
+                                document.getElementById("servicesTitle").style.fontWeight = "normal"
+                                document.getElementById("gallaryTitle").style.fontWeight = "normal"
+                            } else {
+                                document.getElementById("homeTitle").style.fontWeight = "bold"
+                                document.getElementById("servicesTitle").style.fontWeight = "bold"
+                                document.getElementById("gallaryTitle").style.fontWeight = "bold"
+                            }
+                        } 
 
                         document.addEventListener("DOMContentLoaded", function () {
             if (currentLanguage === "ar") {
@@ -354,6 +368,6 @@
                 updateLanguage(currentLanguage); 
             });
         });
-    </script>
+                    </script>
 </body>
 </html>
