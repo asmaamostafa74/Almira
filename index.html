@@ -46,7 +46,7 @@
                         <a href="./index.html" id="homePage" class="text-lg lg:text-[22px] font-medium text-white bg-[#006144] px-4 py-2 rounded-lg">Home</a>
                         <div class="relative">
                             <button id="business-toggle" class="text-sm font-semibold flex items-center">
-                                <span id="businessText" class="text-lg lg:text-[22px] font-normal">Businesses</span>
+                                <span id="businessText" class="text-lg lg:text-[22px] ltr:font-normal rtl:font-semibold">Businesses</span>
                                 <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                                 </svg>
@@ -59,8 +59,8 @@
                                 <a href="./furniture.html" id="busFurniture" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                             </div>
                         </div>
-                        <a href="#about-section" id="aboutUs" class="text-lg lg:text-[22px] font-normal">About Us</a>
-                        <a href="#" id="contactUs" class="text-lg lg:text-[22px] font-normal">Contact Us</a>
+                        <a href="#about-section" id="aboutUs" class="text-lg lg:text-[22px] ltr:font-normal rtl:font-semibold">About Us</a>
+                        <a href="#" id="contactUs" class="text-lg lg:text-[22px] ltr:font-normal rtl:font-semibold">Contact Us</a>
                         <div class="language-toggle flex items-center gap-2 cursor-pointer lg:ml-32" id="toggle-language">
                             <img src="./images/world.svg" alt="World Logo" class="order-1">
                             <span class="language-text text-xl md:text-2xl font-normal" id="language-text">Arabic</span>
@@ -116,8 +116,8 @@
             <header class="relative h-[60vh] md:h-[890px] container mx-auto">
                 <img src="./images/hero.webp" alt="City" class="absolute inset-0 w-full sm:h-full h-[812px] object-cover">
                 <div class="absolute inset-0 bg-black bg-opacity-50 w-full sm:h-full h-[812px] flex flex-col justify-center items-center"> 
-                    <h1 id="almeraHeader" class="animate__animated animate__zoomIn text-4xl md:text-[60px]  font-bold mb-5 text-white ">ALMIRA GROUP</h1>
-                    <p id="almeraPara" class="mt-4 text-lg md:text-[22px] font-normal w-[90%] md:w-[597px] leading-8 text-white text-center">
+                    <h1 id="almeraHeader" class="animate__animated animate__zoomIn text-4xl ltr:md:text-[60px] rtl:text-[58px] font-bold mb-5 text-white ">ALMIRA GROUP</h1>
+                    <p id="almeraPara" class="mt-4 text-lg md:text-[22px] ltr:font-normal rtl:font-semibold w-[90%] md:w-[597px] leading-8 text-white text-center">
                     Al-MIRA is a Group of companies <br> that specialized in several different fields, <br> and its role is to serve customers in the best possible way.
                     </p>
                 </div>
@@ -128,7 +128,7 @@
         <!-- Start Almira Section -->
             <section>
                 <div class="bg-[#F4F3F3] p-8 sm:p-10 md:p-16 lg:p-20 ">
-                    <h2 id="almeraSection" class="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#006144] uppercase sm:mt-0 mt-[500px] mb-24">Almira Sections</h2>
+                    <h2 id="almeraSection" class="text-center font-bold text-3xl sm:text-4xl md:text-5xl ltr:lg:text-6xl rtl:lg:text-[70px] text-[#006144] uppercase sm:mt-0 mt-[500px] mb-24">Almira Sections</h2>
                     <div class="flex flex-wrap justify-center gap-6 mb-12">
                         <a href="./optics.html">
                             <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
@@ -206,23 +206,23 @@
         <!-- End Almira Section -->
 
         <!-- Start About -->
-            <div id="about-section" class="bg-[#F4F3F3] rounded-lg mt-20">
-                <div class="container mx-auto flex flex-col lg:flex-row justify-evenly items-center p-11">
-                    <div class="lg:w-[40%]">
-                        <h1 id="almiraGroup" class="text-3xl font-bold text-green-800 mb-4 uppercase">about Almira group</h1>
-                        <p id="paraOne" class="mb-4">Since the beginning of the twentieth century, Abdulghani Ibrahim Al Meera started trading spices from his shop located in the small market opposite the Grand <br>  Mosque in Mecca. The business then grew.</p>
-                        <p id="paraTwo" class="mb-4">In 1977, Abdulghani Ibrahim Al Meera laid the foundation stone for Al Meera Trading and Importing Establishment.</p>
-                        <p id="paraThree" class="mb-4">In 1989, Abdul Latif and Mustafa, sons of Abdulghani Ibrahim Al Meera, established Al Meera Trading Center Limited Company, which included the following:</p>
+            <div id="about-section" class="bg-[#F4F3F3] rounded-lg mt-20 p-12">
+                <div class="container mx-auto flex flex-col lg:flex-row justify-evenly">
+                    <div class="lg:w-[638px] ml-5">
+                        <h1 id="almiraGroup" class="ltr:text-[55px] rtl:text-[70px] font-bold text-green-800 mb-4 uppercase">about Almira group</h1>
+                        <p id="paraOne" class="mb-4 ltr:font-normal text-2xl rtl:font-semibold text-[22px]">Since the beginning of the twentieth century, Abdulghani Ibrahim Al Meera started trading spices from his shop located in the small market opposite the Grand <br>  Mosque in Mecca. The business then grew.</p>
+                        <p id="paraTwo" class="mb-4 ltr:font-normal text-2xl rtl:font-semibold text-[22px]">In 1977, Abdulghani Ibrahim Al Meera laid the foundation stone for Al Meera Trading and Importing Establishment.</p>
+                        <p id="paraThree" class="mb-4 ltr:font-normal text-2xl rtl:font-semibold text-[22px]">In 1989, Abdul Latif and Mustafa, sons of Abdulghani Ibrahim Al Meera, established Al Meera Trading Center Limited Company, which included the following:</p>
                         <ul class="list-disc list-inside mb-4 ml-4">
-                            <li id="listOne">Furniture and Carpets Division.</li>
-                            <li id="listTwo">Medical Division.</li>
-                            <li id="listThree">Contracting and Maintenance Division.</li>
+                            <li id="listOne" class="ltr:font-normal text-2xl rtl:font-semibold text-[22px]">Furniture and Carpets Division.</li>
+                            <li id="listTwo" class="ltr:font-normal text-2xl rtl:font-semibold text-[22px]">Medical Division.</li>
+                            <li id="listThree" class="ltr:font-normal text-2xl rtl:font-semibold text-[22px]">Contracting and Maintenance Division.</li>
                         </ul>
-                        <p id="paraFour" class="mb-4">Then in 1992, sons of Abdulghani Ibrahim Al Meera established Al Meera Investment Group, which included the following:</p>
+                        <p id="paraFour" class="mb-4 ltr:font-normal text-2xl rtl:font-semibold text-[22px]">Then in 1992, sons of Abdulghani Ibrahim Al Meera established Al Meera Investment Group, which included the following:</p>
                         <ul class="list-disc list-inside ml-4">
-                            <li id="listFour">Al Meera steamatic</li>
-                            <li id="listFive">Al Meera Optics Limited Company</li>
-                            <li id="listSix">Al Meera Carpet Factory</li>
+                            <li id="listFour" class="ltr:font-normal text-2xl rtl:font-semibold text-[22px]">Al Meera steamatic</li>
+                            <li id="listFive" class="ltr:font-normal text-2xl rtl:font-semibold text-[22px]">Al Meera Optics Limited Company</li>
+                            <li id="listSix" class="ltr:font-normal text-2xl rtl:font-semibold text-[22px]">Al Meera Carpet Factory</li>
                         </ul>
                     </div>
                     <div class="p-11 md:flex hidden">
@@ -235,7 +235,7 @@
         <!-- Start Second Section -->
             <div class="container mx-auto relative">
                 <img src="./images/line.webp" alt="line" class="block w-full">
-                <h2 id="imageHeader" class="absolute inset-0 flex items-center justify-center text-white lg:text-[75px] text-2xl lg:font-bold font-medium py-2 uppercase">
+                <h2 id="imageHeader" class="absolute inset-0 flex items-center justify-center text-white ltr:lg:text-[75px] rtl:lg:text-[91px] rtl:lg:font-black text-2xl lg:font-bold font-medium py-2 uppercase">
                     YOUR GATE TO INVESTMENT
                 </h2>
             </div> 
@@ -246,36 +246,35 @@
             <div class="container mx-auto px-4 py-20 flex flex-col gap-8 md:flex-row md:justify-evenly" id="stats-container" data-language="en">
                 <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
                     <img src="./images/users_svgrepo.com.webp" alt="users" class="w-16 h-16">
-                    <p id="EmployeNumbers" class="text-2xl">Working Employment</p>
-                    <p id="EmployeNumbersCounter" class="text-[#006144] text-[42px]">0</p>
+                    <p id="EmployeNumbers" class="font-normal text-2xl">Working Employment</p>
+                    <p id="EmployeNumbersCounter" class="font-medium text-[#006144] text-[42px]">0</p>
                 </div>
                 <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
                     <img src="./images/calendar_svgrepo.com.webp" alt="calendar" class="w-16 h-16">
-                    <p id="yoExpearience" class="text-2xl">Years In Business</p>
-                    <p id="yoExpearienceCounter" class="text-[#006144] text-[42px]">0</p>
+                    <p id="yoExpearience" class="font-normal text-2xl">Years In Business</p>
+                    <p id="yoExpearienceCounter" class="font-medium text-[#006144] text-[42px]">0</p>
                 </div>
                 <div class="flex flex-col items-center justify-center gap-3 text-center md:border-r md:border-[#DDD8D8] md:pr-20">
                     <img src="./images/profits-graphic_svgrepo.com.webp" alt="profits" class="w-16 h-16">
-                    <p id="noProjects" class="text-2xl">Projects</p>
-                    <p id="noProjectsCounter" class="text-[#006144] text-[42px]">0</p>
+                    <p id="noProjects" class="font-normal text-2xl">Projects</p>
+                    <p id="noProjectsCounter" class="font-medium text-[#006144] text-[42px]">0</p>
                 </div>
                 <div class="flex flex-col items-center justify-center gap-3 text-center">
                     <img src="./images/buildings-thin_svgrepo.com.webp" alt="buildings" class="w-16 h-16">
-                    <p id="bLine" class="text-2xl">Business Lines</p>
-                    <p id="bLineCounter" class="text-[#006144] text-[42px]">0</p>
+                    <p id="bLine" class="font-normal text-2xl">Business Lines</p>
+                    <p id="bLineCounter" class="font-medium text-[#006144] text-[42px]">0</p>
                 </div>
             </div>
         </div>
-        
         <!-- End Statistics -->
 
         <!-- Start Members -->
             <div class="bg-[#FAF9F9] ">
                 <div class="container mx-auto flex md:flex-row flex-col justify-around sm:p-2 ltr:p-10 rtl:p-16">
                 <div class="flex flex-col justify-center gap-3">
-                    <h1 id="bMembers" class="text-[#006144] font-bold text-3xl">Board Members</h1>
-                    <p id="nMember" class="font-bold text-[32px]">Salah Al-Mira</p>
-                    <p id="aboutMember" class="font-medium text-2xl">Founder of Al-Mira Group, which specializes in several <br> different fields</p>
+                    <h1 id="bMembers" class="text-[#006144] font-bold ltr:text-[55px] rtl:text-[60px]">Board Members</h1>
+                    <p id="nMember" class="ltr:font-bold ltr:text-[32px] rtl:font-black rtl:text-[48px]">Salah Al-Mira</p>
+                    <p id="aboutMember" class="ltr:font-medium rtl:text-2xl rtl:font-semibold rtl:text-[32px]">Founder of Al-Mira Group, which specializes in several <br> different fields</p>
                 </div>
                 <div>
                     <img src="./images/Frame34.webp" alt="member" class="md:w-[441px] md:h-[441px]">
@@ -321,7 +320,7 @@
         }
     
         document.addEventListener('DOMContentLoaded', () => {
-            animateCounter("EmployeNumbersCounter", 0, 500, 4000, true);
+            animateCounter("EmployeNumbersCounter", 0, 400, 4000, true);
             animateCounter("yoExpearienceCounter", 0, 50, 4000, true);
             animateCounter("noProjectsCounter", 0, 300, 4000, true);
             animateCounter("bLineCounter", 0, 5, 4000, false);
