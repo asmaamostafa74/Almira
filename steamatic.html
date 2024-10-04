@@ -146,8 +146,8 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <img src="./images/Group26.webp" class="md:flex hidden transform rtl:-scale-x-100" alt="Little Vacuum">
-                                    <img src="./images/forVacuum.webp" class="md:flex hidden transform rtl:-scale-x-100" alt="Big Vacuum">
+                                    <img id="toggle-image" src="./images/Group26.webp" class="md:flex hidden" alt="Little Vacuum">
+                                    <img id="vacuum-image" src="./images/steamArabic.webp" class="md:flex hidden" alt="Big Vacuum">
                                 </div>
                             </div>
                         </section>
@@ -305,45 +305,55 @@
                             document.getElementById("sector3").textContent = translations[lang].sector3;
                             document.getElementById("sector4").textContent = translations[lang].sector4;
                             document.getElementById("sector5").textContent = translations[lang].sector5;
+                            const vacuumImage = document.getElementById("vacuum-image");
+                            if (lang === "ar") {
+                                vacuumImage.src = "./images/steamArabic.webp";
+                            } else {
+                                vacuumImage.src = "./images/forVacuum.webp";
+                            }
                         }
 
                         document.addEventListener("DOMContentLoaded", function () {
-                            if (currentLanguage === "ar") {
-                                document.body.setAttribute("dir", "rtl");
-                                document.body.style.fontFamily = "'Cairo', sans-serif";
-                                document.querySelector(".language-text").textContent = "English";
-                                document.querySelector(".language-toggle").classList.add("lg:mr-32");
-                            } else {
-                                document.body.setAttribute("dir", "ltr");
-                                document.body.style.fontFamily = "'Rubik', sans-serif";
-                                document.querySelector(".language-text").textContent = "Arabic";
-                                document.querySelector(".language-toggle").classList.add("lg:ml-32");
-                            }
-                            updateLanguage(currentLanguage); 
-                        });
+            if (currentLanguage === "ar") {
+                document.body.setAttribute("dir", "rtl");
+                document.body.style.fontFamily = "'Cairo', sans-serif";
+                document.querySelector(".language-text").textContent = "English";
+                document.querySelector(".language-toggle").classList.add("lg:mr-32");
+                document.getElementById("toggle-image").style.display = "none";
+            } else {
+                document.body.setAttribute("dir", "ltr");
+                document.body.style.fontFamily = "'Rubik', sans-serif";
+                document.querySelector(".language-text").textContent = "Arabic";
+                document.querySelector(".language-toggle").classList.add("lg:ml-32");
+                document.getElementById("toggle-image").style.display = "block";
+            }
+            updateLanguage(currentLanguage); 
+        });
 
-                        document.querySelectorAll(".language-toggle").forEach(function (toggleButton) {
-                            toggleButton.addEventListener("click", function () {
-                                if (currentLanguage === "en") {
-                                    currentLanguage = "ar";
-                                    toggleButton.querySelector(".language-text").textContent = "English";
-                                    document.body.setAttribute("dir", "rtl");
-                                    document.body.style.fontFamily = "'Cairo', sans-serif";
-                                    toggleButton.classList.remove("lg:ml-32");
-                                    toggleButton.classList.add("lg:mr-32");
-                                } else {
-                                    currentLanguage = "en";
-                                    toggleButton.querySelector(".language-text").textContent = "Arabic";
-                                    document.body.setAttribute("dir", "ltr");
-                                    document.body.style.fontFamily = "'Rubik', sans-serif";
-                                    toggleButton.classList.remove("lg:mr-32");
-                                    toggleButton.classList.add("lg:ml-32");
-                                }
+        document.querySelectorAll(".language-toggle").forEach(function (toggleButton) {
+            toggleButton.addEventListener("click", function () {
+                if (currentLanguage === "en") {
+                    currentLanguage = "ar";
+                    toggleButton.querySelector(".language-text").textContent = "English";
+                    document.body.setAttribute("dir", "rtl");
+                    document.body.style.fontFamily = "'Cairo', sans-serif";
+                    toggleButton.classList.remove("lg:ml-32");
+                    toggleButton.classList.add("lg:mr-32");
+                    document.getElementById("toggle-image").style.display = "none";
+                } else {
+                    currentLanguage = "en";
+                    toggleButton.querySelector(".language-text").textContent = "Arabic";
+                    document.body.setAttribute("dir", "ltr");
+                    document.body.style.fontFamily = "'Rubik', sans-serif";
+                    toggleButton.classList.remove("lg:mr-32");
+                    toggleButton.classList.add("lg:ml-32");
+                    document.getElementById("toggle-image").style.display = "block";
+                }
 
-                                localStorage.setItem('language', currentLanguage);  
-                                updateLanguage(currentLanguage); 
-                            });
-                        });
-                    </script>
+                localStorage.setItem('language', currentLanguage);  
+                updateLanguage(currentLanguage); 
+            });
+        });
+    </script>
 </body>
 </html>
