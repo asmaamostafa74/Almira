@@ -21,6 +21,9 @@
     .rtl {
     direction: rtl;   
 }
+.ltr {
+    direction: ltr;
+}
 </style>
 <body style="font-family: 'Rubik', sans-serif; " class="bg-[#F4F3F3]">
                     <!-- Start Navbar -->
@@ -140,8 +143,8 @@
                                         <p class="ltr:font-normal ltr:text-2xl rtl:font-semibold ltr:text-[22px] mb-[24px]" id="aboutTitle3">Our reputation relies not only in providing good quality carpet but also in giving high standard of quality service to our customers through our well-trained professional staff and up to date high technology tools and equipment. Our well-known satisfied clients include; Saudi Aramco, Saudi Oger, Palaces, several western Housing Compounds, company staff quarters and business complexes around the Kingdom – a list containing some more companies is attached herewith</p>
                                         <p class="ltr:font-normal ltr:text-2xl rtl:font-semibold ltr:text-[22px] mb-[88px]" id="aboutTitle4">In addition, our company is also engaged in marketing a wide range of imported furniture, décor and gift articles. Our showrooms are located at Dammam, Jeddah, and Al Khoba</p>
                                     </div>
-                                    <div class="relative md:flex hidden mt-[211px]">
-                                        <img src="./images/Group27.webp" class="w-[739.99px] h-[561.88px]" alt="forLamp">
+                                    <div class="relative md:flex hidden ltr:mt-[211px] rtl:mt-0">
+                                        <img id="vectorLang" src="./images/Group27.webp" class="w-[739.99px] h-[561.88px]" alt="forLamp">
                                         <img src="./images/lamp.webp" class="absolute ltr:top-[-40%] rtl:top-[-30%] left-[20%] w-[364px] h-[1024px]" alt="lamp">
                                     </div>
                                     
@@ -170,7 +173,72 @@
                     <!-- End icon Bar -->
 
                     <!-- Start Footer -->
-                        <div id="footer" class="bg-[#AB8542] sm:flex hidden"></div>
+                    <div class="bg-[#AB8542]">
+                        <footer class="sm:flex hidden container mx-auto text-white h-[472px] items-center pt-[88px] pb-[87px] pl-[118px] pr-[118px] ltr">
+                            <div class="flex">
+                                <div class="w-[665px]">
+                                    <h2 class="text-[30px] font-semibold mb-[24px]">ALMIRA FURNITURE & CARPET</h2>
+                                    <div class="flex">
+                                        <div>
+                                            <div>
+                                                <h2 class="text-[20px] font-semibold mb-1">Main Center</h2>
+                                                <p class="text-[16px] font-normal leading-6 mb-[24px]">(Dammam) - Dammam Al-Khobar <br> Road, Al Nasiriyah District, Dammam,<br> Kingdom of Saudi Arabia</p>
+                                            </div>
+                                            <div>
+                                                <h2 class="text-[20px] font-semibold mb-1">(Al Khobar) Branch</h2>
+                                                <p class="text-[16px] font-normal leading-6">King Fahd Street, Al Khobar, Kingdom <br> of Saudi Arabia</p>
+                                            </div>
+                                        </div>
+                                        <div class="ml-[97px]">
+                                            <h2 class="text-[20px] font-semibold mb-1">Branch (Jeddah)</h2>
+                                            <p class="text-[16px] font-normal leading-6">60th Street, North of Al-Falak <br> Roundabout, Jeddah, Kingdom of <br> Saudi Arabia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="w-[276px]">
+                                    <h3 class="font-semibold text-[28px]">Outside Sales</h3>
+                                </div>
+                    
+                                <div class="w-[264px]">
+                                    <h3 class="font-semibold text-[20px] mb-[7px]">Eastern Region</h3>
+                                    <ul>
+                                        <li class="flex items-center gap-2 cursor-pointer mb-1">
+                                            <img src="./images/email.svg" alt="Email">
+                                            <a href="mailto:carpet@almiracentre.com" class="ml-2">carpet@almiracentre.com</a>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <img src="./images/phone.svg" alt="Phone">
+                                            <a href="tel:+966138273792" class="ml-2">+966 13 827 3792</a>
+                                        </li>
+                                    </ul>
+                                    <h3 class="text-[20px] font-semibold mt-6">Central Region</h3>
+                                    <ul>
+                                        <li class="flex items-center gap-2 cursor-pointer mb-1">
+                                            <img src="./images/email.svg" alt="Email">
+                                            <a href="mailto:carpet@almiracentre.com" class="ml-2">carpet@almiracentre.com</a>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <img src="./images/phone.svg" alt="Phone">
+                                            <a href="tel:+966504483329" class="ml-2">+966 50 448 3329</a>
+                                        </li>
+                                    </ul>
+                                    <h3 class="text-[20px] font-semibold mt-6">Western Region</h3>
+                                    <ul>
+                                        <li class="flex items-center gap-2 cursor-pointer mb-1">
+                                            <img src="./images/email.svg" alt="Email">
+                                            <a href="mailto:carpet@almiracentre.com" class="ml-2">carpet@almiracentre.com</a>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <img src="./images/phone.svg" alt="Phone">
+                                            <a href="tel:+966504483329" class="ml-2">+966 50 448 3329</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                    
                     <!-- End Footer -->
             </div>
 
@@ -297,7 +365,6 @@
                             document.getElementById("sector3").textContent = translations[lang].sector3;
                             document.getElementById("sector4").textContent = translations[lang].sector4;
                             document.getElementById("sector5").textContent = translations[lang].sector5;
-
                         }
 
                         document.addEventListener("DOMContentLoaded", function () {
