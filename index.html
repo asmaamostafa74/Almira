@@ -41,8 +41,11 @@
                             </button>
                         </div>
                         <div class="flex items-center space-x-2">
-                            <a href="./index.html" class="text-right">
+                            <a href="./index.html" class="text-right md:flex hidden">
                                 <img src="./images/almiraLogo.svg" alt="Almira Logo">
+                            </a>
+                            <a href="./index.html" class="text-right md:hidden flex">
+                                <img src="./images/arabicLogo.png" alt="Almira Logo">
                             </a>
                         </div>
                         <div id="menu-items" class="hidden md:flex items-center gap-4 lg:gap-8">
@@ -132,9 +135,9 @@
         <!-- End Header -->
 
         <!-- Start Almira Section -->
-            <section>
+            <section class="mt-[408px] sm:mt-0">
                 <div class="bg-[#F4F3F3] p-8 sm:p-10 md:p-16 lg:p-[160px] relative z-10 ">
-                    <h2 id="almeraSection" class="text-center font-bold text-3xl sm:text-4xl md:text-5xl ltr:lg:text-6xl rtl:lg:text-[70px] text-[#006144] uppercase sm:mt-0 mt-[500px] mb-[107px]">Almira Sections</h2>
+                    <h2 id="almeraSection" class="text-center font-bold text-3xl sm:text-4xl md:text-5xl ltr:lg:text-6xl rtl:lg:text-[70px] text-[#006144] uppercase sm:mt-0 sm:mb-[107px] mb-[31px]">Almira Sections</h2>
                     <div class="flex flex-wrap justify-center gap-[40px] mb-12">
                         <a href="./optics.html">
                             <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
@@ -179,7 +182,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-wrap justify-center pl-8 pr-8 sm:pl-10 sm:pr-10 md:pl-16 md:pr-16 lg:pt-[10px] gap-[40px] lg:mt-[-170px] sm:mt-[-50px] md:mt-[-20px] bg-[#FAF9F9] pb-[100px]">
+                <div class="flex flex-wrap justify-center pl-8 pr-8 sm:pl-10 sm:pr-10 md:pl-16 md:pr-16 lg:pt-[10px] gap-[40px] lg:mt-[-170px] sm:mt-[-50px] md:mt-[-20px] bg-[#FAF9F9] sm:pb-[100px] pb-[32px]">
                     <a href="./medical.html" class="z-20">
                         <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-[300px] ">
                             <img src="./images/hospital-bed-with-blue-mattress-adjustable-height-monitor-stand-wheels-iv-3d-rendering-image.webp" alt="Al-Mira Medical" class="w-[379px] h-48 object-cover">
@@ -212,11 +215,12 @@
         <!-- End Almira Section -->
 
         <!-- Start About -->
-            <div id="about-section" class="bg-[#F4F3F3] rounded-lg h-[1031px] pt-[96px] pb-[96px] pl-[72px] pr-[76px]">
-                <div class="container mx-auto flex flex-col lg:flex-row justify-evenly gap-[80px]">
+            <h1 id="almiraGroup" class="text-[20px] w-[375px] h-[48px] font-bold text-green-800  uppercase flex items-center justify-center sm:hidden">about Almira group</h1>
+            <div id="about-section" class="bg-[#F4F3F3] sm:rounded-lg h-[1031px] sm:pt-[96px] pb-[96px] pl-[72px] pr-[76px]">
+                <div class="container mx-auto flex flex-col lg:flex-row justify-evenly md:gap-[80px]">
                     <div class="lg:w-[638px]">
-                        <h1 id="almiraGroup" class="md:ltr:text-[55px] md:rtl:text-[70px] text-[20px] font-bold text-green-800 mb-[32px] uppercase">about Almira group</h1>
-                        <p id="paraOne" class="mb-[24px] ltr:font-normal md:text-2xl md:rtl:font-semibold text-[14px] font-normal">Since the beginning of the twentieth century, Abdulghani Ibrahim Al Meera started trading spices from his shop located in the small market opposite the Grand <br>  Mosque in Mecca. The business then grew.</p>
+                        <h1 id="almiraGroup" class="md:ltr:text-[55px] md:rtl:text-[70px] text-[20px] font-bold text-green-800 mb-[32px] uppercase sm:flex items-center justify-center hidden">about Almira group</h1>
+                        <p id="paraOne" class="mb-[24px] ltr:font-normal md:text-2xl md:rtl:font-semibold text-[14px] font-normal mt-[15px] sm:mt-0">Since the beginning of the twentieth century, Abdulghani Ibrahim Al Meera started trading spices from his shop located in the small market opposite the Grand <br>  Mosque in Mecca. The business then grew.</p>
                         <p id="paraTwo" class="mb-[24px] ltr:font-normal md:text-2xl md:rtl:font-semibold text-[14px] font-normal">In 1977, Abdulghani Ibrahim Al Meera laid the foundation stone for Al Meera Trading and Importing Establishment.</p>
                         <p id="paraThree" class="mb-[24px] ltr:font-normal md:text-2xl md:rtl:font-semibold text-[14px] font-normal">In 1989, Abdul Latif and Mustafa, sons of Abdulghani Ibrahim Al Meera, established Al Meera Trading Center Limited Company, which included the following:</p>
                         <ul class="list-disc list-inside mb-[24px] ml-4">
@@ -231,8 +235,8 @@
                             <li id="listSix" class="ltr:font-normal md:text-2xl md:rtl:font-semibold text-[14px] font-normal">Al Meera Carpet Factory</li>
                         </ul>
                     </div>
-                    <div class="md:flex items-center justify-center hidden">
-                        <img src="./images/Frame252.webp" class="w-[540px] h-[700px]" alt="Frame252"  />
+                    <div class="flex  items-center justify-center ">
+                        <img src="./images/Frame252.webp" class="md:w-[540px] md:h-[700px] w-[278px] mt-[40px] sm:mt-0 h-[360px]" alt="Frame252"  />
                     </div>
                 </div>
             </div>
@@ -249,44 +253,48 @@
 
         <!-- Start Statistics -->
         <div class="bg-[#F4F3F3]">
-            <div class="container mx-auto px-4 py-20 flex flex-col gap-8 md:flex-row md:justify-evenly" id="stats-container" data-language="en">
-                <div class="flex flex-col items-center justify-center text-center md:border-r md:border-[#DDD8D8] md:pr-20">
-                    <img src="./images/users_svgrepo.com.webp" alt="users" class="w-16 h-16 mb-[32px]">
-                    <p id="EmployeNumbers" class="font-normal text-2xl mb-[16px]">Working Employment</p>
-                    <p id="EmployeNumbersCounter" class="font-medium text-[#006144] text-[42px]">0</p>
-                </div>
-                <div class="flex flex-col items-center justify-center text-center md:border-r md:border-[#DDD8D8] md:pr-20">
-                    <img src="./images/calendar_svgrepo.com.webp" alt="calendar" class="w-16 h-16 mb-[32px]">
-                    <p id="yoExpearience" class="font-normal text-2xl mb-[16px]">Years In Business</p>
-                    <p id="yoExpearienceCounter" class="font-medium text-[#006144] text-[42px]">0</p>
-                </div>
-                <div class="flex flex-col items-center justify-center text-center md:border-r md:border-[#DDD8D8] md:pr-20">
-                    <img src="./images/profits-graphic_svgrepo.com.webp" alt="profits" class="w-16 h-16 mb-[32px]">
-                    <p id="noProjects" class="font-normal text-2xl mb-[16px]">Projects</p>
-                    <p id="noProjectsCounter" class="font-medium text-[#006144] text-[42px]">0</p>
-                </div>
-                <div class="flex flex-col items-center justify-center text-center">
-                    <img src="./images/buildings-thin_svgrepo.com.webp" alt="buildings" class="w-16 h-16 mb-[32px]">
-                    <p id="bLine" class="font-normal text-2xl mb-[16px]">Business Lines</p>
-                    <p id="bLineCounter" class="font-medium text-[#006144] text-[42px]">0</p>
+            <div class="container mx-auto px-4 py-20" id="stats-container" data-language="en">
+                <div class="grid grid-cols-2 gap-8 sm:grid-cols-2 md:flex md:flex-row md:justify-evenly">
+                    <div class="flex flex-col items-center justify-center text-center md:border-r md:border-[#DDD8D8] md:pr-20">
+                        <img src="./images/users_svgrepo.com.webp" alt="users" class="w-16 h-16 sm:mb-[32px] mb-[8px]">
+                        <p id="EmployeNumbers" class="font-normal sm:text-2xl text-[11px] sm:mb-[16px] mb-[8px]">Working Employment</p>
+                        <p id="EmployeNumbersCounter" class="sm:font-medium font-medium text-[#006144] sm:text-[42px] text-[18px]">0</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center md:border-r md:border-[#DDD8D8] md:pr-20">
+                        <img src="./images/calendar_svgrepo.com.webp" alt="calendar" class="w-16 h-16 sm:mb-[32px] mb-[8px]">
+                        <p id="yoExpearience" class="font-normal sm:text-2xl text-[11px] sm:mb-[16px] mb-[8px]">Years In Business</p>
+                        <p id="yoExpearienceCounter" class="sm:font-medium font-medium text-[#006144] sm:text-[42px] text-[18px]">0</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center md:border-r md:border-[#DDD8D8] md:pr-20">
+                        <img src="./images/profits-graphic_svgrepo.com.webp" alt="profits" class="w-16 h-16 sm:mb-[32px] mb-[8px]">
+                        <p id="noProjects" class="font-normal sm:text-2xl text-[11px] sm:mb-[16px] mb-[8px]">Projects</p>
+                        <p id="noProjectsCounter" class="sm:font-medium font-medium text-[#006144] sm:text-[42px] text-[18px]">0</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center">
+                        <img src="./images/buildings-thin_svgrepo.com.webp" alt="buildings" class="w-16 h-16 sm:mb-[32px] mb-[8px]">
+                        <p id="bLine" class="font-normal sm:text-2xl text-[11px] sm:mb-[16px] mb-[8px]">Business Lines</p>
+                        <p id="bLineCounter" class="sm:font-medium font-medium text-[#006144] sm:text-[42px] text-[18px]">0</p>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <!-- End Statistics -->
 
         <!-- Start Members -->
-            <div class="bg-[#FAF9F9] h-[564px] pr-[134px] pl-[134px] pt-[72px] pm-[72px]">
+            <div class="md:bg-[#FAF9F9] bg-white sm:h-[564px] sm:pr-[134px] sm:pl-[134px] sm:pt-[72px] sm:pm-[72px]">
             <div class="container mx-auto flex md:flex-row flex-col justify-between">
-                <div class="w-[625px] flex flex-col md:mt-[147px] mb-[46px]">
-                    <h1 id="bMembers" class="text-[#006144] font-bold md:ltr:text-[55px] md:rtl:text-[60px] text-2xl mb-[32px]">Board Members</h1>
-                    <p id="nMember" class="ltr:font-bold md:ltr:text-[32px] rtl:font-black md:rtl:text-[48px] text-[20px] mb-[32px]">Salah Al-Mira</p>
-                    <p id="aboutMember" class="ltr:font-medium md:ltr:text-2xl rtl:font-semibold md:rtl:text-[32px] text-[18px] ltr:leading-[38px] rtl:leading-[51.5px]">Founder of Al-Mira Group, which specializes in several <br> different fields</p>
+                <div class="sm:w-[625px] flex flex-col  md:mt-[147px] sm:mb-[46px]">
+                    <h1 id="bMembers" class="text-[#006144] font-bold md:ltr:text-[55px] md:rtl:text-[60px] text-2xl sm:mb-[32px] mb-[10px] ml-[106px] sm:ml-0 mt-6 sm:mt-0">Board Members</h1>
+                    <p id="nMember" class="ltr:font-bold md:ltr:text-[32px] rtl:font-black md:rtl:text-[48px] text-[20px] sm:mb-[32px] mb-[16px] ml-[128px] sm:ml-0">Salah Al-Mira</p>
+                    <p id="aboutMember" class="ltr:font-medium md:ltr:text-2xl rtl:font-semibold md:rtl:text-[32px] text-[18px] ltr:leading-[38px] rtl:leading-[51.5px] sm:flex hidden">Founder of Al-Mira Group, which specializes in several <br> different fields</p>
+                    <p id="aboutMember" class="ltr:font-medium md:ltr:text-2xl rtl:font-semibold md:rtl:text-[32px] font-medium text-[14px] ltr:leading-[38px] rtl:leading-[51.5px] sm:hidden flex ml-[40px] mr-[47px] text-center">Founder of Al-Mira Group, <br> which specializes in several different fields</p>
                 </div>
                 <div>
-                    <img src="./images/Frame34.webp" alt="member" class="md:w-[421px] md:h-[421px]">
+                    <img src="./images/Frame34.webp" alt="member" class="sm:flex hidden md:w-[421px] md:h-[421px]">
                 </div>
             </div>
-            </div>
+            </div> 
         <!-- End Members -->
         
         <!-- Start Footer -->
