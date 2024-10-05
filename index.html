@@ -30,107 +30,110 @@
 <body >
     <div>
         <!-- Start Header -->
-        <div >
-            <nav class="md:bg-white md:text-black text-white md:shadow-md z-50 absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px] h-[88px] rounded-lg">
-                <div class="flex justify-between items-center py-2 px-4 md:py-4 lg:px-12">
-                    <div class="lg:hidden">
-                        <button id="menu-toggle" class="text-white text-3xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <a href="./index.html" class="text-right">
-                            <img src="./images/almiraLogo.svg" alt="Almira Logo">
-                        </a>
-                    </div>
-                    <div id="menu-items" class="hidden md:flex items-center gap-4 lg:gap-8">
-                        <a href="./index.html" id="homePage" class="text-lg lg:text-[22px] font-medium text-white bg-[#006144] px-4 py-2 rounded-lg">Home</a>
-                        <div class="relative">
-                            <button id="business-toggle" class="text-sm font-semibold flex items-center">
-                                <span id="businessText" class="text-lg lg:text-[22px] ltr:font-normal rtl:font-semibold">Businesses</span>
-                                <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            <div>
+                <nav class="md:bg-white md:text-black text-white md:shadow-md z-50 absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px] h-[88px] rounded-lg">
+                    <div class="flex justify-between items-center py-2 px-4 md:py-4 lg:px-12">
+                        <div class="lg:hidden">
+                            <button id="menu-toggle" class="text-white text-3xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
                             </button>
-                            <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#006144] rounded-lg hidden">
-                                <a href="./optics.html" id="busOptics" class="block p-2 text-[15px] text-white">almira optics</a>
-                                <a href="./steamatic.html" id="busSteamatic" class="block p-2 text-[15px] text-white">almira steamatic</a>
-                                <a href="./steel.html" id="bussteel" class="block p-2 text-[15px] text-white">almira steel</a>
-                                <a href="./medical.html" id="busMedical" class="block p-2 text-[15px] text-white">almira medical</a>
-                                <a href="./furniture.html" id="busFurniture" class="block p-2 text-[15px] text-white">carpet & furniture</a>
-                            </div>
                         </div>
-                        <a href="#about-section" id="aboutUs" class="text-lg lg:text-[22px] ltr:font-normal rtl:font-semibold">About Us</a>
-                        <a href="#" id="contactUs" class="text-lg lg:text-[22px] ltr:font-normal rtl:font-semibold">Contact Us</a>
-                        <div class="language-toggle flex items-center gap-2 cursor-pointer lg:ml-32" id="toggle-language">
-                            <img src="./images/world.svg" alt="World Logo" class="order-1">
-                            <span class="language-text text-xl md:text-2xl font-normal" id="language-text">Arabic</span>
+                        <div class="flex items-center space-x-2">
+                            <a href="./index.html" class="text-right">
+                                <img src="./images/almiraLogo.svg" alt="Almira Logo">
+                            </a>
+                        </div>
+                        <div id="menu-items" class="hidden md:flex items-center gap-4 lg:gap-8">
+                            <a href="./index.html" id="homePage" class="text-lg lg:text-[22px] font-medium text-white bg-[#006144] px-4 py-2 rounded-lg">Home</a>
+                            <div class="relative">
+                                <button id="business-toggle" class="text-sm font-semibold flex items-center">
+                                    <span id="businessText" class="text-lg lg:text-[22px] ltr:font-normal rtl:font-semibold">Businesses</span>
+                                    <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <div id="business-dropdown" class="absolute mt-2 lg:mt-5 w-[120px] md:w-[149px] bg-[#006144] rounded-lg hidden">
+                                    <a href="./optics.html" id="busOptics" class="block p-2 text-[15px] text-white">almira optics</a>
+                                    <a href="./steamatic.html" id="busSteamatic" class="block p-2 text-[15px] text-white">almira steamatic</a>
+                                    <a href="./steel.html" id="bussteel" class="block p-2 text-[15px] text-white">almira steel</a>
+                                    <a href="./medical.html" id="busMedical" class="block p-2 text-[15px] text-white">almira medical</a>
+                                    <a href="./furniture.html" id="busFurniture" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                                </div>
+                            </div>
+                            <a href="#about-section" id="aboutUs" class="text-lg lg:text-[22px] ltr:font-normal rtl:font-semibold">About Us</a>
+                            <a href="#" id="contactUs" class="text-lg lg:text-[22px] ltr:font-normal rtl:font-semibold">Contact Us</a>
+                            <div class="language-toggle flex items-center gap-2 cursor-pointer lg:ml-32" id="toggle-language">
+                                <img src="./images/world.svg" alt="World Logo" class="order-1">
+                                <span class="language-text text-xl md:text-2xl font-normal" id="language-text">Arabic</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
-        
-            <!-- Sidebar for Small Screens -->
-            <div id="sidebar" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden">
-                <div class="flex flex-col h-full w-64 bg-white p-4">
-                    <button id="close-sidebar" class="text-black text-2xl flex items-center justify-center self-end relative bg-[#E0E0E0] rounded-lg w-[45px] h-[45px] rtl:right-[-80%] ltr:right-[81%] transform ltr:rotate-180">
-                        <img src="./images/menuToggle.svg" class="" alt="">
-                    </button>
-                    <ul class="flex flex-col mt-8">
-                        <a href="./index.html" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
-                            <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
-                            <p id="sidebarHome">Home</p>
-                        </a>
-                        <div class="relative">
-                            <a id="business-link-unique" href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
-                                <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
-                                <p id="sidebarBusiness">Business</p>
-                                <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
+                </nav>
+            
+                <!-- Sidebar for Small Screens -->
+                <div id="sidebar" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden">
+                    <div class="flex flex-col h-full w-64 bg-white p-4">
+                        <button id="close-sidebar" class="text-black text-2xl flex items-center justify-center self-end relative bg-[#E0E0E0] rounded-lg w-[45px] h-[45px] rtl:right-[-80%] ltr:right-[81%] transform ltr:rotate-180">
+                            <img src="./images/menuToggle.svg" class="" alt="">
+                        </button>
+                        <ul class="flex flex-col mt-8">
+                            <a href="./index.html" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
+                                <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
+                                <p id="sidebarHome">Home</p>
                             </a>
-                            <div id="business-dropdown-unique" class="absolute left-[25%] w-[180px] h-[208px] bg-[#006144] rounded-lg hidden">
-                                <a id="businessOptics" href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
-                                <a id="businessSteam" href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
-                                <a id="businesssteel" href="./steel.html" class="block p-2 text-[15px] text-white">Almira steel</a>
-                                <a id="businessMedical" href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
-                                <a id="businessFurn" href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                            <div class="relative">
+                                <a id="business-link-unique" href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
+                                    <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
+                                    <p id="sidebarBusiness">Business</p>
+                                    <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                                <div id="business-dropdown-unique" class="absolute left-[25%] w-[180px] h-[208px] bg-[#006144] rounded-lg hidden">
+                                    <a id="businessOptics" href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
+                                    <a id="businessSteam" href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
+                                    <a id="businesssteel" href="./steel.html" class="block p-2 text-[15px] text-white">Almira steel</a>
+                                    <a id="businessMedical" href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
+                                    <a id="businessFurn" href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
+                                </div>
                             </div>
-                        </div>
-                        <a href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
-                            <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
-                            <p id="businessAboutus">About Us</p>
-                        </a>
-                        <a href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
-                            <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
-                            <p id="businessContactus">Contact Us</p>
-                        </a>
-                        <a href="#" class="language-toggle flex items-center gap-6 text-[22px] font-medium text-black mb-6">
-                            <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
-                            <p id="sideLanguage" class="language-text">Language</p>
-                        </a>
-                    </ul>
+                            <a href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
+                                <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
+                                <p id="businessAboutus">About Us</p>
+                            </a>
+                            <a href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
+                                <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
+                                <p id="businessContactus">Contact Us</p>
+                            </a>
+                            <a href="#" class="language-toggle flex items-center gap-6 text-[22px] font-medium text-black mb-6">
+                                <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
+                                <p id="sideLanguage" class="language-text">Language</p>
+                            </a>
+                        </ul>
+                    </div>
                 </div>
+            
+                <!-- Hero Section -->
+                <header class="relative h-[60vh] md:h-[890px] container mx-auto">
+                    <img src="./images/hero.webp" alt="City" class="absolute inset-0 w-full sm:h-full h-[812px] object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 w-full sm:h-full h-[812px] flex flex-col justify-center items-center"> 
+                        <h1 id="almeraHeader" class="animate__animated animate__zoomIn text-4xl ltr:md:text-[60px] rtl:text-[58px] font-bold mb-5 text-white ">ALMIRA GROUP</h1>
+                        <p id="almeraPara" class="rtl:hidden mt-4 text-lg md:text-[22px] ltr:font-normal rtl:font-semibold w-[90%] md:w-[597px] leading-8 text-white text-center">
+                        Al-MIRA is a Group of companies <br> that specialized in several different fields, <br> and its role is to serve customers in the best possible way.
+                        </p>
+                        <p id="almeraPara" class="ltr:hidden rtl:flex mt-4 text-lg md:text-[22px] ltr:font-normal rtl:font-semibold w-[90%] md:w-[602px] leading-8 text-white text-center">
+                            مجموعة شركات الميرة المتخصصة <br> في عدة مجالات مختلفة من دورها خدمة العملاء على أكمل وجه
+                        </p>
+                    </div>
+                </header>
             </div>
-        
-            <!-- Hero Section -->
-            <header class="relative h-[60vh] md:h-[890px] container mx-auto">
-                <img src="./images/hero.webp" alt="City" class="absolute inset-0 w-full sm:h-full h-[812px] object-cover">
-                <div class="absolute inset-0 bg-black bg-opacity-50 w-full sm:h-full h-[812px] flex flex-col justify-center items-center"> 
-                    <h1 id="almeraHeader" class="animate__animated animate__zoomIn text-4xl ltr:md:text-[60px] rtl:text-[58px] font-bold mb-5 text-white ">ALMIRA GROUP</h1>
-                    <p id="almeraPara" class="mt-4 text-lg md:text-[22px] ltr:font-normal rtl:font-semibold w-[90%] md:w-[597px] leading-8 text-white text-center">
-                    Al-MIRA is a Group of companies <br> that specialized in several different fields, <br> and its role is to serve customers in the best possible way.
-                    </p>
-                </div>
-            </header>
-        </div>
         <!-- End Header -->
 
         <!-- Start Almira Section -->
             <section>
-                <div class="bg-[#F4F3F3] p-8 sm:p-10 md:p-16 lg:p-20 ">
+                <div class="bg-[#F4F3F3] p-8 sm:p-10 md:p-16 lg:p-24 ">
                     <h2 id="almeraSection" class="text-center font-bold text-3xl sm:text-4xl md:text-5xl ltr:lg:text-6xl rtl:lg:text-[70px] text-[#006144] uppercase sm:mt-0 mt-[500px] mb-[107px]">Almira Sections</h2>
                     <div class="flex flex-wrap justify-center gap-6 mb-12">
                         <a href="./optics.html">
