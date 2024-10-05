@@ -36,9 +36,9 @@
 </style>
 <body style="font-family: 'Rubik', sans-serif;" class="bg-[#F4F3F3]">
                     <!-- Start Navbar -->
-                        <div>
-                            <nav class="lg:bg-[#E0E0E0] md:text-black text-white lg:shadow-md z-50 absolute top-[50px] left-[50%] transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px]  rounded-lg">
-                                <div class="flex justify-between items-center h-[88px] py-2 px-4 md:py-2 lg:px-12">
+                        <div class="flex items-center justify-center">
+                        <nav class="lg:bg-[#E0E0E0] md:text-black text-white lg:shadow-md z-50 absolute top-[72px] left-[50%] transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px]  rounded-lg">
+                            <div class="flex justify-between items-center h-[88px] py-2 px-4 md:py-2 lg:px-12">
                                     <div class="lg:hidden">
                                         <button id="menu-toggle" class="flex text-black text-3xl">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
@@ -54,7 +54,7 @@
                                     <div id="menu-items" class="hidden lg:flex items-center gap-4 lg:gap-8">
                                         <a href="./index.html" id="homePage" class="text-lg lg:text-[22px] ltr:font-normal rtl:font-semibold">Home</a>
                                         <div class="relative">
-                                            <button id="business-toggle" class="lg:text-[22px] lg:text-lg font-bold text-white bg-[#8E0104] rounded-lg p-1 flex items-center">
+                                            <button id="business-toggle" class="lg:text-[22px] ltr:w-[175px] rtl:w-[201px] h-[40px] justify-center ltr:font-bold rtl:font-semibold text-white bg-[#8E0104] rounded-lg flex items-center">
                                                 <span id="businessText">Businesses</span>
                                                 <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -80,54 +80,54 @@
                         
                             <!-- Sidebar for Small Screens -->
                             <div id="sidebar" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden">
-                                <div class="flex flex-col h-full w-64 bg-white p-4">
-                                    <button id="close-sidebar" class="text-black text-2xl flex items-center justify-center self-end relative bg-[#E0E0E0] rounded-lg w-[45px] h-[45px] rtl:right-[-80%] ltr:right-[81%] transform ltr:rotate-180">
-                                        <img src="./images/menuToggle.svg" class="" alt="">
-                                    </button>
-                                    <ul class="flex flex-col mt-8">
-                                        <a href="./index.html" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
-                                            <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
-                                            <p id="sidebarHome">Home</p>
-                                        </a>
-                                        <div class="relative">
-                                            <a id="business-link-unique" href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
-                                                <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
-                                                <p id="sidebarBusiness">Business</p>
-                                                <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                            <div id="business-dropdown-unique" class="absolute left-[25%] w-[180px] h-[208px] bg-[#006144] rounded-lg hidden">
-                                                <a id="businessOptics" href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
-                                                <a id="businessSteam" href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
-                                                <a id="businesssteel" href="./steel.html" class="block p-2 text-[15px] text-white">Almira steel</a>
-                                                <a id="businessMedical" href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
-                                                <a id="businessFurn" href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
-                                            <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
-                                            <p id="businessAboutus">About Us</p>
-                                        </a>
-                                        <a href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
-                                            <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
-                                            <p id="businessContactus">Contact Us</p>
-                                        </a>
-                                        <a href="#" class="language-toggle flex items-center gap-6 text-[22px] font-medium text-black mb-6">
-                                            <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
-                                            <p id="sideLanguage" class="language-text">Language</p>
-                                        </a>
-                                    </ul>
-                                </div>
+                <div class="flex flex-col h-full w-64 bg-white p-4">
+                    <button id="close-sidebar" class="text-black text-2xl flex items-center justify-center self-end relative bg-[#E0E0E0] rounded-lg w-[45px] h-[45px] rtl:right-[-80%] ltr:right-[81%] transform ltr:rotate-180">
+                        <img src="./images/menuToggle.svg" class="" alt="">
+                    </button>
+                    <ul class="flex flex-col mt-8">
+                        <a href="./index.html" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
+                            <img src="./images/homeIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Home Icon">
+                            <p id="sidebarHome">Home</p>
+                        </a>
+                        <div class="relative">
+                            <a id="business-link-unique" href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
+                                <img src="./images/businessIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Business Icon">
+                                <p id="sidebarBusiness">Business</p>
+                                <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <div id="business-dropdown-unique" class="absolute left-[25%] w-[180px] h-[208px] bg-[#006144] rounded-lg hidden">
+                                <a id="businessOptics" href="./optics.html" class="block p-2 text-[15px] text-white">Almira optics</a>
+                                <a id="businessSteam" href="./steamatic.html" class="block p-2 text-[15px] text-white">Almira steamatic</a>
+                                <a id="businesssteel" href="./steel.html" class="block p-2 text-[15px] text-white">Almira steel</a>
+                                <a id="businessMedical" href="./medical.html" class="block p-2 text-[15px] text-white">Almira medical</a>
+                                <a id="businessFurn" href="./furniture.html" class="block p-2 text-[15px] text-white">carpet & furniture</a>
                             </div>
+                        </div>
+                        <a href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
+                            <img src="./images/aboutusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="About Us Icon">
+                            <p id="businessAboutus">About Us</p>
+                        </a>
+                        <a href="#" class="flex items-center gap-6 text-[22px] font-medium text-black mb-6">
+                            <img src="./images/contactusIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Contact Us Icon">
+                            <p id="businessContactus">Contact Us</p>
+                        </a>
+                        <a href="#" class="language-toggle flex items-center gap-6 text-[22px] font-medium text-black mb-6">
+                            <img src="./images/langIcon.svg" class="bg-[#E0E0E0] rounded-lg p-2" alt="Language Icon">
+                            <p id="sideLanguage" class="language-text">Language</p>
+                        </a>
+                    </ul>
+                </div>
+            </div>
                         </div>
                     <!-- End Navbar -->
                     
                     <!-- Title -->
-                        <header class="relative mt-52">
+                        <header class="relative mt-[277px]">
                         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                            <h1 id="almeraHeader" class="animate__animated animate__zoomIn font-bold ltr:sm:text-[64px] rtl:sm:text-[56px] text-[28px] text-[#8E0104] uppercase">Optics Gallery</h1>
-                            <div class="w-[384px] md:flex flex-row items-center justify-center bg-[#E0E0E0] rounded-lg  mt-4 px-4 py-2 gap-8 hidden">
+                            <h1 id="almeraHeader" class="animate__animated animate__zoomIn font-bold ltr:sm:text-[64px] rtl:sm:text-[56px] text-[28px] text-[#8E0104] uppercase mb-[36px]">Optics Gallery</h1>
+                            <div class="w-[384px] md:flex flex-row items-center justify-center bg-[#E0E0E0] rounded-lg px-4 py-2 gap-8 hidden">
                                         <a id="homeTitle" href="./optics.html" class="text-gray-500 font-normal text-[22px]">Home</a>
                                         <a id="gallaryTitle" href="./opticsGallary.html" class="text-white bg-[#8E0104] py-1 px-4 rounded-md text-[22px] ltr:font-bold rtl:font-semibold">Gallery</a> 
                                         <a id="brandsTitle" href="#" class="text-gray-500 font-normal text-[22px]">Brands</a>
@@ -136,7 +136,7 @@
                     <!-- Title -->
 
                     <!-- Second Section -->
-                        <div class="container mx-auto mb-20">
+                        <div class="container mx-auto mt-[112px] mb-20">
                             <div class=" flex overflow-hidden mt-20">
                                 <img src="./images/glass1.webp" class="md:w-[312px] md:h-[278px] w-[79px] h-[71px] animate-slide" alt="glasses">
                                 <img src="./images/glass2.webp" class="md:w-[312px] md:h-[278px] w-[79px] h-[71px] animate-slide" alt="glasses">
