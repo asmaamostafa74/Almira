@@ -24,10 +24,10 @@
 </style>
 <body style="font-family: 'Rubik', sans-serif;" class="bg-[#FAF9F9]">
                     <!-- Start Navbar -->
-                    <div class="flex items-center justify-center">
-                        <nav class="lg:bg-[#E0E0E0] md:text-black text-white lg:shadow-md z-50 absolute top-[72px] left-[50%] transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px]  rounded-lg">
-                            <div class=" flex justify-between items-center h-[88px] py-2 px-4 md:py-2 lg:px-12">
-                                    <div class="lg:hidden">
+                        <div class="flex items-center justify-center">
+                        <nav class="lg:bg-[#E0E0E0] md:text-black text-white lg:shadow-md z-50 absolute sm:top-[72px] top-[60px] left-[50%] transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px]  rounded-lg">
+                            <div class="flex justify-between items-center h-[88px] px-6 md:py-2 lg:px-12">
+                                <div class="lg:hidden">
                                     <button id="menu-toggle" class="text-black text-3xl">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -112,13 +112,17 @@
                     
                     <!-- Title -->
                         <header class="md:flex items-center justify-center relative ltr:mr-20 rtl:ml-44">
-                            <img id="vacuum" src="./images/vacuum.webp" class="animate__animated animate__bounceInLeft w-[526px] h-[642px] mt-[200px]" alt="vacuum">
+                            <img id="vacuum" src="./images/vacuum.webp" class="animate__animated animate__bounceInLeft w-[526px] h-[642px] mt-[200px] sm:flex hidden" alt="vacuum">
                             <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                                <h1 id="almeraHeader" class="animate__animated animate__zoomIn font-bold ltr:md:text-[56px] rtl:md:text-[66px] text-[28px] text-[#00367E] uppercase mt-[181px] mb-[40px]">ALMIRA STEAMATIC</h1>
+                                <h1 id="almeraHeader" class="animate__animated animate__zoomIn font-bold ltr:md:text-[56px] rtl:md:text-[66px] text-[28px] text-[#00367E] uppercase sm:mt-[181px] mt-[208px]">ALMIRA STEAMATIC</h1>
                                     <div class="w-[424px] md:flex hidden flex-row items-center justify-center bg-[#E0E0E0] rounded-lg px-4 py-2 gap-8">
                                         <a id="homeTitle" href="./optics.html" class="text-white bg-[#00367E] py-1 px-4 rounded-md text-[22px] ltr:font-bold rtl:font-semibold">Home</a>
                                         <a id="servicesTitle" href="" class="text-[#00367E] ltr:font-bold rtl:font-normal text-[22px]">Services</a> 
                                         <a id="gallaryTitle" href="./steamaticGallary.html" class="text-[#00367E] ltr:font-bold rtl:font-normal text-[22px]">Gallary</a>
+                                </div>
+                                <div class="flex gap-10">
+                                    <img id="vacuum" src="./images/vacMobile.png" class="animate__animated animate__bounceInLeft ml-[48px] mt-[41px] sm:hidden flex" alt="vacuum">
+                                    <img id="vacuum" src="./images/vacMobile2.png" class="animate__animated animate__bounceInLeft mt-[41px] sm:hidden flex" alt="vacuum">    
                                 </div>
                                 <p id="steamaticTitle" class="md:w-[662px] p-2 ltr:font-normal rtl:font-semibold ltr:md:text-2xl rtl:md:text-[22px] text-[18px] text-[#E0001A] mt-[36px] text-center">Al Mira Steamatic is a master franchisee of Steamatic Inc <br> USA. Our company provides high quality indoor air <br> services and emergency response services. </p>
                             </div>
@@ -157,7 +161,7 @@
 
                     <!-- Start Icon Bar -->
                         <div class="flex fixed justify-between z-50 bottom-0 w-full h-[56px] items-center bg-[#00367E] sm:hidden">
-                            <a href="./steamatic.html" class="p-2 flex flex-col items-center mx-4 text-black bg-white ">
+                            <a href="./steamatic.html" class="w-[79px] p-2 flex flex-col items-center mx-4 text-black bg-white ">
                                 <img class="w-6 h-6" src="./images/home.svg" alt="Home">
                                 <span class="text-[12px] font-normal ">Home</span>
                             </a>

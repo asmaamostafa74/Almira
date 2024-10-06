@@ -41,12 +41,23 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    @media (max-width: 768px) {
+    .opticsImage {
+        height: 60vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    .opticsImage {
+        height: 80vw;
+    }
+}
 </style>
 <body style="font-family: 'Rubik', sans-serif;" class="bg-[#F4F3F3]">
                     <!-- Start Navbar -->
                         <div class="flex items-center justify-center">
-                        <nav class="lg:bg-[#E0E0E0] md:text-black text-white lg:shadow-md z-50 absolute top-[72px] left-[50%] transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px]  rounded-lg">
-                            <div class="flex justify-between items-center h-[88px] py-2 px-4 md:py-2 lg:px-12">
+                        <nav class="lg:bg-[#E0E0E0] md:text-black text-white lg:shadow-md z-50 absolute sm:top-[72px] top-[60px] left-[50%] transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px]  rounded-lg">
+                            <div class="flex justify-between items-center h-[88px] px-6 md:py-2 lg:px-12">
                                     <div class="lg:hidden">
                                         <button id="menu-toggle" class="flex text-black text-3xl">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
@@ -132,16 +143,17 @@
                     <!-- End Navbar -->
                     
                     <!-- Title -->
-                        <header class="relative mt-[294px]">
+                        <header class="relative sm:mt-[294px] mt-[209px]">
                             <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                                <h1 id="almeraHeader" class="animate__animated animate__zoomIn font-bold ltr:sm:text-[68px] rtl:text-[58px] text-[28px] text-[#8E0104] uppercase mb-[16px]">ALMIRA OPTICS</h1>
+                                <h1 id="almeraHeader" class="animate__animated animate__zoomIn font-bold ltr:sm:text-[68px] rtl:sm:text-[58px] text-[28px] text-[#8E0104] uppercase mb-[16px]">ALMIRA OPTICS</h1>
                                     <div class="w-[384px] md:flex flex-row items-center justify-center bg-[#E0E0E0] rounded-lg px-4 py-2 gap-8 hidden">
                                         <a id="homeTitle" href="./optics.html" class="text-white bg-[#8E0104] py-1 px-4 rounded-md text-[22px] font-bold">Home</a>
                                         <a id="gallaryTitle" href="./opticsGallary.html" class="text-gray-500 font-normal text-[22px]">Gallery</a> 
                                         <a id="brandsTitle" href="#" class="text-gray-500 font-normal text-[22px]">Brands</a>
                                 </div>
-                                <img src="./images/Capa_1.webp" class="absolute left-0 top-[100%]" alt="Capa_1">
-                                <img src="./images/Capa_1 (1).webp" class="absolute right-0 top-[100%]" alt="Capa_2">
+                                <img src="./images/Capa_1.webp" class="absolute left-0 top-[100%] sm:flex hidden" alt="Capa_1">
+                                <img src="./images/Capa_1 (1).webp" class="absolute right-0 top-[100%] sm:flex hidden" alt="Capa_2">
+                                <img src="./images/CapaMobile.png" class="absolute mt-[249px] flex sm:hidden" alt="Capa_2">
                         </header>
                     <!-- Title -->
                     
@@ -165,9 +177,9 @@
                     <!-- Photo Section -->
 
                     <!-- Start About Section -->
-                        <div class="flex flex-col ml-[163px] mr-[163px] items-center mt-10 mb-[59px]">
+                        <div class="flex flex-col sm:ml-[163px] sm:mr-[163px] items-center mt-10 mb-[59px]">
                             <h1 id="aboutAlmera" class="font-bold ltr:sm:text-[55px] rtl:sm:text-[70px] text-[28px] text-[#8E0104] ltr:mb-[31px] rtl:mb-[48px] ">About Al-Mira Optics</h1>
-                            <div class="w-[1028px] bg-[#FAF9F9] pt-[51px] pb-[51px] pl-[43px]  pr-[43px]  text-center">
+                            <div class="sm:w-[1028px] bg-[#FAF9F9] pt-[51px] pb-[51px] pl-[43px]  pr-[43px]  text-center">
                                 <p id="para1" class="ltr:font-normal ltr:text-2xl rtl:font-semibold mb-[32px] leading-[38px]">
                                     The company was founded in 1993 and has established their presence. now there 's Al Mira Optics <br> six branches in SA Upscale and very distinctive 
                                 </p>
@@ -186,7 +198,7 @@
 
                     <!-- Start Icon Bar -->
                         <div class="flex fixed justify-between z-50 bottom-0 w-full h-[56px] items-center bg-[#8E0104] sm:hidden">
-                            <a href="./optics.html" class="p-2 flex flex-col items-center mx-4 text-black bg-white ">
+                            <a href="./optics.html" class="w-[79px] p-2 flex flex-col items-center mx-4 text-black bg-white ">
                                 <img class="w-6 h-6" src="./images/home.svg" alt="Home">
                                 <span class="text-[12px] font-normal ">Home</span>
                             </a>
