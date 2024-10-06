@@ -150,7 +150,8 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <img id="vacuum-image" src="./images/forVacuum.webp" class="md:flex hidden right-0 top-[10%] absolute rtl:mb-[122px] ltr-ml-[61px]" alt="Big Vacuum">
+                                    <img id="vacuum-image" src="./images/forVacuum.webp" class="ltr:md:flex rtl:hidden hidden right-0 top-[10%] absolute rtl:mb-[122px] ltr-ml-[61px]" alt="Big Vacuum">
+                                    <img id="vacuum-image" src="./images/steamArabic.webp" class="rtl:md:flex ltr:hidden hidden left-0 top-[10%] absolute rtl:mb-[122px] ltr-ml-[61px]" alt="Big Vacuum">
                                 </div>
                                 
                             </div>
@@ -311,12 +312,6 @@
                             document.getElementById("sector3").textContent = translations[lang].sector3;
                             document.getElementById("sector4").textContent = translations[lang].sector4;
                             document.getElementById("sector5").textContent = translations[lang].sector5;
-                            const vacuumImage = document.getElementById("vacuum-image");
-                            if (lang === "ar") {
-                                vacuumImage.src = "./images/steamArabic.webp";
-                            } else {
-                                vacuumImage.src = "./images/forVacuum.webp";
-                            }
                             if (lang === "ar") {
                                 document.getElementById("steamaticTitle").style.backgroundColor = "#ffffff";
                             } else {
