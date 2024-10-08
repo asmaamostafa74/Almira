@@ -111,7 +111,7 @@
                     <!-- End Navbar -->
                     
                     <!-- Title -->
-                        <header class="md:flex items-center justify-center relative ltr:mr-20 rtl:ml-44">
+                        <header class="md:flex items-center justify-center relative ltr:sm:mr-20 rtl:sm:ml-44">
                             <img id="vacuum" src="./images/vacuum.webp" class="animate__animated animate__bounceInLeft w-[526px] h-[642px] mt-[200px] sm:flex hidden" alt="vacuum">
                             <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
                                 <h1 id="almeraHeader" class="animate__animated animate__zoomIn font-bold ltr:md:text-[56px] rtl:md:text-[66px] text-[28px] text-[#00367E] uppercase sm:mt-[181px] mt-[208px] ml-[49px] sm:ml-0">ALMIRA STEAMATIC</h1>
@@ -124,13 +124,13 @@
                                     <img id="vacuum" src="./images/vacMobile.png" class="animate__animated animate__bounceInLeft ml-[48px] mt-[41px] sm:hidden flex" alt="vacuum">
                                     <img id="vacuum" src="./images/vacMobile2.png" class="animate__animated animate__bounceInLeft mt-[41px] sm:hidden flex" alt="vacuum">    
                                 </div>
-                                <p id="steamaticTitle" class="md:w-[662px] p-2 ltr:font-normal rtl:font-semibold ltr:md:text-2xl rtl:md:text-[22px] text-[18px] text-[#E0001A] mt-[36px] text-center">Al Mira Steamatic is a master franchisee of Steamatic Inc <br> USA. Our company provides high quality indoor air <br> services and emergency response services. </p>
+                                <p id="steamaticTitle" class="md:w-[662px] p-2 ltr:font-normal rtl:font-semibold ltr:md:text-2xl rtl:md:text-[22px] text-[18px] ml-5 text-justify text-[#E0001A] mt-[36px] sm:text-center">Al Mira Steamatic is a master franchisee of Steamatic Inc <br> USA. Our company provides high quality indoor air <br> services and emergency response services. </p>
                             </div>
                         </header>
                     <!-- Title -->
                     
                     <!-- Second Section -->
-                        <section class="relative container mx-auto">
+                        <section class="relative container mx-auto sm:mb-0 mb-8">
                             <div class="flex items-end">
                                 <div class="md:w-[781px] md:ltr:ml-24 md:rtl:mr-24 ltr:ml-5 rtl:mr-5 mt-[50px] ltr:[79px] rtl:mb-[140px]">
                                     <p id="steamaticTitle1" class="ltr:font-normal ltr:md:text-2xl rtl:font-semibold rtl:text-[22px] text-[18px] text-[#E0001A] mb-[40px]">
@@ -150,12 +150,12 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <img id="vacuum-image" src="./images/forVacuum.webp" class="ltr:md:flex rtl:hidden hidden right-0 top-[10%] absolute rtl:mb-[122px] ltr-ml-[61px]" alt="Big Vacuum">
+                                    <img id="vacuum-image" src="./images/forVacuum.webp" class="ltr:xl:flex rtl:hidden hidden right-0 top-[10%] absolute rtl:mb-[122px] ltr-ml-[61px]" alt="Big Vacuum">
                                     <img id="vacuum-image" src="./images/steamArabic.webp" class="rtl:md:flex ltr:hidden hidden left-0 top-[10%] absolute rtl:mb-[122px] ltr-ml-[61px]" alt="Big Vacuum">
                                 </div>
                                 
                             </div>
-                            <img id="toggle-image" src="./images/Group26.webp" class="absolute top-[-20%] mt-16 right-0 mb-[58px]" alt="Little Vacuum">
+                            <img id="toggle-image" src="./images/Group26.webp" class="absolute xl:top-[-20%] top-[-25%] mt-16 right-0 mb-[58px] rtl:hidden md:block hidden" alt="Little Vacuum">
 
                         </section>
                     <!-- Second Section -->
@@ -335,19 +335,17 @@
                         } 
 
                         document.addEventListener("DOMContentLoaded", function () {
-            if (currentLanguage === "ar") {
-                document.body.setAttribute("dir", "rtl");
-                document.body.style.fontFamily = "'Cairo', sans-serif";
-                document.querySelector(".language-text").textContent = "English";
-                document.querySelector(".language-toggle").classList.add("lg:mr-32");
-                document.getElementById("toggle-image").style.display = "none";
-            } else {
-                document.body.setAttribute("dir", "ltr");
-                document.body.style.fontFamily = "'Rubik', sans-serif";
-                document.querySelector(".language-text").textContent = "Arabic";
-                document.querySelector(".language-toggle").classList.add("lg:ml-32");
-                document.getElementById("toggle-image").style.display = "block";
-            }
+                        if (currentLanguage === "ar") {
+                            document.body.setAttribute("dir", "rtl");
+                            document.body.style.fontFamily = "'Cairo', sans-serif";
+                            document.querySelector(".language-text").textContent = "English";
+                            document.querySelector(".language-toggle").classList.add("lg:mr-32");
+                        } else {
+                            document.body.setAttribute("dir", "ltr");
+                            document.body.style.fontFamily = "'Rubik', sans-serif";
+                            document.querySelector(".language-text").textContent = "Arabic";
+                            document.querySelector(".language-toggle").classList.add("lg:ml-32");
+                        }
             updateLanguage(currentLanguage); 
         });
 
@@ -360,7 +358,6 @@
                     document.body.style.fontFamily = "'Cairo', sans-serif";
                     toggleButton.classList.remove("lg:ml-32");
                     toggleButton.classList.add("lg:mr-32");
-                    document.getElementById("toggle-image").style.display = "none";
                 } else {
                     currentLanguage = "en";
                     toggleButton.querySelector(".language-text").textContent = "Arabic";
@@ -368,7 +365,6 @@
                     document.body.style.fontFamily = "'Rubik', sans-serif";
                     toggleButton.classList.remove("lg:mr-32");
                     toggleButton.classList.add("lg:ml-32");
-                    document.getElementById("toggle-image").style.display = "block";
                 }
 
                 localStorage.setItem('language', currentLanguage);  
