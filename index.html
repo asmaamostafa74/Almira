@@ -26,12 +26,18 @@
 .card-title {
     font-family: 'Cairo';
 }
+@media (min-width: 1022px) and (max-width: 1280px) {
+    .navbar {
+        width: 1022px !important;
+    }
+}
+
 </style>
 <body >
     <div>
         <!-- Start Header -->
             <div>
-                <nav class="md:bg-white md:text-black text-white md:shadow-md z-50 absolute top-[72px] left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px] h-[88px] rounded-lg">
+                <nav class="navbar md:bg-white md:text-black text-white md:shadow-md z-50 absolute top-[72px] left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[1148px] md:w-[760px] h-[88px] rounded-lg">
                     <div class="flex justify-between items-center py-2 px-4 md:py-4 lg:px-12">
                         <div class="lg:hidden">
                             <button id="menu-toggle" class="text-white text-3xl">
@@ -216,7 +222,7 @@
 
         <!-- Start About -->
             <h1 id="almiraGroup1" class="text-[20px] w-[375px] h-[48px] font-bold text-green-800  uppercase flex items-center justify-center sm:hidden">about Almira group</h1>
-            <div id="about-section" class="bg-[#F4F3F3] sm:rounded-lg h-[1031px] sm:pt-[96px] sm:pb-[96px] sm:pl-[72px] sm:pr-[76px]">
+            <div id="about-section" class="bg-[#F4F3F3] sm:rounded-lg xl:h-[1031px] sm:pt-[96px] sm:pb-[96px] sm:pl-[72px] sm:pr-[76px]">
                 <div class="container mx-auto flex flex-col lg:flex-row justify-evenly md:gap-[80px]">
                     <div class="lg:w-[638px]">
                         <h1 id="almiraGroup" class="md:ltr:text-[55px] md:rtl:text-[70px] text-[20px] font-bold text-green-800 mb-[32px] uppercase sm:flex hidden">about Almira group</h1>
@@ -282,12 +288,12 @@
         <!-- End Statistics -->
 
         <!-- Start Members -->
-            <div class="md:bg-[#FAF9F9] bg-white sm:h-[564px] sm:pr-[134px] sm:pl-[134px] sm:pt-[72px] sm:pm-[72px]">
-            <div class="container mx-auto flex md:flex-row flex-col justify-between">
-                <div class="sm:w-[625px] flex flex-col  md:mt-[147px] sm:mb-[46px]">
-                    <h1 id="bMembers" class="text-[#006144] font-bold md:ltr:text-[55px] md:rtl:text-[60px] text-2xl sm:mb-[32px] mb-[10px] ltr:ml-[106px] rtl:mr-[60px] rtl:ml-0 sm:ml-0 mt-6 sm:mt-0">Board Members</h1>
-                    <p id="nMember" class="ltr:font-bold md:ltr:text-[32px] rtl:font-black md:rtl:text-[48px] text-[20px] sm:mb-[32px] mb-[16px] ltr:ml-[106px] rtl:mr-[60px] rtl:ml-0 sm:ml-0">Salah Al-Mira</p>
-                    <p id="aboutMember" class="ltr:font-medium md:ltr:text-2xl rtl:font-semibold md:rtl:text-[32px] text-[18px] ltr:leading-[38px] rtl:leading-[51.5px] sm:flex hidden ltr:ml-[106px] rtl:ml-0 rtl:mr-[60px] ">Founder of Al-Mira Group, which specializes in several different fields</p>
+            <div class="md:bg-[#FAF9F9] bg-white lg:h-[564px] sm:pr-[134px] sm:pl-[134px] sm:pt-[72px] sm:pm-[72px]">
+            <div class="container mx-auto flex lg:flex-row flex-col justify-between">
+                <div class="sm:w-[625px] flex flex-col items-center md:items-start  md:mt-[147px] sm:mb-[46px]">
+                    <h1 id="bMembers" class="text-[#006144] font-bold md:ltr:text-[55px] md:rtl:text-[60px] text-2xl sm:mb-[32px] mb-[10px] ltr:xl:ml-[106px] rtl:md:mr-[60px] rtl:ml-0 sm:ml-0 mt-6 sm:mt-0">Board Members</h1>
+                    <p id="nMember" class="ltr:font-bold md:ltr:text-[32px] rtl:font-black md:rtl:text-[48px] text-[20px] sm:mb-[32px] mb-[16px] ltr:xl:ml-[106px] rtl:md:mr-[60px] rtl:ml-0 sm:ml-0">Salah Al-Mira</p>
+                    <p id="aboutMember" class="ltr:font-medium md:ltr:text-2xl rtl:font-semibold md:rtl:text-[32px] text-[18px] ltr:leading-[38px] rtl:leading-[51.5px] sm:flex hidden ltr:xl:ml-[106px] rtl:ml-0 rtl:mr-[60px] ">Founder of Al-Mira Group, which specializes in several different fields</p>
                     <p id="aboutMember1" class="ltr:font-medium md:ltr:text-2xl rtl:font-semibold md:rtl:text-[32px] font-medium text-[14px] ltr:sm:leading-[38px] rtl:sm:leading-[51.5px] ltr:leading-[19.6px] mb-[24px] sm:mb-0 sm:hidden flex ml-[40px] mr-[47px] text-center">Founder of Al-Mira Group, <br> which specializes in several different fields</p>
                 </div>
                 <div>
