@@ -16,43 +16,43 @@
     <!-- Animation Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="./js/script.js"></script>
+    <style>
+        .rtl {
+        direction: rtl;   
+    }
+    @keyframes slide {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    
+        .animate-slide {
+            animation: slide 3s linear infinite;
+        }
+        .opticsImage {
+            width: 100%;
+            height: 440px;
+            background-image: url(./images/Firefly.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @media (max-width: 768px) {
+        .opticsImage {
+            height: 60vw; 
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .opticsImage {
+            height: 80vw;
+        }
+    }
+    </style>
 </head>
-<style>
-    .rtl {
-    direction: rtl;   
-}
-@keyframes slide {
-        0% {
-            transform: translateX(-100%);
-        }
-        100% {
-            transform: translateX(0);
-        }
-    }
-
-    .animate-slide {
-        animation: slide 3s linear infinite;
-    }
-    .opticsImage {
-        width: 100%;
-        height: 440px;
-        background-image: url(./images/Firefly.webp);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    @media (max-width: 768px) {
-    .opticsImage {
-        height: 60vw; 
-    }
-}
-
-@media (max-width: 480px) {
-    .opticsImage {
-        height: 80vw;
-    }
-}
-</style>
 <body style="font-family: 'Rubik', sans-serif;" class="bg-[#F4F3F3]">
                     <!-- Start Navbar -->
                         <div class="flex items-center justify-center">

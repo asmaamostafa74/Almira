@@ -16,24 +16,24 @@
     <!-- Animation Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="./js/script.js"></script>
+    <style>
+        .rtl {
+        direction: rtl;   
+    }
+    @keyframes slide {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    
+        .animate-slide {
+            animation: slide 3s linear infinite;
+        }
+    </style>
 </head>
-<style>
-    .rtl {
-    direction: rtl;   
-}
-@keyframes slide {
-        0% {
-            transform: translateX(-100%);
-        }
-        100% {
-            transform: translateX(0);
-        }
-    }
-
-    .animate-slide {
-        animation: slide 3s linear infinite;
-    }
-</style>
 <body style="font-family: 'Rubik', sans-serif;" class="bg-[#F4F3F3]">
                     <!-- Start Navbar -->
                         <div class="flex items-center justify-center">
